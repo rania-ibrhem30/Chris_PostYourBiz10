@@ -1,0 +1,66 @@
+<section class="header py-5">
+ <div class="container">
+    <div class="div">
+        <h1 class="text-center pt-5">
+            POST YOUR BIZ
+        </h1>
+        <p class="text-center">
+            Find the Best Restaurants, Salons and Spa’s around you.
+        </p>
+    </div>
+    <div class="div-searchBar py-2">
+        <div class="form-group justify-content-center align-items-center d-flex">
+            <input type="text" class="form-control justify-content-center align-items-center d-flex w-75" placeholder="             Search ...">
+            <button class="Search-btn">Search</button>
+            <i class='bx bx-search-alt-2 fs-3' style='color:#0f3d3e'></i>   
+        </div>
+    </div>
+    <div class="div-searchBar2 py-2 form-control w-75">
+        <div class="form-group">
+            <div class="justify-content-center align-items-center d-flex gap-3 div-searchBar ">
+                <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="Listings"></p-dropdown>
+                <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="Category"></p-dropdown>
+                <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="State"></p-dropdown>
+                <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionLabel="name" placeholder="City"></p-dropdown>
+                <input type="number" placeholder="Zip Code" class="px-3">
+                <button class="Search-btn">Search</button>
+            </div>
+           
+        </div>
+    </div>
+    <div class="py-5">
+        <h1 class="text-center text-white py-5">How it works ?</h1>
+    </div>
+ </div>
+ <div class="cards">
+    <div class="container">
+        <div class="row justify-content-center align-items-center d-flex gap-3">
+            <div class="col-md-2">
+                <div class="box-card">
+                    <p class="text-center text-white">1.Find</p>
+                    <div class="rounded-circle">
+                       <img src="" alt="">
+                       <small>You can find now the best restraunts, salons and spa in your  area.</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2 ">
+                <div class="box-card">
+                    hhh
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-card">
+                    hhh
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="box-card">
+                    hhh
+                </div>
+            </div>
+        </div>
+      </div>
+ </div>
+
+</section>

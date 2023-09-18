@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+/*Font------lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+li a{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900 !important;
+    Size:15px;
+    line-height: 18px;
+    color: #0F3D3E !important;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+
+}

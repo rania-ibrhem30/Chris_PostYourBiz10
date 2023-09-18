@@ -1,0 +1,110 @@
+section {
+    background-color: #0F3D3E;
+    height: 700px;
+
+    .container {
+        .div {
+            h1 {
+                color: white;
+            }
+
+            p {
+                color: #E2DCC8;
+                font-size: 22px;
+                line-height: 29.26px;
+
+
+            }
+        }
+
+        .div-searchBar {
+            .form-group {
+                position: relative;
+
+                input {
+                    height: 64px;
+                    width: 820px;
+                }
+
+                .Search-btn {
+                    background-color: #0F3D3E;
+                    color: #ffff;
+                    position: absolute;
+                    right: 195px;
+                    border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    -ms-border-radius: 12px;
+                    -o-border-radius: 12px;
+                    width: 111px;
+                    height: 38px;
+                }
+
+                i {
+                    position: absolute;
+                    left: 190px;
+                }
+            }
+        }
+
+        .div-searchBar2 {
+            background-color: #ffff;
+            margin: 0px 160px;
+
+            .form-group {
+                position: relative;
+
+                .Search-btn {
+                    background-color: #0F3D3E;
+                    color: #ffff;
+                    position: absolute;
+                    right: 17px;
+                    border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    -ms-border-radius: 12px;
+                    -o-border-radius: 12px;
+                    width: 111px;
+                    height: 38px;
+                }
+
+                .p-dropdown {
+                    border: none;
+                    width: 100%;
+                    background-color: transparent;
+                    margin: 0 20px;
+                }
+
+                input,
+                input:focus,
+                input:active {
+                    border: none;
+                    outline: none;
+                }
+
+            }
+        }
+    }
+
+    .cards {
+        .container {
+            .row {
+                .col-md-2 {
+                    height: 260px;
+                    background-color: #0F3D3E;
+                    border: 3px solid white;
+                    .box-card{
+                        .rounded-circle {
+                            background-color: #ffff;
+                            height: 190px;
+                            width: 190px;
+    
+                        }
+                    }
+                    
+                   
+                }
+            }
+        }
+    }
+}
