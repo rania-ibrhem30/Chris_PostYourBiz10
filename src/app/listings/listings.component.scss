@@ -1,0 +1,233 @@
+.searchBar{
+    .container{
+      .div-searchBar2{
+        .form-group{
+            position: relative;
+
+            .div-searchBar {
+
+                .p-dropdown {
+                    border: none;
+                    width: 100%;
+                    background-color: transparent;
+                    margin: 0 15px;
+                }
+                input,
+                input:focus,
+                input:active {
+                    border: none;
+                    outline: none;
+                }
+                
+        .Search-btn {
+            background-color: #0F3D3E;
+            color: #ffff;
+            position: absolute;
+            right: -6px;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            width: 100px;
+            height: 38px;
+        }
+        small{
+            font-size: 12px;
+        }
+
+        
+            }
+        }
+      }
+    }
+}
+.Restaurants {
+    p {
+        line-height: 38.4px;
+        font-size: 32px;
+        font-family: 'Lato', sans-serif;
+        color: #000000;
+        font-weight: 900 !important;
+    }
+    .div-box-navs{
+    justify-content: center !important;
+    align-items: center !important;
+    display: flex !important;
+    }
+
+    .nav-underline {
+        background-color: #ffff;
+        width: 650px;
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        -webkit-border-radius: 12px;
+        -moz-border-radius: 12px;
+        -ms-border-radius: 12px;
+        -o-border-radius: 12px;
+    }
+
+    .nav-underline .nav-link.active {
+        color: #8DD3BB;
+    }
+
+    ul {
+        li:not(:first-child) {
+            border-left: 0.6px solid #D7E2EE;
+            margin-left: 40px;
+
+            .nav-link a:visited {
+                color: #000000;
+            }
+
+            .nav-link a.active {
+                color: #000000
+            }
+
+            button {
+                color: #000000;
+                margin: 0px 67px;
+
+                .nav-link {
+                    color: #000000 !important;
+                }
+            }
+
+
+        }
+    }
+}
+.Area{
+    .container{
+        .row{
+            .col-md-6{
+                h2{
+                    line-height: 38.4px;
+                    font-size: 29px;
+                    font-family: 'Lato', sans-serif !important;
+                    font-weight: 800;
+
+                }
+                .nav-tabs{
+                    .nav-link{
+                        color: #000000;
+                        border: none;
+                        outline: none;
+                        font-family: 'Lato', sans-serif !important;
+
+                    }
+                    .nav-link.active{
+                        color: #0F3D3E;
+                        border-bottom: #0F3D3E 2px solid;
+                    }
+                }
+            }
+            
+            .col-md-6{
+                .form-group {
+                    position: relative;
+    
+                    input {
+                        height: 44px;
+                        width: 820px;
+                        padding: 0 63px;
+                    }
+    
+                    .Search-btn {
+                        background-color: #0F3D3E;
+                        color: #ffff;
+                        position: absolute;
+                        right: 89px;
+                        border-radius: 12px;
+                        -webkit-border-radius: 12px;
+                        -moz-border-radius: 12px;
+                        -ms-border-radius: 12px;
+                        -o-border-radius: 12px;
+                        width: 111px;
+                        height: 33px;
+                    }
+    
+                    i {
+                        position: absolute;
+                        left: 100px;
+                    }
+                }
+            }
+            .tab-content {
+                .tab-pane{
+                    .d-flex{
+                        .card{
+                            .row{
+                                .col-md-4{
+                                  img{
+                                    height: 260px;
+                                  }  
+                                }
+                                .col-md-8{
+                                  .card-body{
+                                    h5 {
+                                        font-family: 'Lato', sans-serif;
+                                        font-size: 20px;
+                                        line-height: 24px;
+                                        font-weight: 900 !important;
+                                    }
+
+                                    span {
+                                        color: #ff8682;
+                                        width: 107px;
+                                        height: 59px;
+                                        font-weight: 700;
+                                        font-size: 20px;
+                                        padding: 0px 82px;
+                                        font-family: 'Lato', sans-serif;
+
+                                    }
+
+                                    small {
+                                        font-family: 'Lato', sans-serif;
+
+                                    }
+                                    .heartt {
+                                        .heart {
+
+                                            i{
+                                                border: 1px #258a8b solid !important;
+                                                height: 48px;
+                                                width: 48px ;
+                                                border-radius: 10px;
+                                                -webkit-border-radius: 10px;
+                                                -moz-border-radius: 10px;
+                                                -ms-border-radius: 10px;
+                                                -o-border-radius: 10px;
+                                                justify-content: center;
+                                                align-items: center;
+                                                display: flex;
+                                            }
+                                          
+                                        }
+                                    }
+                                    .btn{
+                                        button{
+                                            height: 48px;
+                                            border-radius: 10px;
+                                            width: 274px;
+                                            background-color: #8DD3BB;
+                                            outline: none;
+                                            border: none;
+                                        }
+                                  }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+           
+        }
+    }
+}
+}

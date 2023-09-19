@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DropdownModule } from 'primeng/dropdown';
+import { SliderModule } from 'primeng/slider';
+import { InputTextModule } from 'primeng/inputtext';
 
 
 
@@ -11,6 +13,9 @@ import { DropdownModule } from 'primeng/dropdown';
   ],
   exports: [
       DropdownModule,
+      SliderModule,
+      InputTextModule 
+
   ],
 })
 export class PrimeNgModule { }
