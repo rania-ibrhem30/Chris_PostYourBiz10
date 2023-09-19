@@ -1,8 +1,8 @@
-section {
+section  .header{
     background-color: #0F3D3E;
-    height: 700px;
-
     .container {
+      background-color: #0F3D3E;
+
         .div {
             h1 {
                 color: white;
@@ -86,9 +86,15 @@ section {
         }
     }
 
+    
+
+   
+}
+section .bg-green{
     .cards {
         .container {
             .row {
+                margin-top: -92px;
                 .col-md-2 {
                     height: 350px;
                     background-color: #0F3D3E;
@@ -99,9 +105,13 @@ section {
                     -ms-border-radius: 12px;
                     -o-border-radius: 12px;
                     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+                    position: relative;
+
+                    
 
                     .box-card {
-
+                        position: absolute;
+                        top: -16px;
                         p {
                             font-weight: 600;
                         }
@@ -125,7 +135,8 @@ section {
             }
         }
     }
-
+}
+section .Restaurants{
     .Restaurants {
         p {
             line-height: 38.4px;
