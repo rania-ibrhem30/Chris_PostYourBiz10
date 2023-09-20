@@ -62,7 +62,14 @@
             .tab-pane{
                 .d-flex{
                     .card{
+                        border-radius: 14px;
+                        -webkit-border-radius: 14px;
+                        -moz-border-radius: 14px;
+                        -ms-border-radius: 14px;
+                        -o-border-radius: 14px;
                         .row{
+                     
+
                             .col-md-4{
                               img{
                                 height: 260px;
@@ -125,9 +132,10 @@
                         }
                     }
                 }
+
+                }
             }
         }
        
     }
-}
 }
