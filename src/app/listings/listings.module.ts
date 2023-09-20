@@ -8,6 +8,8 @@ import { PhotosComponent } from './photos/photos.component';
 import { ListingDetailsPageComponent } from './listing-details-page/listing-details-page.component';
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { FormsModule } from '@angular/forms';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     ListingsRoutingModule,PrimeNgModule,
-    FormsModule
+    FormsModule,
+    CarouselModule
   ]
 })
 export class ListingsModule { }

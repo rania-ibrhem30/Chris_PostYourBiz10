@@ -14,7 +14,8 @@ import { InputTextModule } from 'primeng/inputtext';
   exports: [
       DropdownModule,
       SliderModule,
-      InputTextModule 
+      InputTextModule ,
+      
 
   ],
 })

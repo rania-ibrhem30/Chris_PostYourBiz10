@@ -9,8 +9,7 @@
                     <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionLabel="name" placeholder="City"></p-dropdown>
                     <input type="number" placeholder="Zip Code" class="">
                      <div class="d-flex justify-content-center align-items-center">
-                        <!-- <label for="customRange1" class="form-label">Zip Distance</label> -->
-                        <small>Zip Distance</small>
+                        <small class="mx-3">Zip Distance</small>
                         <input type="range" class="form-range" id="customRange1">
                      </div>
                     <button class="Search-btn ms-5">Search</button>
@@ -297,7 +296,7 @@
                                         <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
                                     </div>
                                     <div class="btn">
-                                        <button class="View Place">View Place</button>
+                                        <button class="View Place" routerLink="/details/:id">View Place</button>
                                     </div>
                                     </div>
                                 </div>
