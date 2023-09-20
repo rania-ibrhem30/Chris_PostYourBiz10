@@ -1,5 +1,4 @@
 section{
-    // height: 280px;
     background-color:#0F3D3E ;
     .container{
         .row{
@@ -26,13 +25,38 @@ section{
     }
 }
 @media (max-width: 767px) {
-    .col-md-2 , .col-md-3{
-        justify-content: center !important;
-        align-items: center !important;
-        display: flex !important;
-        text-align: center !important;
+    section{
+        background-color:#0F3D3E ;
+        .container{
+            .row{
+                .col-md-2 ,.col-md-3{
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                    img{
+                      width: 132px;
+                    }
+
+                    ul{
+                        padding-left: 0rem;
+                        li{
+                            color:white;
+                            list-style: none;
+                            text-align: center;
+                            // margin: 15px 0px ;
+                            font-family: 'Lato', sans-serif;
+                            // padding: 5px 0px ;
+                          
+                        }
+                        .frist{
+                            font-weight: 600 !important;
+                          }
+                        
+                    }
+                
+                }
+            }
+        }
     }
-    .list{
-        margin: 0px 20px;;
-    }
+   
 }
