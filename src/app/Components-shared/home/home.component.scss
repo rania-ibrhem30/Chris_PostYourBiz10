@@ -160,7 +160,7 @@ section .Restaurants {
 
         .nav-underline {
             background-color: #ffff;
-            width: 650px;
+            //width: 681px;
             height: 80px;
             justify-content: center;
             align-items: center;
@@ -180,7 +180,7 @@ section .Restaurants {
         ul {
             li:not(:first-child) {
                 border-left: 0.6px solid #D7E2EE;
-                margin-left: 40px;
+             //   margin-left: 40px;
 
                 .nav-link a:visited {
                     color: #000000;
@@ -192,7 +192,7 @@ section .Restaurants {
 
                 button {
                     color: #000000;
-                    margin: 0px 67px;
+                  //  margin: 0px 67px;
 
                     .nav-link {
                         color: #000000 !important;
@@ -206,23 +206,32 @@ section .Restaurants {
 
     .tab-content {
         .tab-pane {
-            .d-flex {
+            .row {
                 .card {
                     .row {
-                        .col-md-4 {
+                        .col-4 {
                             img {
                                 height: 219px;
                             }
                         }
 
-                        .col-md-8 {
+                        .col-8 {
+                            border-radius: 4px;
+                            -webkit-border-radius: 4px;
+                            -moz-border-radius: 4px;
+                            -ms-border-radius: 4px;
+                            -o-border-radius: 4px;
+
                             .card-body {
+
+
                                 .d-flex {
                                     h5 {
                                         font-family: 'Lato', sans-serif;
                                         font-size: 20px;
                                         line-height: 24px;
                                         font-weight: 900 !important;
+                                        white-space: nowrap;
                                     }
 
                                     span {
@@ -266,7 +275,7 @@ section .Restaurants {
                                     button {
                                         height: 48px;
                                         border-radius: 10px;
-                                        width: 274px;
+                                        width: 236px;
                                         background-color: #8DD3BB;
                                         outline: none;
                                         border: none;
@@ -320,9 +329,9 @@ section .Restaurants {
                     }
 
                     .Search-btn {
-                
-                      display: none; 
-                     
+
+                        display: none;
+
                     }
 
                     i {
@@ -340,7 +349,7 @@ section .Restaurants {
                         justify-content: center;
                         align-items: center;
                         display: flex;
-}
+                    }
                 }
             }
 
@@ -371,7 +380,7 @@ section .Restaurants {
                         bottom: -53px;
                         outline: none;
                         border: none;
-                       
+
                     }
 
                     .p-dropdown {
@@ -400,15 +409,16 @@ section .Restaurants {
 
 
     }
+
     section .bg-green {
         .cards {
             .container {
                 .row {
-                    
-                  
+
+
                     .col-md-2 {
                         height: 350px;
-                      -webkit-border-radius: 12px;
+                        -webkit-border-radius: 12px;
                         -moz-border-radius: 12px;
                         -ms-border-radius: 12px;
                         -o-border-radius: 12px;
@@ -417,29 +427,31 @@ section .Restaurants {
                         justify-content: center;
                         align-items: center;
                         display: flex;
-                        margin: 0px 30px;   background-color: #0F3D3E;
+                        margin: 0px 30px;
+                        background-color: #0F3D3E;
                         border: 5px solid rgb(237, 236, 236);
                         border-radius: 12px;
+
                         .col-8 {
                             width: 100%;
-                          }
-    
-    
-    
+                        }
+
+
+
                         .box-card {
                             position: absolute;
                             top: -16px;
-    
+
                             p {
                                 font-weight: 600;
                             }
-    
+
                             .rounded-circle {
                                 background-color: #ffff;
                                 height: 200px;
                                 width: 195px;
                                 margin: 45px -4px;
-    
+
                                 small {
                                     font-size: 13px;
                                     color: #454545;
@@ -447,15 +459,147 @@ section .Restaurants {
                                 }
                             }
                         }
-    
-    
+
+
                     }
                 }
             }
         }
     }
 
+    section .Restaurants {
+        .Restaurants {
+            p {
+                line-height: 38.4px;
+                font-size: 24px;
+                font-family: 'Lato', sans-serif;
+                color: #000000;
+                font-weight: 900 !important;
+                text-align: center;
+            }
+
+            ul {
+                padding: 0px;
+                margin: 0;
+                justify-content: center;
+                align-items: center;
+                //font-size: 10px;
+                display: flex;
+                margin: auto !important;
+                padding: 0px !important;
+                white-space: nowrap !important;
+                
+                li {
+                    border-left: 0.6px solid #D7E2EE;
+                    font-size: 1.6rem !important;
+
+
+
+
+                }
+            }
+        }
+
+        .tab-content {
+            .tab-pane {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                .row {
+                    justify-content: center;
+                    align-items: center;
+                    display: flex;
+                }
+                    .card {
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                        max-width: 315px !important;
+
+                        .row {
+                            .col-4 {
+                                img {
+                                    height: 250px !important;
+                                }
+                            }
+
+                            .col-8 {
+                                .card-body {
+                                    .d-flex {
+                                        gap: 0px !important;
+                                        h5 {
+                                            font-family: "Lato", sans-serif;
+                                            font-size: 15px;
+                                            line-height: 24px;
+                                            font-weight: 900 !important;
+                                        
+                                        }
+
+                                        span {
+                                            color: #ff8682;
+                                            width: 107px;
+                                            height: 59px;
+                                            font-weight: 700;
+                                            font-size: 17px;
+                                            padding: 0px 0px !important;
+                                            font-family: "Lato", sans-serif;
+                                        
+                                        }
+
+                                    
+
+                                    small {
+                                        font-family: "Lato", sans-serif;
+                                        font-size: 13px;
+                                        word-break: break-word;
+                                    
+
+                                    }
+                                }
+
+                                .heartt {
+                                    .heart {
+
+                                        i {
+                                            border: 1px #258a8b solid !important;
+                                            height: 48px;
+                                            width: 48px;
+                                            border-radius: 10px;
+                                            -webkit-border-radius: 10px;
+                                            -moz-border-radius: 10px;
+                                            -ms-border-radius: 10px;
+                                            -o-border-radius: 10px;
+                                            justify-content: center;
+                                            align-items: center;
+                                            display: flex;
+                                        }
+
+                                    }
+                                }
+
+                                .btn {
+                                    button {
+                                        height: 48px;
+                                        border-radius: 10px;
+                                        width: 97px !important;
+                                        background-color: #8DD3BB;
+                                        outline: none;
+                                        border: none;
+                                    
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
+
+
 @media (min-width: 375px) and (max-width: 620px) {
     section .header {
         background-color: #0F3D3E;
@@ -492,17 +636,18 @@ section .Restaurants {
                         height: 39px;
                         width: 820px;
                         padding: 0 90px;
-                      
+
                     }
+
                     .custom-input::placeholder {
                         color: transparent;
-                      }
-                    
+                    }
+
 
                     .Search-btn {
-                
-                      display: none; 
-                     
+
+                        display: none;
+
                     }
 
                     i {
@@ -520,8 +665,8 @@ section .Restaurants {
                         justify-content: center;
                         align-items: center;
                         display: flex;
-                        
-}
+
+                    }
                 }
             }
 
@@ -552,7 +697,7 @@ section .Restaurants {
                         bottom: -53px;
                         outline: none;
                         border: none;
-                       
+
                     }
 
                     .p-dropdown {
@@ -582,4 +727,4 @@ section .Restaurants {
 
     }
 
-  }
+}

@@ -20,9 +20,77 @@
           </li>
         
         </ul>
+
         <button class="btn-1">Log In</button>
         <button class="btn-2">Sign Up</button>
 
       </div>
+
     </div>
 </nav>
+
+<div class="mobile">
+    <div class="container">
+      <div class="row justify-content-center align-items-center d-flex">
+        <div class="col-4">
+          <p-button type="button" class="" (click)="sidebarVisible1 = true" icon="pi pi-filter fs-1"></p-button>
+          
+        </div>
+        <div class="col-4">
+          <img src="../../../assets/img/logo/logo.png" alt="logo" class="w-100">
+        
+      </div>
+      <div class="col-4">
+        <p-button type="button" class="" (click)="sidebarVisible2 = true" icon="pi pi-align-justify fs-1"></p-button>
+
+      </div>
+    </div>
+</div>
+<p-sidebar [(visible)]="sidebarVisible1" position="left">
+ 
+  <div class="div-searchBar2 py-2">
+    <div class="form-group justify-content-between align-items-center d-flex">
+        <div class="justify-content-center align-items-center d-flex gap-3 div-searchBar flex-column">
+            <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="Category"></p-dropdown>
+            <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="State"></p-dropdown>
+            <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionlabel="name" placeholder="City"></p-dropdown>
+            <input type="number" placeholder="Zip Code" class="px-3"/>
+            <button class="Search-btn">Search</button>
+
+        </div>
+    </div>
+</div>
+  
+</p-sidebar>
+<p-sidebar [(visible)]="sidebarVisible2" position="right">
+  <div class="d-flex justify-content-between align-items-center flex-column">
+    <div>
+      <ul class="navbar-nav  me-auto mb-2 mb-lg-0  text-center">
+        <li class="nav-item  justify-content-center align-items-center d-flex">
+          <a class="nav-link py-4" routerLink="home" routerLinkActive="bg" >Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-4" routerLink="Listings"  routerLinkActive="bg" >Listings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link py-4" routerLink="Postings" routerLinkActive="bg" >Postings</a>
+        </li>
+        <li class="nav-item">
+           <a class="nav-link py-4" routerLink="Buy & Sell " routerLinkActive="bg" >Buy & Sell </a>
+        </li>
+      
+      </ul>
+    </div>
+    <div class="mt-5 justify-content-center align-items-center">
+      <div class="py-1 mt-5">
+        <button class="btn-1">Log In</button>
+
+      </div>
+      <div class="py-1">
+        <button class="btn-2">Sign Up</button>
+
+      </div>
+
+    </div>
+  </div>
+</p-sidebar>

@@ -40,4 +40,72 @@ nav{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 
 }
+.p-button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: black;
+   
 
+}
+.div-searchBar2 {
+    background-color: #ffff;
+    // margin: 0px 10px;
+
+    .form-group {
+
+        .Search-btn {
+            background-color: #0F3D3E;
+            color: #ffff;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            width: 111px;
+            height: 38px;
+            margin: 20px 0px ;
+}
+
+        .p-dropdown {
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            // margin: 0 20px;
+        }
+
+        input,
+        input:focus,
+        input:active {
+            border: none;
+            outline: none;
+            width: 100px;
+        }
+
+    }
+}
+
+
+.p-sidebar-right , .p-sidebar-left {
+    top: 0;
+    right: 0;
+    width: 188px !important;
+    height: 100%;
+}
+.p-button.p-button-icon-only{
+    margin: 0px 17px;
+}
+.mobile{
+    display: none;
+    background-color: #ffff;
+}
+
+@media (max-width: 767px) {
+    .navbar{
+        display: none;
+    }
+    .mobile{
+        display: block;
+       
+    }
+}

@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { DropdownModule } from 'primeng/dropdown';
 import { SliderModule } from 'primeng/slider';
 import { InputTextModule } from 'primeng/inputtext';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
 
 
 
@@ -15,6 +17,8 @@ import { InputTextModule } from 'primeng/inputtext';
       DropdownModule,
       SliderModule,
       InputTextModule ,
+      SidebarModule,
+      ButtonModule
       
 
   ],
