@@ -1,5 +1,6 @@
 a .nav-link{
     color: #0F3D3E;
+    word-wrap: none;
 }
 .bg{
     background-color: #0F3D3E !important;
@@ -107,6 +108,10 @@ nav{
     .mobile{
         display: block;
        
+    }
+    a .nav-link{
+        color: #0F3D3E;
+        word-break: none;      
     }
 }
 @media (min-width: 800px) and (max-width: 1024px){
