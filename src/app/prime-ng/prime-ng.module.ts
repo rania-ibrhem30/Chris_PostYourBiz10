@@ -5,6 +5,8 @@ import { SliderModule } from 'primeng/slider';
 import { InputTextModule } from 'primeng/inputtext';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { PaginatorModule } from 'primeng/paginator';
+import { TabViewModule } from 'primeng/tabview';
 
 
 
@@ -18,7 +20,9 @@ import { ButtonModule } from 'primeng/button';
       SliderModule,
       InputTextModule ,
       SidebarModule,
-      ButtonModule
+      ButtonModule,
+      PaginatorModule,
+      TabViewModule
       
 
   ],
