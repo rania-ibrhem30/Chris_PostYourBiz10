@@ -109,3 +109,25 @@ nav{
        
     }
 }
+@media (min-width: 800px) and (max-width: 1024px){
+    .navbar{
+        display: block;
+    }
+    .mobile{
+        display: none;
+       
+    }
+    .div-tab{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 12px 26px;
+
+}
+
+.btn-1{
+    padding: 10px;
+}
+    
+}

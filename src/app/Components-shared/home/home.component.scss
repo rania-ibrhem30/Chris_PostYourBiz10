@@ -1,804 +1,950 @@
 section .header {
-    background-color: #0F3D3E;
+  background-color: #0f3d3e;
 
-    .container {
-        background-color: #0F3D3E;
+  .container {
+    background-color: #0f3d3e;
 
-        .div {
-            h1 {
-                color: white;
-            }
+    .div {
+      h1 {
+        color: white;
+      }
 
-            p {
-                color: #E2DCC8;
-                font-size: 22px;
-                line-height: 29.26px;
-
-
-            }
-        }
-
-        .div-searchBar {
-            .form-group {
-                position: relative;
-
-                input {
-                    height: 64px;
-                    width: 820px;
-                    padding: 0 90px;
-                }
-
-                .Search-btn {
-                    background-color: #0F3D3E;
-                    color: #ffff;
-                    position: absolute;
-                    right: 195px;
-                    border-radius: 12px;
-                    -webkit-border-radius: 12px;
-                    -moz-border-radius: 12px;
-                    -ms-border-radius: 12px;
-                    -o-border-radius: 12px;
-                    width: 111px;
-                    height: 38px;
-                }
-
-                i {
-                    position: absolute;
-                    left: 190px;
-                }
-            }
-        }
-
-        .div-searchBar2 {
-            background-color: #ffff;
-            margin: 0px 160px;
-
-            .form-group {
-                position: relative;
-
-                .Search-btn {
-                    background-color: #0F3D3E;
-                    color: #ffff;
-                    position: absolute;
-                    right: 17px;
-                    border-radius: 12px;
-                    -webkit-border-radius: 12px;
-                    -moz-border-radius: 12px;
-                    -ms-border-radius: 12px;
-                    -o-border-radius: 12px;
-                    width: 111px;
-                    height: 38px;
-                }
-
-                .p-dropdown {
-                    border: none;
-                    width: 100%;
-                    background-color: transparent;
-                    margin: 0 20px;
-                }
-
-                input,
-                input:focus,
-                input:active {
-                    border: none;
-                    outline: none;
-                }
-
-            }
-        }
+      p {
+        color: #e2dcc8;
+        font-size: 22px;
+        line-height: 29.26px;
+      }
     }
 
+    .div-searchBar {
+      .form-group {
+        position: relative;
 
+        input {
+          height: 64px;
+          width: 820px;
+          padding: 0 90px;
+        }
 
+        .Search-btn {
+          background-color: #0f3d3e;
+          color: #ffff;
+          position: absolute;
+          right: 195px;
+          border-radius: 12px;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          -ms-border-radius: 12px;
+          -o-border-radius: 12px;
+          width: 111px;
+          height: 38px;
+        }
 
+        i {
+          position: absolute;
+          left: 190px;
+        }
+      }
+    }
+
+    .div-searchBar2 {
+      background-color: #ffff;
+      margin: 0px 160px;
+
+      .form-group {
+        position: relative;
+
+        .Search-btn {
+          background-color: #0f3d3e;
+          color: #ffff;
+          position: absolute;
+          right: 17px;
+          border-radius: 12px;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          -ms-border-radius: 12px;
+          -o-border-radius: 12px;
+          width: 111px;
+          height: 38px;
+        }
+
+        .p-dropdown {
+          border: none;
+          width: 100%;
+          background-color: transparent;
+          margin: 0 20px;
+        }
+
+        input,
+        input:focus,
+        input:active {
+          border: none;
+          outline: none;
+          width: 266px;
+        }
+      }
+    }
+  }
 }
 
 section .bg-green {
-    .cards {
-        .container {
+  .cards {
+    .container {
+      .row {
+        margin-top: -92px;
+
+        .col-md-2 {
+          height: 350px;
+          background-color: #0f3d3e;
+          border: 5px solid rgb(237, 236, 236);
+          border-radius: 12px;
+          -webkit-border-radius: 12px;
+          -moz-border-radius: 12px;
+          -ms-border-radius: 12px;
+          -o-border-radius: 12px;
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          position: relative;
+
+          .box-card {
+            position: absolute;
+            top: -16px;
+
+            p {
+              font-weight: 600;
+            }
+
+            .rounded-circle {
+              background-color: #ffff;
+              height: 200px;
+              width: 195px;
+              margin: 45px -4px;
+
+              small {
+                font-size: 13px;
+                color: #454545;
+                font-family: "Lato", sans-serif;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section .Restaurants {
+  .container {
+    .container {
+      p {
+        color: #ff8682 !important;
+      }
+      p-tabPanel {
+        .d-flex {
+          .card {
             .row {
-                margin-top: -92px;
+              .col-4 {
+                img {
+                  height: 219px;
+                }
+              }
 
-                .col-md-2 {
-                    height: 350px;
-                    background-color: #0F3D3E;
-                    border: 5px solid rgb(237, 236, 236);
-                    border-radius: 12px;
-                    -webkit-border-radius: 12px;
-                    -moz-border-radius: 12px;
-                    -ms-border-radius: 12px;
-                    -o-border-radius: 12px;
-                    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-                    position: relative;
+              .col-8 {
+                border-radius: 4px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                -ms-border-radius: 4px;
+                -o-border-radius: 4px;
 
-
-
-                    .box-card {
-                        position: absolute;
-                        top: -16px;
-
-                        p {
-                            font-weight: 600;
-                        }
-
-                        .rounded-circle {
-                            background-color: #ffff;
-                            height: 200px;
-                            width: 195px;
-                            margin: 45px -4px;
-
-                            small {
-                                font-size: 13px;
-                                color: #454545;
-                                font-family: 'Lato', sans-serif;
-                            }
-                        }
+                .card-body {
+                  .d-flex {
+                    h5 {
+                      font-family: "Lato", sans-serif;
+                      font-size: 20px;
+                      line-height: 24px;
+                      font-weight: 900 !important;
+                      white-space: nowrap;
                     }
 
+                    span {
+                      color: #ff8682;
+                      width: 107px;
+                      height: 59px;
+                      font-weight: 700;
+                      font-size: 20px;
+                      padding: 0px 82px;
+                      font-family: "Lato", sans-serif;
+                    }
 
+                    small {
+                      font-family: "Lato", sans-serif;
+                    }
+                  }
+
+                  .heartt {
+                    .heart {
+                      i {
+                        border: 1px #258a8b solid !important;
+                        height: 48px;
+                        width: 48px;
+                        border-radius: 10px;
+                        -webkit-border-radius: 10px;
+                        -moz-border-radius: 10px;
+                        -ms-border-radius: 10px;
+                        -o-border-radius: 10px;
+                        justify-content: center;
+                        align-items: center;
+                        display: flex;
+                      }
+                    }
+                  }
+
+                  .btn {
+                    button {
+                      height: 48px;
+                      border-radius: 10px;
+                      width: 236px;
+                      background-color: #8dd3bb;
+                      outline: none;
+                      border: none;
+                    }
+                  }
                 }
+              }
             }
+          }
         }
+      }
     }
+  }
 }
-
-   section .Restaurants{
-    .container{
-        .container{
-            p{
-                color: #ff8682 !important;
-            }
-            p-tabPanel{
-              .d-flex{
-                .card{
-                    .row {
-                        .col-4 {
-                            img {
-                                height: 219px;
-                            }
-                        }
-
-                        .col-8 {
-                            border-radius: 4px;
-                            -webkit-border-radius: 4px;
-                            -moz-border-radius: 4px;
-                            -ms-border-radius: 4px;
-                            -o-border-radius: 4px;
-
-                            .card-body {
-
-
-                                .d-flex {
-                                    h5 {
-                                        font-family: 'Lato', sans-serif;
-                                        font-size: 20px;
-                                        line-height: 24px;
-                                        font-weight: 900 !important;
-                                        white-space: nowrap;
-                                    }
-
-                                    span {
-                                        color: #ff8682;
-                                        width: 107px;
-                                        height: 59px;
-                                        font-weight: 700;
-                                        font-size: 20px;
-                                        padding: 0px 82px;
-                                        font-family: 'Lato', sans-serif;
-
-                                    }
-
-                                    small {
-                                        font-family: 'Lato', sans-serif;
-
-                                    }
-                                }
-
-                                .heartt {
-                                    .heart {
-
-                                        i {
-                                            border: 1px #258a8b solid !important;
-                                            height: 48px;
-                                            width: 48px;
-                                            border-radius: 10px;
-                                            -webkit-border-radius: 10px;
-                                            -moz-border-radius: 10px;
-                                            -ms-border-radius: 10px;
-                                            -o-border-radius: 10px;
-                                            justify-content: center;
-                                            align-items: center;
-                                            display: flex;
-                                        }
-
-                                    }
-                                }
-
-                                .btn {
-                                    button {
-                                        height: 48px;
-                                        border-radius: 10px;
-                                        width: 236px;
-                                        background-color: #8DD3BB;
-                                        outline: none;
-                                        border: none;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-              }  
-            }
-        }
-    }
-}
-
-
-@media (max-width: 767px) {
-    section .header {
-        background-color: #0F3D3E;
-
-        .container {
-            background-color: #0F3D3E;
-
-            .div {
-                h1 {
-                    color: white;
-                }
-
-                p {
-                    color: #E2DCC8;
-                    font-size: 14px;
-                    line-height: 29.26px;
-
-
-                }
-            }
-
-            .div-searchBar {
-                flex-direction: column;
-                gap: 1rem;
-                display: flex;
-                flex-direction: column !important;
-                align-items: center;
-                justify-content: center;
-
-                .form-group {
-                    position: relative;
-
-                    input {
-                        height: 39px;
-                        width: 820px;
-                        padding: 0 90px;
-                    }
-
-                    .Search-btn {
-
-                        display: none;
-
-                    }
-
-                    i {
-                        position: absolute;
-                        left: 219px;
-                        background-color: #0F3D3E;
-                        color: white !important;
-                        width: 34px;
-                        height: 27px;
-                        border-radius: 4px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        -ms-border-radius: 4px;
-                        -o-border-radius: 4px;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-                    }
-                }
-            }
-
-            .div-searchBar2 {
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 0px 35px !important;
-                height: 414px;
-
-                .form-group {
-                    position: relative;
-
-                    .Search-btn {
-                        background-color: #0F3D3E;
-                        color: white;
-                        position: absolute;
-                        right: 46px;
-                        border-radius: 5px;
-                        -webkit-border-radius: 5px;
-                        -moz-border-radius: 5px;
-                        -ms-border-radius: 5px;
-                        -o-border-radius: 5px;
-                        width: 111px;
-                        height: 34px;
-                        bottom: -74px;
-                        outline: none;
-                        border: none;
-
-                    }
-
-                    .p-dropdown {
-                        border: none;
-                        width: 100%;
-                        background-color: transparent;
-                        margin: 0 20px;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-                    }
-
-                    input,
-                    input:focus,
-                    input:active {
-                        border: none;
-                        outline: none;
-                        width: 50%;
-                    }
-
-                }
-            }
-        }
-
-
-
-
-    }
-
-    section .bg-green {
-        .cards {
-            .container {
-                .row {
-
-
-                    .col-md-2 {
-                        height: 350px;
-                        -webkit-border-radius: 12px;
-                        -moz-border-radius: 12px;
-                        -ms-border-radius: 12px;
-                        -o-border-radius: 12px;
-                        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-                        position: relative;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-                        margin: 0px 30px;
-                        background-color: #0F3D3E;
-                        border: 5px solid rgb(237, 236, 236);
-                        border-radius: 12px;
-
-                        .col-8 {
-                            width: 100%;
-                        }
-
-
-
-                        .box-card {
-                            position: absolute;
-                            top: -16px;
-
-                            p {
-                                font-weight: 600;
-                            }
-
-                            .rounded-circle {
-                                background-color: #ffff;
-                                height: 200px;
-                                width: 195px;
-                                margin: 45px -4px;
-
-                                small {
-                                    font-size: 13px;
-                                    color: #454545;
-                                    font-family: 'Lato', sans-serif;
-                                }
-                            }
-                        }
-
-
-                    }
-                }
-            }
-        }
-    }
-    section .Restaurants{
-        
-        .container{
-            .h1{
-                font-size: 19px;
-                /* word-break: break-word; */
-                text-align: center;
-                word-wrap: break-word;
-                margin: 0px 21px;
-                font-weight: 700;                }
-            .container{
-                
-                p{
-                    font-size: 10px;
-                }
-                .p-tabview-nav-container .p-tabview-nav-content {
-                    width: 100% !important;
-                }
-                p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-                    border-color:#258a8b;
-                }
-                .p-tabview-title {
-                    line-height: 1;
-                    white-space: nowrap;
-                    font-size: 13px;
-                }
-
-                p-tabPanel{                
-                  .d-flex{
-                    
-                    .card{
-                        .row {
-                            .col-4 {
-                                img {
-                                    height: 219px;
-                                }
-                            }
-    
-                            .col-8 {
-                                border-radius: 4px;
-                                -webkit-border-radius: 4px;
-                                -moz-border-radius: 4px;
-                                -ms-border-radius: 4px;
-                                -o-border-radius: 4px;
-    
-                                .card-body {
-    
-    
-                                    .d-flex {
-                                        h5 {
-                                            font-family: 'Lato', sans-serif;
-                                            font-size: 20px;
-                                            line-height: 24px;
-                                            font-weight: 900 !important;
-                                            white-space: nowrap;
-                                        }
-    
-                                        span {
-                                            color: #ff8682;
-                                            width: 107px;
-                                            height: 59px;
-                                            font-weight: 700;
-                                            font-size: 20px;
-                                            padding: 0px 82px;
-                                            font-family: 'Lato', sans-serif;
-    
-                                        }
-    
-                                        small {
-                                            font-family: 'Lato', sans-serif;
-    
-                                        }
-                                    }
-    
-                                    .heartt {
-                                        .heart {
-    
-                                            i {
-                                                border: 1px #258a8b solid !important;
-                                                height: 48px;
-                                                width: 48px;
-                                                border-radius: 10px;
-                                                -webkit-border-radius: 10px;
-                                                -moz-border-radius: 10px;
-                                                -ms-border-radius: 10px;
-                                                -o-border-radius: 10px;
-                                                justify-content: center;
-                                                align-items: center;
-                                                display: flex;
-                                            }
-    
-                                        }
-                                    }
-    
-                                    .btn {
-                                        button {
-                                            height: 44px;
-                                            border-radius: 10px;
-                                            width: 86px;
-                                            background-color: #8DD3BB;
-                                            outline: none;
-                                            border: none;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                  }  
-                
-                }
-            }
-        }
-    }
-
-    
-}
-@media (min-width: 375px) and (max-width: 620px) {
-    section .header {
-        background-color: #0F3D3E;
-
-        .container {
-            background-color: #0F3D3E;
-
-            .div {
-                h1 {
-                    color: white;
-                }
-
-                p {
-                    color: #E2DCC8;
-                    font-size: 14px;
-                    line-height: 29.26px;
-
-
-                }
-            }
-
-            .div-searchBar {
-                flex-direction: column;
-                gap: 1rem;
-                display: flex;
-                flex-direction: column !important;
-                align-items: center;
-                justify-content: center;
-
-                .form-group {
-                    position: relative;
-
-                    input {
-                        height: 39px;
-                        width: 820px;
-                        padding: 0 90px;
-
-                    }
-
-                    .custom-input::placeholder {
-                        color: transparent;
-                    }
-
-
-                    .Search-btn {
-
-                        display: none;
-
-                    }
-
-                    i {
-                        position: absolute;
-                        left: 268px;
-                        background-color: #0F3D3E;
-                        color: white !important;
-                        width: 34px;
-                        height: 27px;
-                        border-radius: 4px;
-                        -webkit-border-radius: 4px;
-                        -moz-border-radius: 4px;
-                        -ms-border-radius: 4px;
-                        -o-border-radius: 4px;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-
-                    }
-                }
-            }
-
-            .div-searchBar2 {
-                background-color: white;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin: 0px 45px !important;
-                height: 414px;
-
-                .form-group {
-                    position: relative;
-
-                    .Search-btn {
-                            background-color: #0F3D3E;
-                            color: white;
-                            position: absolute;
-                            right: 60px;
-                            border-radius: 5px;
-                            -webkit-border-radius: 5px;
-                            -moz-border-radius: 5px;
-                            -ms-border-radius: 5px;
-                            -o-border-radius: 5px;
-                            width: 111px;
-                            height: 34px;
-                            bottom: -75px;
-                            outline: none;
-                            border: none;
-                        
-
-                    }
-
-                    .p-dropdown {
-                        border: none;
-                        width: 100%;
-                        background-color: transparent;
-                        margin: 0 20px;
-                        justify-content: center;
-                        align-items: center;
-                        display: flex;
-                    }
-
-                    input,
-                    input:focus,
-                    input:active {
-                        border: none;
-                        outline: none;
-                        width: 50%;
-                    }
-
-                }
-            }
-        }
-
-
-
-
-    }
-    section .Restaurants{
-        .container{
-            .h1{
-                font-size: 19px;
-                /* word-break: break-word; */
-                text-align: center;
-                word-wrap: break-word;
-                margin: 0px 21px;
-                font-weight: 700;                }
-            .container{
-              
-                p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-                    border-color:#258a8b;
-                }
-                p-tabPanel{
-                  .d-flex{
-                    .card{
-                        .row {
-                            .col-4 {
-                                img {
-                                    height: 219px;
-                                }
-                            }
-    
-                            .col-8 {
-                                border-radius: 4px;
-                                -webkit-border-radius: 4px;
-                                -moz-border-radius: 4px;
-                                -ms-border-radius: 4px;
-                                -o-border-radius: 4px;
-    
-                                .card-body {
-    
-    
-                                    .d-flex {
-                                        h5 {
-                                            font-family: 'Lato', sans-serif;
-                                            font-size: 20px;
-                                            line-height: 24px;
-                                            font-weight: 900 !important;
-                                            white-space: nowrap;
-                                        }
-    
-                                        span {
-                                            color: #ff8682;
-                                            width: 107px;
-                                            height: 59px;
-                                            font-weight: 700;
-                                            font-size: 20px;
-                                            padding: 0px 82px;
-                                            font-family: 'Lato', sans-serif;
-    
-                                        }
-    
-                                        small {
-                                            font-family: 'Lato', sans-serif;
-    
-                                        }
-                                    }
-    
-                                    .heartt {
-                                        .heart {
-    
-                                            i {
-                                                border: 1px #258a8b solid !important;
-                                                height: 48px;
-                                                width: 48px;
-                                                border-radius: 10px;
-                                                -webkit-border-radius: 10px;
-                                                -moz-border-radius: 10px;
-                                                -ms-border-radius: 10px;
-                                                -o-border-radius: 10px;
-                                                justify-content: center;
-                                                align-items: center;
-                                                display: flex;
-                                            }
-    
-                                        }
-                                    }
-    
-                                    .btn {
-                                        button {
-                                            height: 48px;
-                                            border-radius: 10px;
-                                            width: 93px;
-                                            background-color: #8DD3BB;
-                                            outline: none;
-                                            border: none;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                  }  
-                }
-            }
-        }
-    }
-    
-
-}
-
-
-
-
-
-
-
 .p-tabview .p-tabview-nav-content {
-    height: 80px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    -ms-border-radius: 12px;
-    -o-border-radius: 12px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 .p-tabview .p-tabview-nav {
-    background: #ffffff;
-     border:none;
-    border-width: 0 0 2px 0;
+  background: #ffffff;
+  border: none;
+  border-width: 0 0 2px 0;
 }
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
-    color: #0F3D3E !important;
-
+  color: #0f3d3e !important;
 }
 .p-tabview .p-tabview-nav {
-    background: #ffffff;
-    border: none;
-    border-width: 0 0 2px 0;
-    border-color:  #258a8b;
-    color: #0F3D3E !important;
-   justify-content: center;
-   align-items: center;
-   display: flex;
-} 
-.p-tabview-nav-container{
-    display: flex;
-    justify-content: center;
-    .p-tabview-nav-content{
-        width: 50%;
+  background: #ffffff;
+  border: none;
+  border-width: 0 0 2px 0;
+  border-color: #258a8b;
+  color: #0f3d3e !important;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.p-tabview-nav-container {
+  display: flex;
+  justify-content: center;
+  .p-tabview-nav-content {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  section .header {
+    background-color: #0f3d3e;
+
+    .container {
+      background-color: #0f3d3e;
+
+      .div {
+        h1 {
+          color: white;
+        }
+
+        p {
+          color: #e2dcc8;
+          font-size: 14px;
+          line-height: 29.26px;
+        }
+      }
+
+      .div-searchBar {
+        flex-direction: column;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+
+        .form-group {
+          position: relative;
+
+          input {
+            height: 39px;
+            width: 820px;
+            padding: 0 90px;
+          }
+
+          .Search-btn {
+            display: none;
+          }
+
+          i {
+            position: absolute;
+            left: 219px;
+            background-color: #0f3d3e;
+            color: white !important;
+            width: 34px;
+            height: 27px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+        }
+      }
+
+      .div-searchBar2 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 35px !important;
+        height: 414px;
+
+        .form-group {
+          position: relative;
+
+          .Search-btn {
+            background-color: #0f3d3e;
+            color: white;
+            position: absolute;
+            right: 46px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            width: 111px;
+            height: 34px;
+            bottom: -74px;
+            outline: none;
+            border: none;
+          }
+
+          .p-dropdown {
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            margin: 0 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+
+          input,
+          input:focus,
+          input:active {
+            border: none;
+            outline: none;
+            width: 50%;
+          }
+        }
+      }
     }
+  }
+
+  section .bg-green {
+    .cards {
+      .container {
+        .row {
+          .col-md-2 {
+            height: 350px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0px 30px;
+            background-color: #0f3d3e;
+            border: 5px solid rgb(237, 236, 236);
+            border-radius: 12px;
+
+            .col-8 {
+              width: 100%;
+            }
+
+            .box-card {
+              position: absolute;
+              top: -16px;
+
+              p {
+                font-weight: 600;
+              }
+
+              .rounded-circle {
+                background-color: #ffff;
+                height: 200px;
+                width: 195px;
+                margin: 45px -4px;
+
+                small {
+                  font-size: 13px;
+                  color: #454545;
+                  font-family: "Lato", sans-serif;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  section .Restaurants {
+    .container {
+      .h1 {
+        font-size: 19px;
+        /* word-break: break-word; */
+        text-align: center;
+        word-wrap: break-word;
+        margin: 0px 21px;
+        font-weight: 700;
+      }
+      .container {
+        p {
+          font-size: 10px;
+        }
+        .p-tabview-nav-container .p-tabview-nav-content {
+          width: 100% !important;
+        }
+        p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+          border-color: #258a8b;
+        }
+        .p-tabview-title {
+          line-height: 1;
+          white-space: nowrap;
+          font-size: 13px;
+        }
+
+        p-tabPanel {
+          .d-flex {
+            .card {
+              .row {
+                .col-4 {
+                  img {
+                    height: 219px;
+                  }
+                }
+
+                .col-8 {
+                  border-radius: 4px;
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  -ms-border-radius: 4px;
+                  -o-border-radius: 4px;
+
+                  .card-body {
+                    .d-flex {
+                      h5 {
+                        font-family: "Lato", sans-serif;
+                        font-size: 15px;
+                        line-height: 33px;
+                        font-weight: 900 !important;
+                        white-space: nowrap;
+                      }
+
+                      span {
+                        color: #ff8682;
+                        width: 107px;
+                        height: 59px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        padding: 0px 0px;
+                        font-family: "Lato", sans-serif;
+                        gap: 0px !important;
+                      }
+
+                      small {
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+
+                    .heartt {
+                      .heart {
+                        i {
+                          border: 1px #258a8b solid !important;
+                          height: 48px;
+                          width: 48px;
+                          border-radius: 10px;
+                          -webkit-border-radius: 10px;
+                          -moz-border-radius: 10px;
+                          -ms-border-radius: 10px;
+                          -o-border-radius: 10px;
+                          justify-content: center;
+                          align-items: center;
+                          display: flex;
+                        }
+                      }
+                    }
+
+                    .btn {
+                      button {
+                        height: 44px;
+                        border-radius: 10px;
+                        width: 86px;
+                        background-color: #8dd3bb;
+                        outline: none;
+                        border: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 375px) and (max-width: 620px) {
+  section .header {
+    background-color: #0f3d3e;
+
+    .container {
+      background-color: #0f3d3e;
+
+      .div {
+        h1 {
+          color: white;
+        }
+
+        p {
+          color: #e2dcc8;
+          font-size: 14px;
+          line-height: 29.26px;
+        }
+      }
+
+      .div-searchBar {
+        flex-direction: column;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+
+        .form-group {
+          position: relative;
+
+          input {
+            height: 39px;
+            width: 820px;
+            padding: 0 90px;
+          }
+
+          .custom-input::placeholder {
+            color: transparent;
+          }
+
+          .Search-btn {
+            display: none;
+          }
+
+          i {
+            position: absolute;
+            left: 268px;
+            background-color: #0f3d3e;
+            color: white !important;
+            width: 34px;
+            height: 27px;
+            border-radius: 4px;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            -ms-border-radius: 4px;
+            -o-border-radius: 4px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+        }
+      }
+
+      .div-searchBar2 {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 45px !important;
+        height: 414px;
+
+        .form-group {
+          position: relative;
+
+          .Search-btn {
+            background-color: #0f3d3e;
+            color: white;
+            position: absolute;
+            right: 60px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            width: 111px;
+            height: 34px;
+            bottom: -75px;
+            outline: none;
+            border: none;
+          }
+
+          .p-dropdown {
+            border: none;
+            width: 100%;
+            background-color: transparent;
+            margin: 0 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+          }
+
+          input,
+          input:focus,
+          input:active {
+            border: none;
+            outline: none;
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  section .Restaurants {
+    .container {
+      .h1 {
+        font-size: 19px;
+        /* word-break: break-word; */
+        text-align: center;
+        word-wrap: break-word;
+        margin: 0px 21px;
+        font-weight: 700;
+      }
+      .container {
+        p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+          border-color: #258a8b;
+        }
+        p-tabPanel {
+          .d-flex {
+            .card {
+              .row {
+                .col-4 {
+                  img {
+                    height: 219px;
+                  }
+                }
+
+                .col-8 {
+                  border-radius: 4px;
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  -ms-border-radius: 4px;
+                  -o-border-radius: 4px;
+
+                  .card-body {
+                    .d-flex {
+                      h5 {
+                        font-family: "Lato", sans-serif;
+                        font-size: 15px;
+                        line-height: 33px;
+                        font-weight: 900 !important;
+                        white-space: nowrap;
+                      }
+
+                      span {
+                        color: #ff8682;
+                        width: 107px;
+                        height: 59px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        padding: 0px 0px;
+                        font-family: "Lato", sans-serif;
+                        gap: 0px !important;
+                      }
+
+                      small {
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+
+                    .heartt {
+                      .heart {
+                        i {
+                          border: 1px #258a8b solid !important;
+                          height: 48px;
+                          width: 48px;
+                          border-radius: 10px;
+                          -webkit-border-radius: 10px;
+                          -moz-border-radius: 10px;
+                          -ms-border-radius: 10px;
+                          -o-border-radius: 10px;
+                          justify-content: center;
+                          align-items: center;
+                          display: flex;
+                        }
+                      }
+                    }
+
+                    .btn {
+                      button {
+                        height: 48px;
+                        border-radius: 10px;
+                        width: 93px;
+                        background-color: #8dd3bb;
+                        outline: none;
+                        border: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  section .header {
+    background-color: #0f3d3e;
+
+    .container {
+      background-color: #0f3d3e;
+
+      .div {
+        h1 {
+          color: white;
+        }
+
+        p {
+          color: #e2dcc8;
+          font-size: 22px;
+          line-height: 29.26px;
+        }
+      }
+
+      .div-searchBar {
+        margin: 0px -62px;
+        padding: 0px -21px;
+        width: 793px !important;
+        .form-group {
+          position: relative;
+
+          input {
+            height: 64px;
+            width: 100px;
+            padding: 0 95px;
+            margin: 0px -62px;
+            padding: 0px -21px;
+            width: 793px !important;
+          }
+
+          .Search-btn {
+            background-color: #0f3d3e;
+            color: white;
+            position: absolute;
+            right: 41px;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            width: 71px;
+            height: 38px;
+          }
+
+          i {
+            position: absolute;
+            left: 55px;
+          }
+        }
+      }
+
+      .div-searchBar2 {
+        background-color: white;
+        margin: 0px -62px;
+        padding: 0px -21px;
+        width: 793px !important;
+
+        .form-group {
+          position: relative;
+
+          .Search-btn {
+            background-color: #0f3d3e;
+            color: #ffff;
+            position: absolute;
+            right: 17px;
+            border-radius: 12px;
+            -webkit-border-radius: 12px;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            width: 71px;
+            height: 38px;
+          }
+
+          .p-dropdown {
+            border: none;
+            width: 70%;
+            background-color: transparent;
+            .p-dropdown-trigger {
+              background: transparent;
+              color: #6c757d;
+              width: 0rem;
+              border-top-right-radius: 6px;
+              border-bottom-right-radius: 6px;
+              padding: 0px 10px;
+              font-size: 10px;
+            }
+          }
+
+          input,
+          input:focus,
+          input:active {
+            border: none;
+            outline: none;
+            width: 99px;
+          }
+        }
+      }
+    }
+  }
+  section .bg-green {
+    .cards {
+      .container {
+        .row {
+  
+          
+            .col-md-2 {
+                flex: 0 0 auto;
+                width: 32.666667%;
+            }
+  
+          
+        }
+      }
+    }
+  }
+
+
+  section .Restaurants {
+    .container {
+      .h1 {
+        font-size: 19px;
+        /* word-break: break-word; */
+        text-align: center;
+        word-wrap: break-word;
+        margin: 0px 21px;
+        font-weight: 700;
+      }
+      .container {
+        p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+          border-color: #258a8b;
+        }
+        p-tabPanel {
+          .d-flex {
+            .card {
+              .row {
+                .col-4 {
+                  img {
+                    height: 219px;
+                  }
+                }
+
+                .col-8 {
+                  border-radius: 4px;
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  -ms-border-radius: 4px;
+                  -o-border-radius: 4px;
+
+                  .card-body {
+                    .d-flex {
+                      h5 {
+                        font-family: "Lato", sans-serif;
+                        font-size: 15px;
+                        line-height: 33px;
+                        font-weight: 900 !important;
+                        white-space: nowrap;
+                      }
+
+                      span {
+                        color: #ff8682;
+                        width: 107px;
+                        height: 59px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        padding: 0px 0px;
+                        font-family: "Lato", sans-serif;
+                        gap: 0px !important;
+                      }
+
+                      small {
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+
+                    .heartt {
+                      .heart {
+                        i {
+                          border: 1px #258a8b solid !important;
+                          height: 48px;
+                          width: 48px;
+                          border-radius: 10px;
+                          -webkit-border-radius: 10px;
+                          -moz-border-radius: 10px;
+                          -ms-border-radius: 10px;
+                          -o-border-radius: 10px;
+                          justify-content: center;
+                          align-items: center;
+                          display: flex;
+                        }
+                      }
+                    }
+
+                    .btn {
+                      button {
+                        height: 48px;
+                        border-radius: 10px;
+                        width: 93px;
+                        background-color: #8dd3bb;
+                        outline: none;
+                        border: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
