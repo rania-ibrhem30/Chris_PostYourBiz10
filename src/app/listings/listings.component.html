@@ -2,316 +2,276 @@
     <div class="container">
         <div class="div-searchBar2 py-2 form-control w-100">
             <div class="form-group">
-                <div class="justify-content-center align-items-center d-flex gap-1 div-searchBar ">
-                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="Listings"></p-dropdown>
-                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="Category"></p-dropdown>
-                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionLabel="name" placeholder="State"></p-dropdown>
-                    <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionLabel="name" placeholder="City"></p-dropdown>
-                    <input type="number" placeholder="Zip Code" class="">
-                     <div class="d-flex justify-content-center align-items-center">
+                <div class="justify-content-center align-items-center d-flex gap-1 div-searchBar">
+                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="Listings"></p-dropdown>
+                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="Category"></p-dropdown>
+                    <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="State"></p-dropdown>
+                    <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionlabel="name" placeholder="City"></p-dropdown>
+                    <input type="number" placeholder="Zip Code" class=""/>
+                    <div class="d-flex justify-content-center align-items-center">
                         <small class="mx-3">Zip Distance</small>
-                        <input type="range" class="form-range" id="customRange1">
-                     </div>
+                        <input type="range" class="form-range" id="customRange1"/>
+                    </div>
                     <button class="Search-btn ms-5">Search</button>
                 </div>
-               
             </div>
         </div>
     </div>
-   
 </section>
 <section class="Restaurants py-2">
     <div class="container">
         <ul class="nav nav-underline m-auto" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false">Restaurants</button>
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="false">
+                    Restaurants
+                </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Salons</button>
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    Salons
+                </button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Spa’s</button>
+                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+                    Spa’s
+                </button>
             </li>
-           
-          </ul>
+        </ul>
     </div>
 </section>
 <section class="Area py-3">
     <div class="container">
         <div class="row justify-content-between align-items-center d-flex">
             <div class="col-md-6">
-            <div class="d-flex justify-content-center align-items-center gap-5">
-                <h2 class="h1">
-                    All Restaurants in Area
-                </h2>
-                <div>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Grid <i class='bx bx-grid bx-flip-horizontal fs-3' style='color:#8DD3BB' ></i></button>
-                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Map <i class='bx bx-map-alt bx-flip-horizontal fs-3'  style='color:#8DD3BB'  ></i></button>
-                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Photo <i class='bx bx-photo-album bx-flip-horizontal fs-3' style='color:#8DD3BB'></i></button>
+                <div class="d-flex justify-content-center align-items-center">
+                    <h2 class="h1">
+                        All Restaurants in Area
+                    </h2>
+                    
+                    <div>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                                <div class=" par d-flex align-items-center justify-content-center">
+                                    <p class="p-0 m-0">Grid</p>
+                                    <i class="bx bx-grid bx-flip-horizontal fs-3" style="color: #8dd3bb;"></i>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                                <div class=" par d-flex align-items-center justify-content-center">
+                                    <p class="p-0 m-0">Map</p>
+                                    <i class="bx bx-map-alt bx-flip-horizontal fs-3" style="color: #8dd3bb;"></i>
+                                </div>
+                            </button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                                <div class=" par d-flex align-items-center justify-content-center">
+                                    <p class="p-0 m-0">Photo</p>
+                                    <i class="bx bx-photo-album bx-flip-horizontal fs-3" style="color: #8dd3bb;"></i>
+                                </div>
+                            </button>
+                        </div>
                     </div>
-                  </div>
-               
-            </div>
-           
+                </div>
+                <p class="ps-5">1925 Results</p>
             </div>
             <div class="col-md-6">
                 <div class="div-searchBar py-2">
                     <div class="form-group justify-content-center align-items-center d-flex">
-                        <input type="text" class="form-control justify-content-center align-items-center d-flex w-75" placeholder="             Search ...      ">
+                        <input type="text" class="form-control justify-content-center align-items-center d-flex w-75" placeholder="             Search ...      "/>
                         <button class="Search-btn">Search</button>
-                        <i class='bx bx-search-alt-2 fs-3' style='color:#0f3d3e'></i>   
+                        <i class="bx bx-search-alt-2 fs-3" style="color: #0f3d3e;"></i>
                     </div>
                 </div>
             </div>
             <div class="tab-content py-5" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
-                    <div class="d-flex gap-5">
-                        <div class="card mb-3 col-md-6" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place">View Place</button>
-                                    </div>
-                                    </div>
+                    <div class="d-flex gap-3 row justify-content-center align-items-center py-3">
+                        <div class="card my-0 py-0 px-0" style="max-width: 520px;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
                                 </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place">View Place</button>
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        
-                    
-                    </div>
-                    <div class="d-flex gap-5">
-                        <div class="card mb-3 col-md-6" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place">View Place</button>
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place">View Place</button>
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        
-                    
-                    </div>
-                    <div class="d-flex gap-5">
-                        <div class="card mb-3 col-md-6" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place">View Place</button>
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        <div class="card mb-3" style="width: 40rem;">
-                            <div class="row">
-                              <div class="col-md-4">
-                                <img src="../../../assets/img/Home/card1.png" class="img-fluid rounded-start" alt="...">
-                              </div>
-                              <div class="col-md-8">
-                                <div class="card-body">
-                                    <div class="d-flex gap-5">
-                                        <div><h5>Cafe Maribelle</h5></div>
-                                        <div><span>$240</span></div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <i class='bx bxs-location-plus'></i>
-                                        <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                                    </div>
-                                    <div class="d-flex gap-3">
-                                      <div class="d-flex justify-content-center align-items-center">
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-                                        <i class='bx bxs-star' style='color:#ff8682'  ></i>
-    
-                                      </div>
-                                      <div><small>371 reviews</small></div>
-                                    </div>
-                                    <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                    <div class="heart">
-                                        <i class='bx bxs-heart fs-5' style='color:#101010' ></i>
-                                    </div>
-                                    <div class="btn">
-                                        <button class="View Place" routerLink="/details/:id">View Place</button>
-                                    </div>
-                                    </div>
-                                </div>
-                              </div>
-                            </div>
-                        </div>
-                        
-                    
-                    </div>
 
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h5 class="me-3">Cafe Maribelle</h5>
+                                            </div>
+                                            <div>
+                                                <span>$240</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bx bxs-location-plus"></i>
+                                            <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                            </div>
+                                            <div>
+                                                <small>371 reviews</small>
+                                            </div>
+                                        </div>
+                                        <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
+                                            <div class="heart">
+                                                <i class="bx bxs-heart fs-5" style="color: #101010;"></i>
+                                            </div>
+                                            <div class="btn">
+                                                <button class="View Place">View Place</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-0 py-0 px-0" style="max-width: 520px;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h5 class="me-3">Cafe Maribelle</h5>
+                                            </div>
+                                            <div>
+                                                <span>$240</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bx bxs-location-plus"></i>
+                                            <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                            </div>
+                                            <div>
+                                                <small>371 reviews</small>
+                                            </div>
+                                        </div>
+                                        <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
+                                            <div class="heart">
+                                                <i class="bx bxs-heart fs-5" style="color: #101010;"></i>
+                                            </div>
+                                            <div class="btn">
+                                                <button class="View Place">View Place</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-3 row justify-content-center align-items-center py-3">
+                        <div class="card my-0 py-0 px-0" style="max-width: 520px;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h5 class="me-3">Cafe Maribelle</h5>
+                                            </div>
+                                            <div>
+                                                <span>$240</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bx bxs-location-plus"></i>
+                                            <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                            </div>
+                                            <div>
+                                                <small>371 reviews</small>
+                                            </div>
+                                        </div>
+                                        <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
+                                            <div class="heart">
+                                                <i class="bx bxs-heart fs-5" style="color: #101010;"></i>
+                                            </div>
+                                            <div class="btn">
+                                                <button class="View Place">View Place</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card my-0 py-0 px-0" style="max-width: 520px;">
+                            <div class="row g-0">
+                                <div class="col-4">
+                                    <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div>
+                                                <h5 class="me-3">Cafe Maribelle</h5>
+                                            </div>
+                                            <div>
+                                                <span>$240</span>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <i class="bx bxs-location-plus"></i>
+                                            <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
+                                        </div>
+                                        <div class="d-flex gap-3">
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                                <i class="bx bxs-star" style="color: #ff8682;"></i>
+                                            </div>
+                                            <div>
+                                                <small>371 reviews</small>
+                                            </div>
+                                        </div>
+                                        <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
+                                            <div class="heart">
+                                                <i class="bx bxs-heart fs-5" style="color: #101010;"></i>
+                                            </div>
+                                            <div class="btn">
+                                                <button class="View Place">View Place</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0"><app-map></app-map></div>
-                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0"><app-photos></app-photos></div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <app-map></app-map>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <app-photos></app-photos>
+                </div>
             </div>
-            
         </div>
     </div>
 </section>

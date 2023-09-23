@@ -4,138 +4,67 @@
         font-family: 'Lato', sans-serif !important;
          font-weight: 900;
     }
-    .row{
-        .col-md-6{
-            h2{
-                line-height: 38.4px;
-                font-size: 29px;
-                font-family: 'Lato', sans-serif !important;
-                font-weight: 800;
+    .d-flex{
+         .row{
+          
+            .card-body {
+                .d-flex {
+                  h5 {
+                    font-family: "Lato", sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 900 !important;
+                    white-space: nowrap;
+                    margin: 0px 36px;;
+                  }
 
-            }
-            .nav-tabs{
-                .nav-link{
-                    color: #000000;
-                    border: none;
-                    outline: none;
-                    font-family: 'Lato', sans-serif !important;
+                  span {
+                    color: #ff8682;
+                    width: 107px;
+                    height: 59px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    padding: 0px 82px;
+                    font-family: "Lato", sans-serif;
+                  }
 
-                }
-                .nav-link.active{
-                    color: #0F3D3E;
-                    border-bottom: #0F3D3E 2px solid;
-                }
-            }
-        }
-        
-        .col-md-6{
-            .form-group {
-                position: relative;
-
-                input {
-                    height: 44px;
-                    width: 820px;
-                    padding: 0 63px;
+                  small {
+                    font-family: "Lato", sans-serif;
+                  }
                 }
 
-                .Search-btn {
-                    background-color: #0F3D3E;
-                    color: #ffff;
-                    position: absolute;
-                    right: 89px;
-                    border-radius: 12px;
-                    -webkit-border-radius: 12px;
-                    -moz-border-radius: 12px;
-                    -ms-border-radius: 12px;
-                    -o-border-radius: 12px;
-                    width: 111px;
-                    height: 33px;
-                }
-
-                i {
-                    position: absolute;
-                    left: 100px;
-                }
-            }
-        }
-        .tab-content {
-            .tab-pane{
-                .d-flex{
-                    .card{
-                        border-radius: 14px;
-                        -webkit-border-radius: 14px;
-                        -moz-border-radius: 14px;
-                        -ms-border-radius: 14px;
-                        -o-border-radius: 14px;
-                        .row{
-                     
-
-                            .col-md-4{
-                              img{
-                                height: 260px;
-                              }  
-                            }
-                            .col-md-8{
-                              .card-body{
-                                h5 {
-                                    font-family: 'Lato', sans-serif;
-                                    font-size: 20px;
-                                    line-height: 24px;
-                                    font-weight: 900 !important;
-                                }
-
-                                span {
-                                    color: #ff8682;
-                                    width: 107px;
-                                    height: 59px;
-                                    font-weight: 700;
-                                    font-size: 20px;
-                                    padding: 0px 82px;
-                                    font-family: 'Lato', sans-serif;
-
-                                }
-
-                                small , h5{
-                                    font-family: 'Lato', sans-serif;
-
-                                }
-                                .heartt {
-                                    .heart {
-
-                                        i{
-                                            border: 1px #258a8b solid !important;
-                                            height: 48px;
-                                            width: 48px ;
-                                            border-radius: 10px;
-                                            -webkit-border-radius: 10px;
-                                            -moz-border-radius: 10px;
-                                            -ms-border-radius: 10px;
-                                            -o-border-radius: 10px;
-                                            justify-content: center;
-                                            align-items: center;
-                                            display: flex;
-                                        }
-                                      
-                                    }
-                                }
-                                .btn{
-                                    button{
-                                        height: 48px;
-                                        border-radius: 10px;
-                                        width: 274px;
-                                        background-color: #8DD3BB;
-                                        outline: none;
-                                        border: none;
-                                    }
-                              }
-                            }
-                        }
+                .heartt {
+                  .heart {
+                    i {
+                      border: 1px #258a8b solid !important;
+                      height: 48px;
+                      width: 48px;
+                      border-radius: 10px;
+                      -webkit-border-radius: 10px;
+                      -moz-border-radius: 10px;
+                      -ms-border-radius: 10px;
+                      -o-border-radius: 10px;
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
                     }
+                  }
                 }
 
+                .btn {
+                  button {
+                    height: 48px;
+                    border-radius: 10px;
+                    width: 236px;
+                    background-color: #8dd3bb;
+                    outline: none;
+                    border: none;
+                  }
                 }
-            }
-        }
+              }
+      
        
     }
+    }
+  
 }
