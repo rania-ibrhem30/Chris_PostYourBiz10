@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ServicesListingService } from 'src/app/listings/services/services-listing.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -11,8 +13,8 @@ export class HomeComponent {
   categories:any[]|undefined;
   categoriesName:string|any
   citiesName: string | any;
-  
-  constructor(){
+   data:any[]=[]
+  constructor( private service:ServicesListingService){
     
   }
   ngOnInit(): void {
@@ -74,7 +76,11 @@ export class HomeComponent {
     { name: "RESTAURANTS ", cities: "RS" },
     { name: "BEAUTY SALON SPA", code: "BS" },
   ];
-}
+
+ 
+  
+  
+
   }
 
-
+}

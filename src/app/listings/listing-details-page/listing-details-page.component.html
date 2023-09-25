@@ -1,5 +1,5 @@
 <section class="details py-5">
-    <div class="container">
+    <div class="container" *ngIf="datainfo">
         <div class="div-searchBar py-2">
             <div class="form-group justify-content-center align-items-center d-flex">
                 <input type="text" class="form-control justify-content-center align-items-center d-flex w-75"
@@ -9,36 +9,34 @@
             </div>
         </div>
         <div class=" card-info py-4">
-            <div class="row">
-                <div class="col-4">
-                    <div class="d-flex justify-content-center align-items-center gap-2">
-                        <div>
-                            <h3>Cafe Maribelle</h3>
-                            <!-- <small>371 reviews</small> -->
-
-
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
+            <div class="row justify-content-between">
+                <div class="col-8 rate-container  ">
+                 <div class=" justify-content-start align-items-start">
+                    <div class="title d-flex align-items-center justify-content-start rate-flex-box">
+                        <span class="d-inline">{{datainfo.name}}</span>
+                        <span class=" mx-3  d-flex justify-content-center align-items-center">
                             <i class='bx bxs-star' style='color:#ff8682'></i>
                             <i class='bx bxs-star ' style='color:#ff8682'></i>
                             <i class='bx bxs-star' style='color:#ff8682'></i>
                             <i class='bx bxs-star' style='color:#ff8682'></i>
                             <i class='bx bxs-star' style='color:#ff8682'></i>
-
-                        </div>
-                        <div>
-
-                        </div>
+    
+                        </span>
+                        <div class="break"></div>
+                        <small class="flex-review">371 reviews</small>
                     </div>
+
+              
+
+                 </div>
                 </div>
-                <div class="col-2 ">
+
+                <div class="col-2">
                     <h3>$240</h3>
                 </div>
-            </div>
-            <div>
-            <small>371 reviews</small>
 
             </div>
+   
             <div class="row card-info-2 justify-content-between align-items-center gap-5">
                 <div class="col-md-4">
                     <ul>
@@ -55,7 +53,7 @@
                             <div class="d-flex ">
                                
                                 <i class='bx bx-message-dots  me-2 fs-5'></i>
-                                <p class="p-0 m-0 ">cafemaribelle@av.com</p>
+                                <p class="p-0 m-0 ">{{datainfo.email}}</p>
                                 
                             </div>
                       
@@ -82,32 +80,34 @@
             </div>
 
         </div>
-        <div class="div-photos bg-info">
-            <div class="row justify-content-center align-items-center d-flex bg-danger">
-                <div class="col-md-6 col-12">
-                    <img src="../../../assets/img/detalis-info/Rectangle 3.png" alt="" class="w-100 img-frist ">
+        <div class="div-photos ">
+            <div class="row justify-content-center align-items-center d-flex">
+                <div class="col-md-6 p-0 ">
+                    <img src="{{datainfo.logo}}" alt="" class="w-100 img-frist ">
                 </div>
-                <div class="col-md-6 col-12 ">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../../../assets/img/detalis-info/Rectangle 5.png" alt="">
+                <div class="col-md-6    ">
+                    <ng-container  *ngFor="let item of imgs ;let i = index">
+                    <div class="row justify-content-between">
+                        <div class=" col-6 p-0 " *ngIf="i == 0">
+                            <img class="w-100 img-1" src="{{item}}" alt="">
 
                         </div>
-                        <div class="col-md-6">
-                            <img src="../../../assets/img/detalis-info/Rectangle 6 (1).png" alt="">
+                        <div class=" col-6 p-0" *ngIf="i == 1">
+                            <img class="w-100 img-2 " src="{{item}}" alt="">
 
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="../../../assets/img/detalis-info/Rectangle 5 (1).png" alt="">
-                        </div>
-                        <div class="col-md-6">
-                            <img src="../../../assets/img/detalis-info/Rectangle 6.png" alt="">
                         </div>
 
                     </div>
+                    <div class="row">
+                        <div class="col-6 p-0 justify-content-between" *ngIf="i == 2">
+                            <img class="w-100 img-3" src="{{item}}" alt="">
+                        </div>
+                        <div class="col-6 p-0" *ngIf="i == 3">
+                            <img class="w-100 img-4" src="{{item}}" alt="">
+                        </div>
+
+                    </div>
+                </ng-container>
                 </div>
             </div>
         </div>

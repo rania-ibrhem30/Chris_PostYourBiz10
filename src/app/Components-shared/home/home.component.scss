@@ -218,6 +218,13 @@ section .Restaurants {
     }
   }
 }
+section .Contact{
+  .container{
+    h4{
+      cursor: pointer;
+    }
+  }
+}
 .p-tabview .p-tabview-nav-content {
   height: 80px;
   justify-content: center;

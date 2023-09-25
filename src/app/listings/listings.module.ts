@@ -9,6 +9,7 @@ import { ListingDetailsPageComponent } from './listing-details-page/listing-deta
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { FormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -23,7 +24,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     CommonModule,
     ListingsRoutingModule,PrimeNgModule,
     FormsModule,
-    CarouselModule
+    CarouselModule,
+    HttpClientModule
   ]
 })
 export class ListingsModule { }

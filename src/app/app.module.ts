@@ -9,13 +9,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
@@ -24,6 +27,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     PrimeNgModule,
     FormsModule,
     BrowserAnimationsModule,
+    HttpClientModule
     
   ],
   providers: [],

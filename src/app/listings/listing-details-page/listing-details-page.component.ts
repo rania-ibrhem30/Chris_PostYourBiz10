@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { ServicesListingService } from '../services/services-listing.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-listing-details-page',
@@ -7,6 +9,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./listing-details-page.component.scss']
 })
 export class ListingDetailsPageComponent {
+  id:any
+  datainfo:any;
+  imgs:any[]=[]
+constructor( private service:ServicesListingService , private route:ActivatedRoute){
+  this.id=route.snapshot.paramMap.get("id")
+
+}
+
   customOptions: OwlOptions = {
     loop: true,
     autoplay:false,
@@ -35,5 +45,18 @@ export class ListingDetailsPageComponent {
     },
     nav: false
   }
+  getdetalisId() {
+    this.service.GetListingByID(this.id).subscribe((res: any) => {
+      this.datainfo = res.data;
+      this.imgs=res.data.images;
+      console.log(this.imgs)
+      console.log("rania", res);
   
+     
+    });
+  }
+  
+  ngOnInit(): void {
+    this.getdetalisId()
+  }
 }

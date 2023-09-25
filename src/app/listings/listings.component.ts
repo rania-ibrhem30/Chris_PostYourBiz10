@@ -1,4 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { ServicesListingService } from './services/services-listing.service';
 
 @Component({
   selector: 'app-listings',
@@ -8,12 +9,26 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 })
 export class ListingsComponent {
-
+   data:any[]=[]
   cities: any[] | undefined;
   categories:any[]|undefined;
   categoriesName:string|any
   citiesName: string | any;
   value: number = 50;
+  first: number = 0;
+
+  rows: number = 10;
+ 
+  constructor(private service:ServicesListingService){
+
+  }
+  getlisting(){
+    this.service.GetListing().subscribe((res:any)=>{
+      this.data=res
+     console.log(this.data)
+    })
+  }
+ 
   ngOnInit(): void {
     this.cities = [
       { name: "All", cities: "AL" },
@@ -73,5 +88,10 @@ export class ListingsComponent {
       { name: "RESTAURANTS ", cities: "RS" },
       { name: "BEAUTY SALON SPA", code: "BS" },
     ];
+
+    this.getlisting()
   }
+  
+
+
 }
