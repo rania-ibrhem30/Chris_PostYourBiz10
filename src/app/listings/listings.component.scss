@@ -359,6 +359,142 @@
    .Area .container .row .col-md-6 .form-group .Search-btn{
     display: none;
    }
+   .Area{
+    .container{
+     .row{
+       .col-md-6{
+         .d-flex{
+           .h1{
+             font-size: 18px;
+             padding: 0;
+             margin: 0;
+           }
+           .nav{
+             
+              .nav-link{
+               .par{
+                  gap:19px !important;
+                 p{
+                   display: none !important;
+                 }
+                 i{
+                   color: #ff8682;
+                 }
+               }
+              }
+             }
+           }
+         }
+       }
+       .col-md-6{
+       .div-searchBar{
+         .form-group{
+           i{
+           color: white !important;
+           background-color: #0f3d3e;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           width: 32px;
+           height: 29px;
+           justify-content: center;
+           align-items: center;
+           display: flex;
+           left: 260px;
+           border-radius:4px ;
+           -webkit-border-radius:4px ;
+           -moz-border-radius:4px ;
+           -ms-border-radius:4px ;
+           -o-border-radius:4px ;
+           }
+          
+           input{
+             padding: 0px 12px !important;
+           }
+            }
+          }
+       }
+       .tab-content{
+         .tab-pane{
+           .d-flex{
+            padding: 0px 10px !important;
+
+
+             .card{
+                 justify-content: center;
+                 align-items: center;
+                 display: flex;
+               .row{
+                .col-4 {
+                  img {
+                    height: 219px;
+                  }
+                }
+                 .col-8{
+                   .card-body {
+                     .d-flex {
+                       h5 {
+                         font-family: "Lato", sans-serif;
+                         font-size: 15px;
+                         line-height: 33px;
+                         font-weight: 900 !important;
+                         white-space: nowrap;
+                       }
+       
+                       span {
+                         color: #ff8682;
+                         width: 107px;
+                         height: 59px;
+                         font-weight: 700;
+                         font-size: 17px;
+                         padding: 0px 0px;
+                         font-family: "Lato", sans-serif;
+                         gap: 0px !important;
+                       }
+       
+                       small {
+                         font-family: "Lato", sans-serif;
+                       }
+                     }
+       
+                     .heartt {
+                       .heart {
+                         i {
+                           border: 1px #258a8b solid !important;
+                           height: 48px;
+                           width: 48px;
+                           border-radius: 10px;
+                           -webkit-border-radius: 10px;
+                           -moz-border-radius: 10px;
+                           -ms-border-radius: 10px;
+                           -o-border-radius: 10px;
+                           justify-content: center;
+                           align-items: center;
+                           display: flex;
+                         }
+                       }
+                     }
+       
+                     .btn {
+                       button {
+                         height: 44px;
+                         border-radius: 10px;
+                         width: 86px;
+                         background-color: #8dd3bb;
+                         outline: none;
+                         border: none;
+                       }
+                     }
+                   }
+                 }
+               }
+             }
+             
+           }
+         }
+       }
+     }
+    }
    .Restaurants {
     p {
         line-height: 38.4px;
@@ -419,138 +555,8 @@
         }
     }
 
-}
-.Area{
-   .container{
-    .row{
-      .col-md-6{
-        .d-flex{
-          .h1{
-            font-size: 18px;
-            padding: 0;
-            margin: 0;
-          }
-          .nav{
-            
-             .nav-link{
-              .par{
-                 gap:19px !important;
-                p{
-                  display: none !important;
-                }
-                i{
-                  color: #ff8682;
-                }
-              }
-             }
-            }
-          }
-        }
-      }
-      .col-md-6{
-      .div-searchBar{
-        .form-group{
-          i{
-          color: white !important;
-          background-color: #0f3d3e;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          width: 32px;
-          height: 29px;
-          justify-content: center;
-          align-items: center;
-          display: flex;
-          left: 260px;
-          border-radius:4px ;
-          -webkit-border-radius:4px ;
-          -moz-border-radius:4px ;
-          -ms-border-radius:4px ;
-          -o-border-radius:4px ;
-          }
-         
-          input{
-            padding: 0px 12px !important;
-          }
-           }
-         }
-      }
-      .tab-content{
-        .tab-pane{
-          .d-flex{
-            .card{
-              .row{
-                .col-4 {
-                  img {
-                    // height: 219px !important;
-                  }
-                }
-                .col-8{
-
-                  .card-body {
-                    .d-flex {
-                      h5 {
-                        font-family: "Lato", sans-serif;
-                        font-size: 15px;
-                        line-height: 33px;
-                        font-weight: 900 !important;
-                        white-space: nowrap;
-                      }
-      
-                      span {
-                        color: #ff8682;
-                        width: 107px;
-                        height: 59px;
-                        font-weight: 700;
-                        font-size: 17px;
-                        padding: 0px 0px;
-                        font-family: "Lato", sans-serif;
-                        gap: 0px !important;
-                      }
-      
-                      small {
-                        font-family: "Lato", sans-serif;
-                      }
-                    }
-      
-                    .heartt {
-                      .heart {
-                        i {
-                          border: 1px #258a8b solid !important;
-                          height: 48px;
-                          width: 48px;
-                          border-radius: 10px;
-                          -webkit-border-radius: 10px;
-                          -moz-border-radius: 10px;
-                          -ms-border-radius: 10px;
-                          -o-border-radius: 10px;
-                          justify-content: center;
-                          align-items: center;
-                          display: flex;
-                        }
-                      }
-                    }
-      
-                    .btn {
-                      button {
-                        height: 44px;
-                        border-radius: 10px;
-                        width: 86px;
-                        background-color: #8dd3bb;
-                        outline: none;
-                        border: none;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-            
-          }
-        }
-      }
-    }
    }
+
 }
 
 

@@ -34,7 +34,10 @@
         }
         .card-info{
             .row{
-                .col-md-4{
+              align-items: center;
+              justify-content: space-between;
+              display: flex;
+              .col-md-4{
                     .d-flex{
                         h3 ,small{
                          color: #112211;
@@ -277,9 +280,9 @@
 
 @media (max-width: 767px) {
      .row{
-        justify-content: center !important;
-        align-items: center !important;
-        display: flex !important;
+       width: 100%;
+       margin: 0px;
+       padding: 0px;
      }
      h3{
         color: #FF8682;
@@ -320,5 +323,99 @@
                 left: 70px !important;
             }
         }
+    }
+    .card-info{
+      .row{
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        gap: 10px !important;
+       
+      }
+  }
+    .div-photos{
+      .row{
+        .col-md-6{
+          padding-left: 2px;
+        }
+      }
+    }
+    .Similar{
+        .d-flex {
+            .card {
+              .row {
+                .col-4 {
+                  img {
+                    height: 219px;
+                    width: 100%;
+                  }
+                }
+        
+                .col-8 {
+                  border-radius: 4px;
+                  -webkit-border-radius: 4px;
+                  -moz-border-radius: 4px;
+                  -ms-border-radius: 4px;
+                  -o-border-radius: 4px;
+        
+                  .card-body {
+                    .d-flex {
+                      h5 {
+                        font-family: "Lato", sans-serif;
+                        font-size: 15px;
+                        line-height: 33px;
+                        font-weight: 900 !important;
+                        white-space: nowrap;
+                      }
+        
+                      span {
+                        color: #ff8682;
+                        width: 107px;
+                        height: 59px;
+                        font-weight: 700;
+                        font-size: 17px;
+                        padding: 0px 0px;
+                        font-family: "Lato", sans-serif;
+                        gap: 0px !important;
+                      }
+        
+                      small {
+                        font-family: "Lato", sans-serif;
+                      }
+                    }
+        
+                    .heartt {
+                      .heart {
+                        i {
+                          border: 1px #258a8b solid !important;
+                          height: 48px;
+                          width: 48px;
+                          border-radius: 10px;
+                          -webkit-border-radius: 10px;
+                          -moz-border-radius: 10px;
+                          -ms-border-radius: 10px;
+                          -o-border-radius: 10px;
+                          justify-content: center;
+                          align-items: center;
+                          display: flex;
+                        }
+                      }
+                    }
+        
+                    .btn {
+                      button {
+                        height: 44px;
+                        border-radius: 10px;
+                        width: 139px;
+                       background-color: #8dd3bb;
+                        outline: none;
+                        border: none;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
     }
   }
