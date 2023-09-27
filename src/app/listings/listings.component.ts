@@ -1,5 +1,7 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, DoCheck, ViewEncapsulation } from '@angular/core';
 import { ServicesListingService } from './services/services-listing.service';
+import { Subscription } from 'rxjs';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-listings',
@@ -8,29 +10,45 @@ import { ServicesListingService } from './services/services-listing.service';
   encapsulation: ViewEncapsulation.None
 
 })
-export class ListingsComponent {
-   data:any[]=[]
+export class ListingsComponent implements DoCheck {
+  data:any[] = [];
+  fliterarray:any[] = [];
   cities: any[] | undefined;
   categories:any[]|undefined;
   categoriesName:string|any
   citiesName: string | any;
-  value: number = 50;
-  first: number = 0;
-
-  rows: number = 10;
+  StatesName:any[] | undefined;
+  state:string|any;
+  formGroup: FormGroup | undefined;
+  Subscription!: Subscription;
+  fliterbody!:FormGroup;
+  filterForm: any;
  
-  constructor(private service:ServicesListingService){
-
+  constructor(public service:ServicesListingService){
   }
   getlisting(){
     this.service.GetListing().subscribe((res:any)=>{
       this.data=res
      console.log(this.data)
+     
+    })
+  }
+ 
+  fliterlistingBIZ(){
+    this.service.fliterListing().subscribe((res:any)=>{
+      this.fliterarray= res.body;
+      this.data = this.fliterarray;
+
+      console.log(this.fliterarray)
+
+
+
+
     })
   }
  
   ngOnInit(): void {
-    this.cities = [
+    this.StatesName = [
       { name: "All", cities: "AL" },
       { name: "Alabama", cities: "AL" },
       { name: "Alaska", code: "AK" },
@@ -91,7 +109,9 @@ export class ListingsComponent {
 
     this.getlisting()
   }
-  
+  ngDoCheck(): void {
+   
+  }
 
 
 }

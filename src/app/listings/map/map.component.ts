@@ -8,12 +8,22 @@ import { ServicesListingService } from '../services/services-listing.service';
 })
 export class MapComponent {
   data:any[]=[]
+  fliterarray:any[]=[]
   constructor(private service:ServicesListingService){}
 
   getlisting(){
     this.service.GetListing().subscribe((res:any)=>{
       this.data=res
      console.log(this.data)
+    })
+  }
+  fliterlistingBIZ(){
+    this.service.fliterListing().subscribe((res:any)=>{
+      this.fliterarray= res;
+      console.log(res)
+
+
+
     })
   }
   ngOnInit(): void {

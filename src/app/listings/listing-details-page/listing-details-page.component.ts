@@ -12,6 +12,7 @@ export class ListingDetailsPageComponent {
   id:any
   datainfo:any;
   imgs:any[]=[]
+  twoImgs:boolean = false
 constructor( private service:ServicesListingService , private route:ActivatedRoute){
   this.id=route.snapshot.paramMap.get("id")
 
@@ -49,6 +50,9 @@ constructor( private service:ServicesListingService , private route:ActivatedRou
     this.service.GetListingByID(this.id).subscribe((res: any) => {
       this.datainfo = res.data;
       this.imgs=res.data.images;
+      if(this.imgs.length == 2){
+        this.twoImgs=true
+      }
       console.log(this.imgs)
       console.log("rania", res);
   

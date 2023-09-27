@@ -80,46 +80,75 @@
             </div>
 
         </div>
-        <div class="div-photos ">
-            <div class="row justify-content-center align-items-center d-flex">
-                <div class="col-md-6 p-0 ">
-                    <img src="{{datainfo.logo}}" alt="" class="w-100 img-frist ">
+        <div class="div-photos d-flex gap-3">
+            <div class="col-6 d-flex">
+              <img class="flex-grow-1" height="400" src="{{datainfo.logo}}" alt=""> 
+            </div>
+            <div class="col-6 d-flex">
+                <div class="flex" *ngIf="imgs.length == 1">
+                    <ng-container *ngFor="let img of imgs" >
+                        <div class="one d-flex"  class="one">
+                        <img class="flex-grow-1" width="" height="400"  src="{{img}}" alt="">  
+                        </div>
+                    </ng-container>
                 </div>
-                <div class="col-md-6    ">
-                    <ng-container  *ngFor="let item of imgs ;let i = index">
-                    <div class="row justify-content-between">
-                        <div class=" col-6 p-0 " *ngIf="i == 0">
-                            <img class="w-100 img-1" src="{{item}}" alt="">
-
+                <div  class="d-flex flex-column" *ngIf="imgs.length == 2">
+                    <ng-container >
+                        <div class="wrapper" *ngFor="let img of imgs">
+                            <div class="two d-flex" >
+                                <img class="flex-grow-1" width="" height="400"  src="{{img}}" alt="">  
+                            </div>
                         </div>
-                        <div class=" col-6 p-0" *ngIf="i == 1">
-                            <img class="w-100 img-2 " src="{{item}}" alt="">
-
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="col-6 p-0 justify-content-between" *ngIf="i == 2">
-                            <img class="w-100 img-3" src="{{item}}" alt="">
-                        </div>
-                        <div class="col-6 p-0" *ngIf="i == 3">
-                            <img class="w-100 img-4" src="{{item}}" alt="">
-                        </div>
-
-                    </div>
-                </ng-container>
+                    </ng-container>
                 </div>
+                <div class="d-flex flex-wrap col-12" *ngIf="imgs.length == 3">
+                    <ng-container >
+                        <div class="v" *ngFor="let img of imgs">
+                            <div class="three" >
+                                <img width="300" height="400"  src="{{img}}" alt="">  
+                            </div>
+                        </div>
+                        </ng-container>
+                </div>
+                <!-- <div class="d-flex flex-wrap col-12" *ngIf="imgs.length >= 3">
+                    <ng-container *ngFor="let img of imgs" class="">
+                      <div class="v">
+                        <div class="three d-flex">
+                          <img [src]="img" alt="" class="w-50">
+                        </div>
+                      </div>
+                    </ng-container>
+                    
+                    <div class="v" *ngIf="imgs.length > 4">
+                      <div class="three d-flex">
+                        <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-50">
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="d-flex flex-wrap col-12">
+                    <ng-container *ngFor="let img of imgs; let i = index">
+                      <div class="v" *ngIf="i < 3">
+                        <div class="three">
+                          <img [src]="img" alt="" class="w-100">
+                        </div>
+                      </div>
+                    </ng-container>
+                  
+                    <div class="v" *ngIf="imgs.length >= 4 && imgs.length >= 3">
+                      <div class="three">
+                        <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-100">
+                      </div>
+                    </div>
+                  </div>
+               
             </div>
         </div>
+      
+                
+
         <div class="Description">
             <h3 class="py-4">Description</h3>
-            <p>Lorem ipsum dolor sit amet consectetur. Diam sed in tortor interdum non. Enim nisl nisl tellus urna elit
-                nulla sodales felis. Vel sed turpis blandit sagittis. Auctor tincidunt ornare sed amet.. Lorem ipsum
-                dolor sit amet consectetur. Diam sed in tortor interdum non. Enim nisl nisl tellus urna elit nulla
-                sodales felis. Vel sed turpis blandit sagittis. Auctor tincidunt ornare sed amet. lis. Vel sed turpis
-                blandit sagittis. Auctor tincidunt ornare sed amet.. Lorem ipsum dolor sit amet consectetur. Diam sed in
-                tortor interdum non. Enim nisl nisl tellus urna elit nulla sodales felis. Vel sed turpis blandit
-                sagittis. Auctor tincidunt ornare sed amet.</p>
+            <p>{{datainfo.description}}</p>
         </div>
         <div class="Location/Map">
             <h3 class="py-3">Location/Map</h3>
@@ -322,6 +351,6 @@
      
         </div>
 
-    </div>
+        </div>
 
 </section>

@@ -144,6 +144,13 @@
                 }
             }
         }
+        // .div-photos{
+        //   .row{
+        //     .side-img{
+
+        //     }
+        //   }
+        // }
         
         .Reviews{
             .book-btn{
@@ -465,3 +472,8 @@
 
 
 
+
+  .two{
+    display: flex !important;
+    flex-direction: column !important;
+  }

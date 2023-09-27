@@ -1,0 +1,51 @@
+.contact-us{
+ .container{
+    .row{
+        .col-md-6{
+            h2{
+                color:#000000;
+                font-size: 40px;
+                font-family: "Lato", sans-serif;
+                font-weight: 700;
+
+            }
+            form{
+                button{
+                    background-color: #8DD3BB;
+                    border-radius: 4px;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    -ms-border-radius: 4px;
+                    -o-border-radius: 4px;
+                    height: 48px;
+                    width: 512px;
+                    color: #112211;
+                    border: none;
+                    outline: none;
+                }
+                p{
+                    color:
+                    #112211;
+
+                }
+            }
+        }
+        .hide-from-web {
+            display: block;
+        }
+    }
+ }
+}
+@media (max-width: 767px) {
+   
+        .img-nav{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .hide-from-web {
+            display: none !important;
+        }
+
+     
+}
