@@ -9,6 +9,8 @@ import { ServicesListingService } from '../services/services-listing.service';
 export class MapComponent {
   data:any[]=[]
   fliterarray:any[]=[]
+  first = 0; 
+  rows = 2; 
   constructor(private service:ServicesListingService){}
 
   getlisting(){
@@ -25,6 +27,9 @@ export class MapComponent {
 
 
     })
+  }
+  onPageChange(event: any): void {
+    this.first = event.first;
   }
   ngOnInit(): void {
     this.getlisting()

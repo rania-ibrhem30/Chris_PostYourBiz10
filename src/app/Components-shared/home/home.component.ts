@@ -14,6 +14,8 @@ export class HomeComponent {
   categoriesName:string|any
   citiesName: string | any;
    data:any[]=[]
+   first = 0; 
+   rows = 2;
   constructor( private service:ServicesListingService){
     
   }
@@ -81,6 +83,9 @@ export class HomeComponent {
   
   
 
+  }
+  onPageChange(event: any): void {
+    this.first = event.first;
   }
 
 }

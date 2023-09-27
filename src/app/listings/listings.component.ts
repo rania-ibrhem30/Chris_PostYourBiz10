@@ -23,7 +23,12 @@ export class ListingsComponent implements DoCheck {
   Subscription!: Subscription;
   fliterbody!:FormGroup;
   filterForm: any;
- 
+ loader:boolean =false
+   first = 0; 
+   rows = 2; 
+    //  rowsPerPageOptions = [10, 20, 30]; 
+
+
   constructor(public service:ServicesListingService){
   }
   getlisting(){
@@ -35,9 +40,13 @@ export class ListingsComponent implements DoCheck {
   }
  
   fliterlistingBIZ(){
+    this.loader=true
+
     this.service.fliterListing().subscribe((res:any)=>{
       this.fliterarray= res.body;
       this.data = this.fliterarray;
+      this.loader=false
+
 
       console.log(this.fliterarray)
 
@@ -45,6 +54,9 @@ export class ListingsComponent implements DoCheck {
 
 
     })
+  }
+  onPageChange(event: any): void {
+    this.first = event.first;
   }
  
   ngOnInit(): void {
