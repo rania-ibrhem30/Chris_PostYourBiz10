@@ -7,6 +7,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
 import { PaginatorModule } from 'primeng/paginator';
 import { TabViewModule } from 'primeng/tabview';
+import { GalleriaModule } from 'primeng/galleria';
 
 
 
@@ -22,7 +23,9 @@ import { TabViewModule } from 'primeng/tabview';
       SidebarModule,
       ButtonModule,
       PaginatorModule,
-      TabViewModule
+      TabViewModule,
+      GalleriaModule
+      
       
 
   ],

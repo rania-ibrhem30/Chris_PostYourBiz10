@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ServicesListingService } from '../services/services-listing.service';
 import { ActivatedRoute } from '@angular/router';
+import { PrimeNGConfig } from 'primeng/api';
 
 @Component({
   selector: 'app-listing-details-page',
@@ -11,9 +12,16 @@ import { ActivatedRoute } from '@angular/router';
 export class ListingDetailsPageComponent {
   id:any
   datainfo:any;
-  imgs:any[]=[]
+  imgs:any[]=[];
+  photo:any[]=[];
   twoImgs:boolean = false
-constructor( private service:ServicesListingService , private route:ActivatedRoute){
+  displayCount: number = 4;
+  img: any[] = [];
+  isVisible = false;
+  galleryphotos:string[]=[];
+constructor( private service:ServicesListingService , private route:ActivatedRoute ,private primengConfig: PrimeNGConfig){
+
+
   this.id=route.snapshot.paramMap.get("id")
 
 }
@@ -49,18 +57,46 @@ constructor( private service:ServicesListingService , private route:ActivatedRou
   getdetalisId() {
     this.service.GetListingByID(this.id).subscribe((res: any) => {
       this.datainfo = res.data;
+      this.galleryphotos=res.data.images;
       this.imgs=res.data.images;
+
       if(this.imgs.length == 2){
         this.twoImgs=true
       }
-      console.log(this.imgs)
-      console.log("rania", res);
+      // console.log(this.imgs)
+      // console.log("rania", res);
+      // console.log(this.imgs);
+      console.log(this.galleryphotos)
   
      
     });
   }
+  // showAllPhotos() {
+  //   // this.displayCount = this.imgs.length;
+  // }
+  responsiveOptions: any[] = [
+    {
+        breakpoint: '1500px',
+        numVisible: 5
+    },
+    {
+        breakpoint: '1024px',
+        numVisible: 3
+    },
+    {
+        breakpoint: '768px',
+        numVisible: 2
+    },
+    {
+        breakpoint: '560px',
+        numVisible: 1
+    }
+];
+
+
   
   ngOnInit(): void {
     this.getdetalisId()
+    this.galleryphotos=this.img;
   }
 }

@@ -1,4 +1,4 @@
-<!-- <section class="details py-5">
+<section class="details py-5">
     <div class="container" *ngIf="datainfo">
         <div class="div-searchBar py-2">
             <div class="form-group justify-content-center align-items-center d-flex">
@@ -11,24 +11,24 @@
         <div class=" card-info py-4">
             <div class="row justify-content-between">
                 <div class="col-8 rate-container  ">
-                 <div class=" justify-content-start align-items-start">
-                    <div class="title d-flex align-items-center justify-content-start rate-flex-box">
-                        <span class="d-inline">{{datainfo.name}}</span>
-                        <span class=" mx-3  d-flex justify-content-center align-items-center">
-                            <i class='bx bxs-star' style='color:#ff8682'></i>
-                            <i class='bx bxs-star ' style='color:#ff8682'></i>
-                            <i class='bx bxs-star' style='color:#ff8682'></i>
-                            <i class='bx bxs-star' style='color:#ff8682'></i>
-                            <i class='bx bxs-star' style='color:#ff8682'></i>
-    
-                        </span>
-                        <div class="break"></div>
-                        <small class="flex-review">371 reviews</small>
+                    <div class=" justify-content-start align-items-start">
+                        <div class="title d-flex align-items-center justify-content-start rate-flex-box">
+                            <span class="d-inline">{{datainfo.name}}</span>
+                            <span class=" mx-3  d-flex justify-content-center align-items-center">
+                                <i class='bx bxs-star' style='color:#ff8682'></i>
+                                <i class='bx bxs-star ' style='color:#ff8682'></i>
+                                <i class='bx bxs-star' style='color:#ff8682'></i>
+                                <i class='bx bxs-star' style='color:#ff8682'></i>
+                                <i class='bx bxs-star' style='color:#ff8682'></i>
+
+                            </span>
+                            <div class="break"></div>
+                            <small class="flex-review">371 reviews</small>
+                        </div>
+
+
+
                     </div>
-
-              
-
-                 </div>
                 </div>
 
                 <div class="col-2">
@@ -36,37 +36,37 @@
                 </div>
 
             </div>
-   
+
             <div class="row card-info-2 justify-content-between align-items-center gap-5">
                 <div class="col-md-4">
                     <ul>
-                        <li> 
+                        <li>
                             <div class="d-flex">
-                               
+
                                 <i class='bx bx-location-plus me-2 fs-5'></i>
-                                <p class="p-0 m-0 ">  1036 Cambell St, Rapid City, South Dakota,57701</p>
-                                
+                                <p class="p-0 m-0 "> 1036 Cambell St, Rapid City, South Dakota,57701</p>
+
                             </div>
-                      
-                          </li>
-                          <li> 
+
+                        </li>
+                        <li>
                             <div class="d-flex ">
-                               
+
                                 <i class='bx bx-message-dots  me-2 fs-5'></i>
                                 <p class="p-0 m-0 ">{{datainfo.email}}</p>
-                                
+
                             </div>
-                      
-                          </li>
-                          <li> 
+
+                        </li>
+                        <li>
                             <div class="d-flex">
-                               
+
                                 <i class='bx bx-phone me-2 fs-5'></i>
                                 <p class="p-0 m-0 ">(605) 716-6600</p>
-                                
+
                             </div>
-                      
-                          </li>
+
+                        </li>
                     </ul>
 
                 </div>
@@ -80,75 +80,119 @@
             </div>
 
         </div>
-     <div class="div-photos d-flex gap-3">
-            <div class="col-6 d-flex">
-              <img class="flex-grow-1" height="400" src="{{datainfo.logo}}" alt=""> 
-            </div>
-            <div class="col-6 d-flex">
-                <div class="flex" *ngIf="imgs.length == 1">
-                    <ng-container *ngFor="let img of imgs" >
-                        <div class="one d-flex"  class="one">
-                        <img class="flex-grow-1" width="" height="400"  src="{{img}}" alt="">  
-                        </div>
-                    </ng-container>
-                </div>
-                <div  class="d-flex flex-column" *ngIf="imgs.length == 2">
-                    <ng-container >
-                        <div class="wrapper" *ngFor="let img of imgs">
-                            <div class="two d-flex" >
-                                <img class="flex-grow-1" width="" height="400"  src="{{img}}" alt="">  
-                            </div>
-                        </div>
-                    </ng-container>
-                </div>
-                <div class="d-flex flex-wrap col-12" *ngIf="imgs.length == 3">
-                    <ng-container >
-                        <div class="v" *ngFor="let img of imgs">
-                            <div class="three" >
-                                <img width="300" height="400"  src="{{img}}" alt="">  
-                            </div>
-                        </div>
-                        </ng-container>
-                </div>
-                 <div class="d-flex flex-wrap col-12" *ngIf="imgs.length >= 3">
-                    <ng-container *ngFor="let img of imgs" class="">
-                      <div class="v">
-                        <div class="three d-flex">
-                          <img [src]="img" alt="" class="w-50">
-                        </div>
-                      </div>
-                    </ng-container>
-                    
-                    <div class="v" *ngIf="imgs.length > 4">
-                      <div class="three d-flex">
-                        <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-50">
-                      </div>
-                    </div>
-                  </div>
-               <div class="d-flex flex-wrap col-12">
-                    <ng-container *ngFor="let img of imgs; let i = index">
-                      <div class="v" *ngIf="i < 3">
-                        <div class="three">
-                          <img [src]="img" alt="" class="w-100">
-                        </div>
-                      </div>
-                    </ng-container>
-                  
-                    <div class="v" *ngIf="imgs.length >= 4 && imgs.length >= 3">
-                      <div class="three">
-                        <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-100">
-                      </div>
-                    </div>
-                  </div> 
-               
-            </div>
-        </div>
-       
-     
-      
-      
-                
+        <div class="div-photos justify-content-center align-items-center d-flex">
+            <div class="parent justify-content-center align-items-center d-flex ga-2" *ngIf="imgs.length == 1">
+                <div class="div1">
+                    <img class="me-2" height="400" src="{{datainfo.logo}}" alt="">
 
+                </div>
+                <div class="div2">
+                    <div class="" *ngIf="imgs.length == 1">
+                        <ng-container *ngFor="let img of imgs">
+                            <img class="" width="" height="400" src="{{img}}" alt="">
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="parent2 " *ngIf="imgs.length == 2">
+                <div class="div1">
+                    <img class="mt-1" height="425" src="{{datainfo.logo}}" alt="">
+
+                </div>
+                <div class="div22">
+
+                </div>
+                <div class="div32">
+                    <div *ngIf="imgs.length == 2" class="">
+                        <ng-container *ngFor="let img of imgs">
+                            <img class="mt-1" height="210" src="{{img}}" alt="">
+                        </ng-container>
+                    </div>
+                    <div class="div42"> </div>
+                </div>
+
+            </div>
+            <div class="parent " *ngIf="imgs.length == 3">
+                <div class="div1">
+                    <img class="" height="370" src="{{datainfo.logo}}" alt="">
+
+                </div>
+                <div class="div2">
+                    <div *ngIf="imgs.length == 3">
+                        <ng-container *ngFor="let img of imgs">
+                            <img width="" height="200" src="{{img}}" alt="">
+                        </ng-container>
+
+
+                    </div>
+
+                </div>
+                <div class="div3">
+                </div>
+                <div class="div4"></div>
+                <div class="div5">
+                </div>
+            </div>
+            <div class="parent4" *ngIf="imgs.length == 4">
+                <div class="div14">
+                    <img class="" height="340" src="{{datainfo.logo}}" alt="">
+                </div>
+                <div class="div24">
+                </div>
+                <div class="div34">
+                    <div *ngIf="imgs.length == 4" class="">
+                        <ng-container *ngFor="let img of imgs" class="d-flex">
+                            <img width="" height="170" src="{{img}}" alt="">
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+            <div class="parent4" *ngIf="imgs.length > 4">
+                <div class="div14">
+                    <img class="" height="340" src="{{datainfo.logo}}" alt="">
+                </div>
+                <div class="div24">
+                </div>
+                <div class="div34">
+                    <div *ngIf="imgs.length >= 4" class="">
+                        <ng-container *ngFor="let img of imgs.slice(0, displayCount)" class="d-flex">
+                            <img width="" height="170" src="{{img}}" alt="">
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-around align-items-end ms-3 py-3">
+            <div>
+                <p-galleria 
+                  [value]="[galleryphotos]"
+                  [containerStyle]="{ 'max-width': '300px' }"
+                  [fullScreen]="true"
+                  [autoPlay]="true"
+                  [transitionInterval]="1500"
+                  [showThumbnails]="false"
+                  [(visible)]="isVisible">
+                  <ng-template pTemplate="item" let-image>
+                    <img 
+                      [src]="img"
+                      style="width: 100%; display: block;" />
+                  </ng-template>
+                </p-galleria>
+              
+                <p-button 
+                  label="Show FullScreen" 
+                  (click)="isVisible = true">
+                </p-button>
+              </div>
+              
+              
+              
+              
+              
+              
+         </div>
         <div class="Description">
             <h3 class="py-4">Description</h3>
             <p>{{datainfo.description}}</p>
@@ -181,8 +225,7 @@
                         <div class="d-flex justify-content-center align-items-center py-2">
 
                             <div class="d-flex align-items-center justify-content-center gap-2">
-                                <img src="../../../assets/img/detalis-info/Ellipse 1.png" alt=""
-                                    style="width: 50px;">
+                                <img src="../../../assets/img/detalis-info/Ellipse 1.png" alt="" style="width: 50px;">
                                 <div>
                                     <p>Omar Siphron</p>
                                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -210,9 +253,9 @@
 
 
                         </div>
-        
+
                     </ng-template>
-                    
+
                     <ng-template carouselSlide>
 
                         <div class="d-flex justify-content-center align-items-center">
@@ -234,8 +277,7 @@
                         <div class="d-flex justify-content-center align-items-center">
 
                             <div class="d-flex align-items-center justify-content-center gap-2">
-                                <img src="../../../assets/img/detalis-info/Ellipse 1.png" alt=""
-                                    style="width: 50px;">
+                                <img src="../../../assets/img/detalis-info/Ellipse 1.png" alt="" style="width: 50px;">
                                 <div>
                                     <p>Omar Siphron</p>
                                     <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -264,9 +306,10 @@
                 <div class="card my-0 py-0 px-0 " style="max-width: 520px">
                     <div class="row g-0">
                         <div class="col-4">
-                            <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
+                            <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start"
+                                alt="..." />
                         </div>
-                
+
                         <div class="col-8">
                             <div class="card-body">
                                 <div class="d-flex justify-content-center align-items-center">
@@ -304,148 +347,56 @@
                             </div>
                         </div>
                     </div>
-                   </div>
-                 <div class="card my-0 py-0 px-0" style="max-width: 520px">
-                  <div class="row g-0">
-                      <div class="col-4">
-                          <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start" alt="..."/>
-                      </div>
-              
-                      <div class="col-8">
-                          <div class="card-body">
-                              <div class="d-flex justify-content-center align-items-center">
-                                  <div>
-                                      <h5 class="me-3">Cafe Maribelle</h5>
-                                  </div>
-                                  <div>
-                                      <span>$240</span>
-                                  </div>
-                              </div>
-                              <div class="d-flex">
-                                  <i class="bx bxs-location-plus"></i>
-                                  <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
-                              </div>
-                              <div class="d-flex gap-3">
-                                  <div class="d-flex justify-content-center align-items-center">
-                                      <i class="bx bxs-star" style="color: #ff8682"></i>
-                                      <i class="bx bxs-star" style="color: #ff8682"></i>
-                                      <i class="bx bxs-star" style="color: #ff8682"></i>
-                                      <i class="bx bxs-star" style="color: #ff8682"></i>
-                                      <i class="bx bxs-star" style="color: #ff8682"></i>
-                                  </div>
-                                  <div>
-                                      <small>371 reviews</small>
-                                  </div>
-                              </div>
-                              <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
-                                  <div class="heart">
-                                      <i class="bx bxs-heart fs-5" style="color: #101010"></i>
-                                  </div>
-                                  <div class="btn">
-                                      <button class="View Place">View Place</button>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                 </div>
-              </div>
-          
-     
-        </div>
+                </div>
+                <div class="card my-0 py-0 px-0" style="max-width: 520px">
+                    <div class="row g-0">
+                        <div class="col-4">
+                            <img src="./../../assets/img/Home/card1.png" class="img-fluid h-100 rounded-start"
+                                alt="..." />
+                        </div>
 
-        </div>
-
-</section>
- -->
-
-
-
-<!-- <div class="container justify-content-center align-items-center d-flex " *ngIf="imgs.length == 1">
-        <div *ngIf="datainfo"class="parent gap-2 bg-info">
-            <div class="div1"> 
-                <img class="" height="400" src="{{datainfo.logo}}" alt=""> 
-    
-            </div>
-            <div class="div2">
-                <div class="" *ngIf="imgs.length == 1">
-                    <ng-container *ngFor="let img of imgs" >
-                        <img class="" width="" height="400"  src="{{img}}" alt="">  
-                    </ng-container>
-                </div> </div>
-        </div>
-    </div> -->
-
-
-<section class="py-5">
-    <div class="container">
-        <div class="parent justify-content-center align-items-center d-flex ga-2" *ngIf="imgs.length == 1">
-            <div class="div1">
-                <img class="me-2" height="400" src="{{datainfo.logo}}" alt="">
-
-            </div>
-            <div class="div2">
-                <div class="" *ngIf="imgs.length == 1">
-                    <ng-container *ngFor="let img of imgs">
-                        <img class="" width="" height="400" src="{{img}}" alt="">
-                    </ng-container>
+                        <div class="col-8">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div>
+                                        <h5 class="me-3">Cafe Maribelle</h5>
+                                    </div>
+                                    <div>
+                                        <span>$240</span>
+                                    </div>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bx bxs-location-plus"></i>
+                                    <small>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</small>
+                                </div>
+                                <div class="d-flex gap-3">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <i class="bx bxs-star" style="color: #ff8682"></i>
+                                        <i class="bx bxs-star" style="color: #ff8682"></i>
+                                        <i class="bx bxs-star" style="color: #ff8682"></i>
+                                        <i class="bx bxs-star" style="color: #ff8682"></i>
+                                        <i class="bx bxs-star" style="color: #ff8682"></i>
+                                    </div>
+                                    <div>
+                                        <small>371 reviews</small>
+                                    </div>
+                                </div>
+                                <div class="heartt d-flex py-4 gap-1 justify-content-center align-items-center">
+                                    <div class="heart">
+                                        <i class="bx bxs-heart fs-5" style="color: #101010"></i>
+                                    </div>
+                                    <div class="btn">
+                                        <button class="View Place">View Place</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="parent2 " *ngIf="imgs.length == 2">
-            <div class="div1">
-                <img class="mt-1" height="425" src="{{datainfo.logo}}" alt="">
 
-            </div>
-            <div class="div22">
-
-            </div>
-            <div class="div32">
-                <div *ngIf="imgs.length == 2" class="">
-                    <ng-container *ngFor="let img of imgs">
-                        <img class="mt-1" height="210" src="{{img}}" alt="">
-                    </ng-container>
-                </div>
-                <div class="div42"> </div>
-            </div>
 
         </div>
-        <div class="parent " *ngIf="imgs.length == 3">
-            <div class="div1">
-                <img class="" height="370" src="{{datainfo.logo}}" alt="">
-
-            </div>
-            <div class="div2">
-                <div *ngIf="imgs.length == 3">
-                    <ng-container *ngFor="let img of imgs">
-                        <img width="" height="200" src="{{img}}" alt="">
-                    </ng-container>
-
-
-                </div>
-
-            </div>
-            <div class="div3">
-            </div>
-            <div class="div4"></div>
-            <div class="div5">
-            </div>
-        </div>
-        <div class="parent4 bg-danger" *ngIf="imgs.length == 4">
-            <div class="div14">
-                <img class="" height="340" src="{{datainfo.logo}}" alt="">
-            </div>
-            <div class="div24">
-                <!-- Empty div for spacing -->
-            </div>
-            <div class="div34">
-                <div *ngIf="imgs.length == 4" class="">
-                    <ng-container *ngFor="let img of imgs" class="d-flex">
-                        <img width="" height="170" src="{{img}}" alt="">
-                    </ng-container>
-                </div>
-            </div>
-        </div>
-      
     </div>
 </section>
+
