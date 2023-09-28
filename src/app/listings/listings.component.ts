@@ -13,6 +13,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 export class ListingsComponent implements DoCheck {
   data:any[] = [];
   fliterarray:any[] = [];
+  searcharray:any[]=[];
   cities: any[] | undefined;
   categories:any[]|undefined;
   categoriesName:string|any
@@ -26,7 +27,8 @@ export class ListingsComponent implements DoCheck {
  loader:boolean =false
    first = 0; 
    rows = 2; 
-    //  rowsPerPageOptions = [10, 20, 30]; 
+   searchQuery: string = '';
+
 
 
   constructor(public service:ServicesListingService){
@@ -57,6 +59,15 @@ export class ListingsComponent implements DoCheck {
   }
   onPageChange(event: any): void {
     this.first = event.first;
+  }
+  onSearch(): void {
+    if (this.searchQuery.trim() === '') {
+      this.searcharray = this.data;
+    } else {
+      this.searcharray = this.data.filter(item =>
+        item.name.toLowerCase().includes(this.searchQuery.toLowerCase())
+      );
+    }
   }
  
   ngOnInit(): void {

@@ -159,7 +159,7 @@
             </div>
           </div>
         </div>
-        <p class="ps-5">1925 Results</p>
+        <p class="ps-5">{{data.length}} Results</p>
       </div>
       <div class="col-md-6">
         <div class="div-searchBar py-2">
@@ -168,12 +168,14 @@
           >
             <input
               type="text"
+              [(ngModel)]="searchQuery" (input)="onSearch()"
               class="form-control justify-content-center align-items-center d-flex w-75"
               placeholder="             Search ...      "
             />
-            <button class="Search-btn">Search</button>
+            <button class="Search-btn" (click)="onSearch()">Search</button>
             <i class="bx bx-search-alt-2 fs-3" style="color: #0f3d3e;"></i>
           </div>
+         
         </div>
       </div>
       <div class="tab-content py-5" id="nav-tabContent">

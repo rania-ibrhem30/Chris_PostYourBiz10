@@ -1,4 +1,4 @@
-<section class="details py-5">
+<!-- <section class="details py-5">
     <div class="container" *ngIf="datainfo">
         <div class="div-searchBar py-2">
             <div class="form-group justify-content-center align-items-center d-flex">
@@ -80,7 +80,7 @@
             </div>
 
         </div>
-        <div class="div-photos d-flex gap-3">
+     <div class="div-photos d-flex gap-3">
             <div class="col-6 d-flex">
               <img class="flex-grow-1" height="400" src="{{datainfo.logo}}" alt=""> 
             </div>
@@ -110,7 +110,7 @@
                         </div>
                         </ng-container>
                 </div>
-                <!-- <div class="d-flex flex-wrap col-12" *ngIf="imgs.length >= 3">
+                 <div class="d-flex flex-wrap col-12" *ngIf="imgs.length >= 3">
                     <ng-container *ngFor="let img of imgs" class="">
                       <div class="v">
                         <div class="three d-flex">
@@ -124,8 +124,8 @@
                         <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-50">
                       </div>
                     </div>
-                  </div> -->
-                  <div class="d-flex flex-wrap col-12">
+                  </div>
+               <div class="d-flex flex-wrap col-12">
                     <ng-container *ngFor="let img of imgs; let i = index">
                       <div class="v" *ngIf="i < 3">
                         <div class="three">
@@ -139,10 +139,13 @@
                         <img src="../../../assets/img/detalis-info/plus-icon-plus-math-icon-download-icons-9.png" alt="" class="w-100">
                       </div>
                     </div>
-                  </div>
+                  </div> 
                
             </div>
         </div>
+       
+     
+      
       
                 
 
@@ -354,3 +357,49 @@
         </div>
 
 </section>
+ -->
+
+ <section class="py-5">
+    
+    <div class="container justify-content-center align-items-center d-flex 1">
+        <div *ngIf="datainfo"class="parent gap-2 bg-info">
+            <div class="div1"> 
+                <img class="" height="400" src="{{datainfo.logo}}" alt=""> 
+    
+            </div>
+            <div class="div2">
+                <div class="" *ngIf="imgs.length == 1">
+                    <ng-container *ngFor="let img of imgs" >
+                        <img class="" width="" height="400"  src="{{img}}" alt="">  
+                    </ng-container>
+                </div> </div>
+        </div>
+    </div>
+ </section>
+ 
+<div class="container ">
+    <div class="parent2 justify-content-center align-items-center bg-dark d-flex gap-2">
+        <div class="div12">
+            <img class="" height="500" src="{{datainfo.logo}}" alt="">
+             
+        </div>
+        <div class="div22"> 
+            <div *ngIf="imgs.length == 2" class="mb-2">
+                <ng-container *ngFor="let img of imgs" >
+                    <img width="" height="250"  src="{{img}}" alt="">  
+                </ng-container>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="parent">
+        <div class="div1"> </div>
+        <div class="div2"> </div>
+        <div class="div3"> </div>
+        <div class="div4"> </div>
+        <div class="div5"> </div>
+        </div>
+</div>
+    

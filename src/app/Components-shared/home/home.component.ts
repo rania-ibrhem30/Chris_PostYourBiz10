@@ -14,7 +14,7 @@ export class HomeComponent {
   categoriesName:string|any
   citiesName: string | any;
    data:any[]=[]
-   first = 0; 
+   first = 1; 
    rows = 2;
   constructor( private service:ServicesListingService){
     
