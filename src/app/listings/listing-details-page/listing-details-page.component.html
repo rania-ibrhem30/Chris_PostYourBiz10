@@ -80,47 +80,45 @@
             </div>
 
         </div>
-        <div class="div-photos justify-content-center align-items-center d-flex">
-            <div class="parent justify-content-center align-items-center d-flex ga-2" *ngIf="imgs.length == 1">
-                <div class="div1">
-                    <img class="me-2" height="400" src="{{datainfo.logo}}" alt="">
+        <div class="div-photos justify-content-center align-items-center">
+            <div class="row gap-2 justify-content-center align-items-center d-flex" *ngIf="imgs.length == 1">
+                <div class="col-md-5">
+                    <img class="w-100" height="" src="{{datainfo.logo}}" alt="">
 
                 </div>
-                <div class="div2">
-                    <div class="" *ngIf="imgs.length == 1">
-                        <ng-container *ngFor="let img of imgs">
-                            <img class="" width="" height="400" src="{{img}}" alt="">
-                        </ng-container>
-                    </div>
+                <div class="col-md-5" *ngFor="let img of imgs">
+                    <img class="w-100" width="" height="" src="{{img}}" alt="">
+
                 </div>
             </div>
-            <div class="parent2 " *ngIf="imgs.length == 2">
-                <div class="div1">
-                    <img class="mt-1" height="425" src="{{datainfo.logo}}" alt="">
+            <div class="parent2 row justify-content-center align-items-center" *ngIf="imgs.length == 2">
+                <div class="div1 col-5">
+                    <img class="mt" height="360" width="600" src="{{datainfo.logo}}" alt="">
 
                 </div>
                 <div class="div22">
 
                 </div>
-                <div class="div32">
+                <div class="div32 col-5">
                     <div *ngIf="imgs.length == 2" class="">
                         <ng-container *ngFor="let img of imgs">
-                            <img class="mt-1" height="210" src="{{img}}" alt="">
+                            <img class=" mar" height="180" src="{{img}}" alt="" class="">
                         </ng-container>
                     </div>
                     <div class="div42"> </div>
                 </div>
 
             </div>
+
             <div class="parent " *ngIf="imgs.length == 3">
                 <div class="div1">
-                    <img class="" height="370" src="{{datainfo.logo}}" alt="">
+                    <img class="" height="380" src="{{datainfo.logo}}" alt="">
 
                 </div>
                 <div class="div2">
                     <div *ngIf="imgs.length == 3">
                         <ng-container *ngFor="let img of imgs">
-                            <img width="" height="200" src="{{img}}" alt="">
+                            <img width="280" height="190" src="{{img}}" alt="">
                         </ng-container>
 
 
@@ -129,10 +127,13 @@
                 </div>
                 <div class="div3">
                 </div>
-                <div class="div4"></div>
+                <div class="div4">
+
+                </div>
                 <div class="div5">
                 </div>
             </div>
+
             <div class="parent4" *ngIf="imgs.length == 4">
                 <div class="div14">
                     <img class="" height="340" src="{{datainfo.logo}}" alt="">
@@ -164,35 +165,29 @@
 
 
         </div>
-        <div class="d-flex justify-content-around align-items-end ms-3 py-3">
-            <div>
-                <p-galleria 
-                  [value]="[galleryphotos]"
-                  [containerStyle]="{ 'max-width': '300px' }"
-                  [fullScreen]="true"
-                  [autoPlay]="true"
-                  [transitionInterval]="1500"
-                  [showThumbnails]="false"
-                  [(visible)]="isVisible">
-                  <ng-template pTemplate="item" let-image>
-                    <img 
-                      [src]="img"
-                      style="width: 100%; display: block;" />
-                  </ng-template>
-                </p-galleria>
-              
-                <p-button 
-                  label="Show FullScreen" 
-                  (click)="isVisible = true">
-                </p-button>
-              </div>
-              
-              
-              
-              
-              
-              
-         </div>
+        <div class="mobilebs">
+            <div class="row gap-2">
+                <div class="col-12" *ngFor="let item of imgs.slice(0,3)">
+                    <img src="{{item}}" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
+        <div class="parent-div d-flex justify-content-around align-items-end ms-3 py-3">
+            <button class="view-button" (click)="displayBasic = true">View all photos</button>
+            <p-galleria [value]="galleryphotos" [(visible)]="displayBasic" [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{ 'max-width': '850px' }" [numVisible]="7" [circular]="true" [fullScreen]="true"
+                [showItemNavigators]="true" [showThumbnails]="false">
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item" style="width: 100%; display: block;" />
+                </ng-template>
+            </p-galleria>
+
+
+
+
+
+
+        </div>
         <div class="Description">
             <h3 class="py-4">Description</h3>
             <p>{{datainfo.description}}</p>
@@ -399,4 +394,3 @@
         </div>
     </div>
 </section>
-

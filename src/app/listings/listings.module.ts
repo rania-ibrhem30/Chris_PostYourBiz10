@@ -27,7 +27,9 @@ import { LoaderComponent } from './loader/loader.component';
     FormsModule,
     CarouselModule,
     HttpClientModule,
-    ReactiveFormsModule ,
+    ReactiveFormsModule,
+    
+    
     
     
   ],
