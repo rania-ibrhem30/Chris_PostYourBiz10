@@ -37,14 +37,21 @@ export class NavbarComponent {
  
  
   fliterlistingBIZ(){
-    this.service.fliternavbar().subscribe((res:any)=>{
-      console.log(res)
-      this.router.navigate(['/Listings/grid'])
+    // this.service.fliternavbar().subscribe((res:any)=>{
+    //   console.log(res)
+    //   this.router.navigate(['/Listings/grid'])
       
 
 
 
-    })
+    // })
+    console.log(this.service.filterbodyhome.value)
+    this.router.navigate(['/Listings'], {
+      queryParams: {
+        state:this.service.filterbodynav.value.state.name,
+        cities:this.service.filterbodynav.value.state.code
+      }});
+    this.sidebarVisible1=false
   }
   ngOnInit(): void {
     this.StatesName = [
