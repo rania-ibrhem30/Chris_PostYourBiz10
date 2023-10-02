@@ -8,12 +8,14 @@ import { PhotosComponent } from './photos/photos.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
+import { PostingDetalisPageComponent } from './posting-detalis-page/posting-detalis-page.component';
 
 @NgModule({
   declarations: [
     PostingComponent,
     MapComponent,
     PhotosComponent,
+    PostingDetalisPageComponent,
     
     
   ],

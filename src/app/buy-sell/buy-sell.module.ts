@@ -9,12 +9,14 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BuySellDetalisComponent } from './buy-sell-detalis/buy-sell-detalis.component';
 
 @NgModule({
   declarations: [
     BuySellComponent,
     MapComponent,
-    PhotosComponent
+    PhotosComponent,
+    BuySellDetalisComponent
   ],
   imports: [
     CommonModule,

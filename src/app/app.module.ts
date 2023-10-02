@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './Components-shared/home/home.component';
 import { NavbarComponent } from './Components-shared/navbar/navbar.component';
 import { FooterComponent } from './Components-shared/footer/footer.component';
-import { RouterOutlet } from '@angular/router';
+import {RouterModule, RouterOutlet } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { PrimeNgModule } from './prime-ng/prime-ng.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -28,7 +28,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
     
   ],
   providers: [],
