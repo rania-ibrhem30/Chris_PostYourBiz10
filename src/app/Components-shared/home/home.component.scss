@@ -30,14 +30,15 @@ section .header {
           background-color: #0f3d3e;
           color: #ffff;
           position: absolute;
-          right: 195px;
+          right: 175px;
           border-radius: 12px;
           -webkit-border-radius: 12px;
           -moz-border-radius: 12px;
           -ms-border-radius: 12px;
           -o-border-radius: 12px;
-          width: 111px;
+          width: 100px;
           height: 38px;
+      
         }
 
         i {
@@ -54,34 +55,56 @@ section .header {
       .form-group {
         position: relative;
 
-        .Search-btn {
-          background-color: #0f3d3e;
-          color: #ffff;
-          position: absolute;
-          right: 17px;
-          border-radius: 12px;
-          -webkit-border-radius: 12px;
-          -moz-border-radius: 12px;
-          -ms-border-radius: 12px;
-          -o-border-radius: 12px;
-          width: 111px;
-          height: 38px;
-        }
+        .div-searchBar {
+          margin-right: 168px;
+          form{
+           display: flex !important; /* or inline-flex if you want it inline */
+           justify-content: center !important;
+           align-items: center !important;
+           gap: 1rem; /* Adjust the gap as needed */
+           .p-dropdown {
+               border: none;
+               width: 100%;
+               background-color: transparent;
+               margin: 0 15px;
+           }
+           input,
+           input:focus,
+           input:active {
+               border: none;
+               outline: none;
+           }
+           
+         small {
+           white-space: nowrap;
+           font-family: 'Lato', sans-serif;
+           font-size: 14px !important;
 
-        .p-dropdown {
-          border: none;
-          width: 100%;
-          background-color: transparent;
-          margin: 0 20px;
-        }
+         }
+         
+         .Search-btn {
+           background-color: #0F3D3E;
+           color: #ffff;
+           position: absolute;
+           right: -6px;
+           border-radius: 12px;
+           -webkit-border-radius: 12px;
+           -moz-border-radius: 12px;
+           -ms-border-radius: 12px;
+           -o-border-radius: 12px;
+           width: 100px;
+           height: 38px;
+       }
+       small {
+           font-size: 12px;
+       }
 
-        input,
-        input:focus,
-        input:active {
-          border: none;
-          outline: none;
-          width: 266px;
-        }
+
+          }
+       
+        
+
+         }
       }
     }
   }

@@ -9,7 +9,6 @@ import { ListingDetailsPageComponent } from './listing-details-page/listing-deta
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
-import { LoaderComponent } from './loader/loader.component';
 
 
 
@@ -19,7 +18,7 @@ import { LoaderComponent } from './loader/loader.component';
     MapComponent,
     PhotosComponent,
     ListingDetailsPageComponent,
-    LoaderComponent,
+    
   ],
   imports: [
     CommonModule,

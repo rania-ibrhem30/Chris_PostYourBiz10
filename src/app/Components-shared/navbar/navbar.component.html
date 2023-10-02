@@ -56,13 +56,32 @@
   <div class="div-searchBar2 py-2">
     <div class="form-group justify-content-between align-items-center d-flex">
         <div class="justify-content-center align-items-center d-flex gap-3 div-searchBar flex-column">
-            <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="Category"></p-dropdown>
-            <p-dropdown [options]="categories" [(ngModel)]="categoriesName" optionlabel="name" placeholder="State"></p-dropdown>
-            <p-dropdown [options]="cities" [(ngModel)]="citiesName" optionlabel="name" placeholder="City"></p-dropdown>
-            <input type="number" placeholder="Zip Code" class="px-3"/>
-            <button class="Search-btn">Search</button>
+          <form [formGroup]="service.filterbodynav">
+            <p-dropdown
+              [options]="categories"
+              optionlabel="name"
+              placeholder="Listings"
+            ></p-dropdown>
+            <p-dropdown
+              formControlName="state"
+              [options]="StatesName"
+              optionLabel="name"
+              placeholder="State"
+            >
+            </p-dropdown>
+            <p-dropdown
+              [options]="categories"
+              optionlabel="name"
+              placeholder="Category"
+            ></p-dropdown>
+            <input type="text" pInputText placeholder="Zip Code" />
+            <button class="Search-btn" (click)="fliterlistingBIZ()">
+              Search
+            </button>
+          </form>
 
         </div>
+      
     </div>
 </div>
   

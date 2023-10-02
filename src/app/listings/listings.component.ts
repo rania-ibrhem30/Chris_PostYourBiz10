@@ -2,6 +2,7 @@ import { Component, DoCheck, ViewEncapsulation } from '@angular/core';
 import { ServicesListingService } from './services/services-listing.service';
 import { Subscription } from 'rxjs';
 import { FormControl, FormGroup } from '@angular/forms';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-listings',
@@ -11,43 +12,45 @@ import { FormControl, FormGroup } from '@angular/forms';
 
 })
 export class ListingsComponent implements DoCheck {
-  data:any[] = [];
-  fliterarray:any[] = [];
-  searcharray:any[]=[];
+  data: any[] = [];
+  fliterarray: any[] = [];
+  searcharray: any[] = [];
   cities: any[] | undefined;
-  categories:any[]|undefined;
-  categoriesName:string|any
+  categories: any[] | undefined;
+  categoriesName: string | any
   citiesName: string | any;
-  StatesName:any[] | undefined;
-  state:string|any;
+  StatesName: any[] | undefined;
+  state: string | any;
   formGroup: FormGroup | undefined;
   Subscription!: Subscription;
-  fliterbody!:FormGroup;
+  fliterbody!: FormGroup;
   filterForm: any;
- loader:boolean =false
-   first = 0; 
-   rows = 2; 
-   searchQuery: string = '';
+  loader: boolean = false
+  first = 0;
+  rows = 2;
+  searchQuery: string = '';
+  arrayData: any;
 
 
 
-  constructor(public service:ServicesListingService){
+
+  constructor(public service: ServicesListingService , public _router:ActivatedRoute) {
   }
-  getlisting(){
-    this.service.GetListing().subscribe((res:any)=>{
-      this.data=res
-     console.log(this.data)
-     
+  getlisting() {
+    this.service.GetListing().subscribe((res: any) => {
+      this.data = res
+      console.log(this.data)
+
     })
   }
- 
-  fliterlistingBIZ(){
-    this.loader=true
 
-    this.service.fliterListing().subscribe((res:any)=>{
-      this.fliterarray= res.body;
+  fliterlistingBIZ() {
+    this.loader = true
+
+    this.service.fliterListing().subscribe((res: any) => {
+      this.fliterarray = res.body;
       this.data = this.fliterarray;
-      this.loader=false
+      this.loader = false
 
 
       console.log(this.fliterarray)
@@ -69,7 +72,7 @@ export class ListingsComponent implements DoCheck {
       );
     }
   }
- 
+
   ngOnInit(): void {
     this.StatesName = [
       { name: "All", cities: "AL" },
@@ -124,16 +127,17 @@ export class ListingsComponent implements DoCheck {
       { name: "Wisconsin", code: "WI" },
       { name: "Wyoming", code: "WY" },
     ];
-     this.categories = [
+    this.categories = [
       { name: "MASSAGE SPA", cities: "SPA" },
       { name: "RESTAURANTS ", cities: "RS" },
       { name: "BEAUTY SALON SPA", code: "BS" },
     ];
 
-    this.getlisting()
+    this.getlisting();
+   ;
   }
   ngDoCheck(): void {
-   
+
   }
 
 

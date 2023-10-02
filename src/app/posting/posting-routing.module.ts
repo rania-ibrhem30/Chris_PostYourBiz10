@@ -3,7 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { PostingComponent } from './posting.component';
 
 const routes: Routes = [
-  { path: '', component: PostingComponent }
+  { path: '', component: PostingComponent },
+  { path: 'posting', component: PostingComponent }
+
 ];
 
 @NgModule({

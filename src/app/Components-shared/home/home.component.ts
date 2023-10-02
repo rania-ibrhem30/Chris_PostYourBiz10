@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { ServicesListingService } from 'src/app/listings/services/services-listing.service';
 import { Observable } from 'rxjs';
+import { ActivatedRoute, Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,15 +13,23 @@ export class HomeComponent {
   cities: any[] | undefined;
   categories:any[]|undefined;
   categoriesName:string|any
-  citiesName: string | any;
-   data:any[]=[]
+  StatesName: string | any;
+   arrayfromnavbar:any[]=[]
    first = 1; 
    rows = 2;
-  constructor( private service:ServicesListingService){
+   arrayData:any[]=[]
+  constructor( public service:ServicesListingService , private router:Router, public routeing:ActivatedRoute){
     
   }
+  filterlistingBIZ() {
+    this.service.filterbodyhomepage().subscribe((res: any) => {
+      this.arrayfromnavbar = res;
+      console.log("rania", this.arrayfromnavbar);
+      this.router.navigate(['/Listings'], { queryParams: { arrayData: JSON.stringify(this.arrayfromnavbar) } });
+    });
+  }
   ngOnInit(): void {
-  this.cities = [
+  this.StatesName = [
     { name: "All", cities: "AL" },
     { name: "Alabama", cities: "AL" },
     { name: "Alaska", code: "AK" },
@@ -78,6 +87,14 @@ export class HomeComponent {
     { name: "RESTAURANTS ", cities: "RS" },
     { name: "BEAUTY SALON SPA", code: "BS" },
   ];
+  this.routeing.queryParams.subscribe(params => {
+    if (params && params['arrayData']) {
+      this.arrayData = JSON.parse(params['arrayData']);
+      console.log(this.arrayData);
+      // Perform further manipulation with the arrayData
+    }
+  })
+  
 
  
   

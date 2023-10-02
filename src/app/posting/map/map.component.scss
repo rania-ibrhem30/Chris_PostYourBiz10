@@ -1,0 +1,152 @@
+.container{
+    h5{
+        color: #0F3D3E;
+        font-family: 'Lato', sans-serif !important;
+         font-weight: 900;
+    }
+    .d-flex{
+         .row{
+          
+            .card-body {
+                .d-flex {
+                  h5 {
+                    font-family: "Lato", sans-serif;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 900 !important;
+                    white-space: nowrap;
+                    margin: 0px 36px;;
+                  }
+
+                  span {
+                    color: #ff8682;
+                    width: 107px;
+                    height: 59px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    padding: 0px 82px;
+                    font-family: "Lato", sans-serif;
+                  }
+
+                  small {
+                    font-family: "Lato", sans-serif;
+                  }
+                }
+
+                .heartt {
+                  .heart {
+                    i {
+                      border: 1px #258a8b solid !important;
+                      height: 48px;
+                      width: 48px;
+                      border-radius: 10px;
+                      -webkit-border-radius: 10px;
+                      -moz-border-radius: 10px;
+                      -ms-border-radius: 10px;
+                      -o-border-radius: 10px;
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                    }
+                  }
+                }
+
+                .btn {
+                  button {
+                    height: 48px;
+                    border-radius: 10px;
+                    width: 236px;
+                    background-color: #8dd3bb;
+                    outline: none;
+                    border: none;
+                  }
+                }
+              }
+      
+       
+    }
+    }
+  
+}
+@media (max-width: 767px){
+ 
+  .map{
+    .container{
+      .d-flex {
+        .card {
+          .row {
+            .col-4 {
+              img {
+                height: 219px;
+              }
+            }
+    
+            .col-8 {
+              border-radius: 4px;
+              -webkit-border-radius: 4px;
+              -moz-border-radius: 4px;
+              -ms-border-radius: 4px;
+              -o-border-radius: 4px;
+    
+              .card-body {
+                .d-flex {
+                  h5 {
+                    font-family: "Lato", sans-serif;
+                    font-size: 15px;
+                    line-height: 33px;
+                    font-weight: 900 !important;
+                    white-space: nowrap;
+                  }
+    
+                  span {
+                    color: #ff8682;
+                    width: 107px;
+                    height: 59px;
+                    font-weight: 700;
+                    font-size: 17px;
+                    padding: 0px 0px;
+                    font-family: "Lato", sans-serif;
+                    gap: 0px !important;
+                  }
+    
+                  small {
+                    font-family: "Lato", sans-serif;
+                  }
+                }
+    
+                .heartt {
+                  .heart {
+                    i {
+                      border: 1px #258a8b solid !important;
+                      height: 48px;
+                      width: 48px;
+                      border-radius: 10px;
+                      -webkit-border-radius: 10px;
+                      -moz-border-radius: 10px;
+                      -ms-border-radius: 10px;
+                      -o-border-radius: 10px;
+                      justify-content: center;
+                      align-items: center;
+                      display: flex;
+                    }
+                  }
+                }
+    
+                .btn {
+                  button {
+                    height: 44px;
+                    border-radius: 10px;
+                    width: 139px;
+                   background-color: #8dd3bb;
+                    outline: none;
+                    border: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
