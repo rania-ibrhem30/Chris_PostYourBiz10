@@ -47,7 +47,7 @@ export class ListingsComponent implements DoCheck {
   fliterlistingBIZ() {
     this.loader = true
     this.service.fliterListing().subscribe((res: any) => {
-      this.fliterarray = res.body;
+      this.fliterarray = res.body; 
       this.data = this.fliterarray;
       this.loader = false
 
