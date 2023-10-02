@@ -8,6 +8,7 @@ import { ButtonModule } from 'primeng/button';
 import { PaginatorModule } from 'primeng/paginator';
 import { TabViewModule } from 'primeng/tabview';
 import { GalleriaModule } from 'primeng/galleria';
+import { PasswordModule } from 'primeng/password';
 
 
 
@@ -24,7 +25,8 @@ import { GalleriaModule } from 'primeng/galleria';
       ButtonModule,
       PaginatorModule,
       TabViewModule,
-      GalleriaModule
+      GalleriaModule,
+      PasswordModule
       
       
 

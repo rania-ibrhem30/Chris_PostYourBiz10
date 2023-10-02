@@ -87,6 +87,8 @@ export class HomeComponent {
     { name: "RESTAURANTS ", cities: "RS" },
     { name: "BEAUTY SALON SPA", code: "BS" },
   ];
+
+  
   this.routeing.queryParams.subscribe(params => {
     if (params && params['arrayData']) {
       this.arrayData = JSON.parse(params['arrayData']);
