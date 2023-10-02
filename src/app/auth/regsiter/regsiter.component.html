@@ -1,1 +1,38 @@
-<p>regsiter works!</p>
+<section class="contact-us py-3">
+    <div class="container">
+        <div class="img-nav pb-5">
+            <img src="../../../assets/img/logo/logo.png" alt="" class="">
+        </div>
+    </div>
+    <div class="container pt-0">
+        <div class="row justify-content-center align-items-center d-flex gap-3 ">
+            <div class="col-md-5 col-10">
+                <h2 class="py-1">Signup</h2>
+                <p class=" p-0 mb-3">Signup to create your accout.</p>
+                <form>
+                 <div class="py-1 w-100">
+                    <p class="m-1 p-1">Email :</p>
+                    <input pInputText id="email" class="form-control"  placeholder="" />
+                 </div>
+                 <div class="py-1 w-100">
+                    <p class="m-1 p-1">Password :</p>
+                    <p-password formControlName="value" [toggleMask]="true"  class="form-control"></p-password>
+                </div>
+                <div class="py-1 w-100">
+                    <p class="m-1 p-1">Confirm Password :</p>
+                    <p-password formControlName="value" [toggleMask]="true"  class="form-control"></p-password>
+                </div>
+                 
+                 <div class="justify-content-center align-items-center d-flex py-3 w-100">
+                    <button class="send w-100">Send</button>
+                 </div>
+
+               </form>
+               <p class="text-center rania" routerLink="/auth/login" >Already have an account? <span>Login</span></p>
+            </div>                                                 
+            <div class="hide-from-web col-md-5">
+                <img src="../../assets/img/auth/slider3.png" alt="" class="w-100" height="650">
+            </div>
+        </div>
+    </div>
+</section>

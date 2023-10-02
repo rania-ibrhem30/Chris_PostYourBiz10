@@ -1,0 +1,97 @@
+.p-input-icon-right>.p-inputtext {
+    padding-right: 18.5rem;
+}
+
+.contact-us {
+    .container {
+        .row {
+            .col-md-5 {
+                h2 {
+                    color: #000000;
+                    font-size: 50px;
+                    font-family: "Lato", sans-serif;
+                    font-weight: 900 !important;
+                    line-height: 48px;
+
+                }
+
+                form {
+                    button {
+                        background-color: #8DD3BB;
+                        border-radius: 4px;
+                        -webkit-border-radius: 4px;
+                        -moz-border-radius: 4px;
+                        -ms-border-radius: 4px;
+                        -o-border-radius: 4px;
+                        height: 48px;
+                        width: 512px;
+                        color: #112211;
+                        border: none;
+                        outline: none;
+                    }
+
+                    .Forget{
+                        color:black;
+                        cursor: pointer !important;
+                        font-size: 14px;
+                        font-weight: 300;
+                     }
+                }
+            }
+
+            .hide-from-web {
+                display: block;
+            }
+
+            .p-input-icon-right>.p-inputtext {
+                border: none;
+                height: 39px;
+            }
+            .p-password-panel{
+                display: none !important;
+            }
+            .p-inputtext:enabled:focus:first-child {
+                box-shadow: none;
+            }
+            .p-inputtext:enabled:focus:last-child {
+                box-shadow: none;
+                border: #000000 solid 1px;
+            }
+           
+          
+        }
+    }
+}
+
+@media (max-width: 767px) {
+
+    .img-nav {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .hide-from-web {
+        display: none !important;
+    }
+    .p-input-icon-right>.p-inputtext {
+        padding-right: 7.5rem !important;
+    }
+    
+
+
+}
+.rania{
+
+
+    color:#112211;
+    cursor: pointer !important;
+    text-decoration-style: none !important;
+    -moz-text-decoration-style: none !important;
+    text-align: center;
+}
+span{
+    color: #FF8682;
+}
+
+	
