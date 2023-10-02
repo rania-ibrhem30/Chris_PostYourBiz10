@@ -22,11 +22,16 @@ export class HomeComponent {
     
   }
   filterlistingBIZ() {
-    this.service.filterbodyhomepage().subscribe((res: any) => {
-      this.arrayfromnavbar = res;
-      console.log("rania", this.arrayfromnavbar);
-      this.router.navigate(['/Listings'], { queryParams: { arrayData: JSON.stringify(this.arrayfromnavbar) } });
-    });
+    // this.service.filterbodyhomepage().subscribe((res: any) => {
+    //   this.arrayfromnavbar = res;
+    //   console.log("rania", this.arrayfromnavbar);
+    //   this.router.navigate(['/Listings'], { queryParams: { arrayData: JSON.stringify(this.arrayfromnavbar) } });
+    // });
+    console.log(this.service.filterbodyhome.value.state)
+    this.router.navigate(['/Listings'], {
+      queryParams: this.service.filterbodyhome.value.state
+    }
+    );
   }
   ngOnInit(): void {
   this.StatesName = [

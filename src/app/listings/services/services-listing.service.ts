@@ -25,11 +25,11 @@ export class ServicesListingService {
   GetListingByID(id:any){
     return this._http.get(`${environment.BACKEND_DOMAIN}/get-business/${id}`);
   }
-  fliterListing(){
-    let body ={
-      state:this.filterbody.value.state.name,
-    }
-    return this._http.post(`${environment.BACKEND_DOMAIN}/filter-business-website-request/${environment.SITE_DOMAIN}`,body ,{
+  fliterListing(dynamicBody = this.filterbody.value.state.name){
+    // let body ={
+    //   state:this.filterbody.value.state.name,
+    // }
+    return this._http.post(`${environment.BACKEND_DOMAIN}/filter-business-website-request/${environment.SITE_DOMAIN}`,dynamicBody ,{
       observe: 'response',
     })
   }

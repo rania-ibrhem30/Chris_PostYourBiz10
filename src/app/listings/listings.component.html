@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <p class="ps-5">{{data.length}} Results</p>
+        <p class="ps-5">{{data?.length}} Results</p>
       </div>
       <div class="col-md-6">
         <div class="div-searchBar py-2">
@@ -157,7 +157,7 @@
       </div>
       <div>
         <p-paginator (onPageChange)="onPageChange($event)" [first]="first" [rows]="rows"
-          [totalRecords]="data.length"></p-paginator>
+          [totalRecords]="data?.length"></p-paginator>
       </div>
     </div>
   </div>

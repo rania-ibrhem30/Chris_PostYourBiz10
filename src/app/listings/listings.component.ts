@@ -12,7 +12,7 @@ import { ActivatedRoute } from '@angular/router';
 
 })
 export class ListingsComponent implements DoCheck {
-  data: any[] = [];
+  data:any;
   fliterarray: any[] = [];
   searcharray: any[] = [];
   cities: any[] | undefined;
@@ -46,7 +46,6 @@ export class ListingsComponent implements DoCheck {
 
   fliterlistingBIZ() {
     this.loader = true
-
     this.service.fliterListing().subscribe((res: any) => {
       this.fliterarray = res.body;
       this.data = this.fliterarray;
@@ -67,7 +66,7 @@ export class ListingsComponent implements DoCheck {
     if (this.searchQuery.trim() === '') {
       this.searcharray = this.data;
     } else {
-      this.searcharray = this.data.filter(item =>
+      this.searcharray = this.data.filter((item:any) =>
         item.name.toLowerCase().includes(this.searchQuery.toLowerCase())
       );
     }
@@ -133,8 +132,15 @@ export class ListingsComponent implements DoCheck {
       { name: "BEAUTY SALON SPA", code: "BS" },
     ];
 
-    this.getlisting();
+    //this.getlisting();
    ;
+   this._router.queryParams.subscribe(params => {
+      console.log(params)
+      this.service.fliterListing(params).subscribe(res => {
+        this.data=res.body
+        console.log(this.data)
+      })
+   })
   }
   ngDoCheck(): void {
 
