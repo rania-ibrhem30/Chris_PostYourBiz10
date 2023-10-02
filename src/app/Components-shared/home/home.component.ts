@@ -27,11 +27,12 @@ export class HomeComponent {
     //   console.log("rania", this.arrayfromnavbar);
     //   this.router.navigate(['/Listings'], { queryParams: { arrayData: JSON.stringify(this.arrayfromnavbar) } });
     // });
-    console.log(this.service.filterbodyhome.value.state)
+    console.log(this.service.filterbodyhome.value)
     this.router.navigate(['/Listings'], {
-      queryParams: this.service.filterbodyhome.value.state
-    }
-    );
+      queryParams: {
+        state:this.service.filterbodyhome.value.state.name,
+        cities:this.service.filterbodyhome.value.state.code
+      }});
   }
   ngOnInit(): void {
   this.StatesName = [

@@ -132,14 +132,19 @@ export class ListingsComponent implements DoCheck {
       { name: "BEAUTY SALON SPA", code: "BS" },
     ];
 
-    //this.getlisting();
+    ;
    ;
    this._router.queryParams.subscribe(params => {
       console.log(params)
-      this.service.fliterListing(params).subscribe(res => {
-        this.data=res.body
-        console.log(this.data)
-      })
+      if(Object.keys(params).length) {
+        this.service.fliterListing(params).subscribe(res => {
+          this.data=res.body
+          console.log(this.data)
+        })
+      } else {
+        this.getlisting()
+      }
+
    })
   }
   ngDoCheck(): void {
