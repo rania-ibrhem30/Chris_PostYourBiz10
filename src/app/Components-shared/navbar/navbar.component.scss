@@ -39,6 +39,7 @@ a .nav-link{
 }
 nav{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    height: 90px !important;
 
 }
 .p-button{
@@ -114,25 +115,34 @@ nav{
         word-break: none;      
     }
 }
-@media (min-width: 800px) and (max-width: 1024px){
+// @media (min-width: 800px) and (max-width: 1024px){
+//     .navbar{
+//         display: block;
+//     }
+//     .mobile{
+//         display: none;
+       
+//     }
+//     .div-tab{
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: start;
+//     margin: 12px 26px;
+
+// }
+
+// .btn-1{
+//     padding: 10px;
+// }
+    
+// }
+@media (min-width:768px) and (max-width:1400px) {
     .navbar{
-        display: block;
+        display: none;
     }
     .mobile{
-        display: none;
+        display: block;
        
     }
-    .div-tab{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    margin: 12px 26px;
-
-}
-
-.btn-1{
-    padding: 10px;
-}
-    
 }

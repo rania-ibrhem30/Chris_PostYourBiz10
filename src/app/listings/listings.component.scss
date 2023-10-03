@@ -11,10 +11,11 @@
                 .div-searchBar {
               
                    form{
-                    display: flex !important; /* or inline-flex if you want it inline */
+                    display: flex !important;
                     justify-content: center !important;
                     align-items: center !important;
-                    gap: 1rem; /* Adjust the gap as needed */
+                    gap: 10rem; 
+                    margin-right: 228px;
                     .p-dropdown {
                         border: none;
                         width: 100%;
@@ -82,7 +83,7 @@
     .nav-underline {
         background-color: #ffff;
         // width: 650px;
-        height: 80px;
+        height: 66px;
         justify-content: center;
         align-items: center;
         display: flex;

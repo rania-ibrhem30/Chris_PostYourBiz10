@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { TermsConditionsComponent } from './Components-shared/terms-conditions/terms-conditions.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactUsComponent } from './Components-shared/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     NavbarComponent,
     FooterComponent,
     TermsConditionsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,

@@ -23,14 +23,14 @@ section .header {
         input {
           height: 64px;
           width: 820px;
-          padding: 0 90px;
+          padding: 0 63px;
         }
 
         .Search-btn {
           background-color: #0f3d3e;
           color: #ffff;
           position: absolute;
-          right: 175px;
+          right: 171px;
           border-radius: 12px;
           -webkit-border-radius: 12px;
           -moz-border-radius: 12px;
@@ -38,7 +38,7 @@ section .header {
           -o-border-radius: 12px;
           width: 100px;
           height: 38px;
-      
+
         }
 
         i {
@@ -57,54 +57,60 @@ section .header {
 
         .div-searchBar {
           margin-right: 168px;
-          form{
-           display: flex !important; /* or inline-flex if you want it inline */
-           justify-content: center !important;
-           align-items: center !important;
-           gap: 1rem; /* Adjust the gap as needed */
-           .p-dropdown {
-               border: none;
-               width: 100%;
-               background-color: transparent;
-               margin: 0 15px;
-           }
-           input,
-           input:focus,
-           input:active {
-               border: none;
-               outline: none;
-           }
-           
-         small {
-           white-space: nowrap;
-           font-family: 'Lato', sans-serif;
-           font-size: 14px !important;
 
-         }
-         
-         .Search-btn {
-           background-color: #0F3D3E;
-           color: #ffff;
-           position: absolute;
-           right: -6px;
-           border-radius: 12px;
-           -webkit-border-radius: 12px;
-           -moz-border-radius: 12px;
-           -ms-border-radius: 12px;
-           -o-border-radius: 12px;
-           width: 100px;
-           height: 38px;
-       }
-       small {
-           font-size: 12px;
-       }
+          form {
+            display: flex !important;
+            /* or inline-flex if you want it inline */
+            justify-content: center !important;
+            align-items: center !important;
+            gap: 5rem;
+
+            /* Adjust the gap as needed */
+            .p-dropdown {
+              border: none;
+              width: 100%;
+              background-color: transparent;
+              margin: 0 15px;
+            }
+
+            input,
+            input:focus,
+            input:active {
+              border: none;
+              outline: none;
+            }
+
+            small {
+              white-space: nowrap;
+              font-family: 'Lato', sans-serif;
+              font-size: 14px !important;
+
+            }
+
+            .Search-btn {
+              background-color: #0F3D3E;
+              color: #ffff;
+              position: absolute;
+              right: -6px;
+              border-radius: 12px;
+              -webkit-border-radius: 12px;
+              -moz-border-radius: 12px;
+              -ms-border-radius: 12px;
+              -o-border-radius: 12px;
+              width: 100px;
+              height: 38px;
+            }
+
+            small {
+              font-size: 12px;
+            }
 
 
           }
-       
-        
 
-         }
+
+
+        }
       }
     }
   }
@@ -161,9 +167,16 @@ section .Restaurants {
       p {
         color: #ff8682 !important;
       }
+
       p-tabPanel {
         .d-flex {
           .card {
+            border-radius: 21px;
+            -webkit-border-radius: 21px;
+            -moz-border-radius: 21px;
+            -ms-border-radius: 21px;
+            -o-border-radius: 21px;
+
             .row {
               .col-4 {
                 img {
@@ -172,13 +185,19 @@ section .Restaurants {
               }
 
               .col-8 {
-                border-radius: 4px;
+                border-radius: px;
                 -webkit-border-radius: 4px;
                 -moz-border-radius: 4px;
                 -ms-border-radius: 4px;
                 -o-border-radius: 4px;
 
                 .card-body {
+                  border-radius: 21px;
+                  -webkit-border-radius: 21px;
+                  -moz-border-radius: 21px;
+                  -ms-border-radius: 21px;
+                  -o-border-radius: 21px;
+
                   .d-flex {
                     h5 {
                       font-family: "Lato", sans-serif;
@@ -186,7 +205,8 @@ section .Restaurants {
                       line-height: 24px;
                       font-weight: 900 !important;
                       white-space: nowrap;
-                      margin: 0px 36px;;
+                      margin: 0px 36px;
+                      ;
                     }
 
                     span {
@@ -241,13 +261,7 @@ section .Restaurants {
     }
   }
 }
-section .Contact{
-  .container{
-    h4{
-      cursor: pointer;
-    }
-  }
-}
+
 .p-tabview .p-tabview-nav-content {
   height: 80px;
   justify-content: center;
@@ -260,14 +274,17 @@ section .Contact{
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
+
 .p-tabview .p-tabview-nav {
   background: #ffffff;
   border: none;
   border-width: 0 0 2px 0;
 }
+
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
   color: #0f3d3e !important;
 }
+
 .p-tabview .p-tabview-nav {
   background: #ffffff;
   border: none;
@@ -277,10 +294,13 @@ section .Contact{
   justify-content: center;
   align-items: center;
   display: flex;
+  gap: 110px;
 }
+
 .p-tabview-nav-container {
   display: flex;
   justify-content: center;
+
   .p-tabview-nav-content {
     width: 50%;
   }
@@ -305,93 +325,101 @@ section .Contact{
         }
       }
 
-      .div-searchBar, form {
-        flex-direction: column !important;
-        gap: 1rem !important;
-        display: flex !important;
-        flex-direction: column !important;
-        align-items: center;
-        justify-content: center;
+      // .div-searchBar,
+      // form {
+      //   flex-direction: column !important;
+      //   gap: 1rem !important;
+      //   display: flex !important;
+      //   flex-direction: column !important;
+      //   align-items: center;
+      //   justify-content: center;
 
-        .form-group {
-          position: relative;
+      //   .form-group {
+      //     position: relative;
 
-          input {
-            height: 39px;
-            width: 820px;
-            padding: 0 90px;
-          }
+      //     input {
+      //       height: 39px;
+      //       width: 820px;
+      //       padding: 0 90px;
+      //     }
 
-          .Search-btn {
-            display: none;
-          }
+      //     .Search-btn {
+      //       display: none;
+      //     }
 
-          i {
-            position: absolute;
-            left: 219px;
-            background-color: #0f3d3e;
-            color: white !important;
-            width: 34px;
-            height: 27px;
-            border-radius: 4px;
-            -webkit-border-radius: 4px;
-            -moz-border-radius: 4px;
-            -ms-border-radius: 4px;
-            -o-border-radius: 4px;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-          }
-        }
+      //     i {
+      //       position: absolute;
+      //       left: 219px;
+      //       background-color: #0f3d3e;
+      //       color: white !important;
+      //       width: 34px;
+      //       height: 27px;
+      //       border-radius: 4px;
+      //       -webkit-border-radius: 4px;
+      //       -moz-border-radius: 4px;
+      //       -ms-border-radius: 4px;
+      //       -o-border-radius: 4px;
+      //       justify-content: center;
+      //       align-items: center;
+      //       display: flex;
+      //     }
+      //   }
+      // }
+
+      // .div-searchBar2 {
+      //   background-color: white;
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   justify-content: center;
+      //   // margin: 0px 35px !important;
+      //   height: 414px;
+
+      //   .form-group {
+      //     position: relative;
+
+      //     .Search-btn {
+      //       background-color: #0f3d3e;
+      //       color: white;
+      //       position: absolute;
+      //       right: 46px !important;
+      //       border-radius: 5px;
+      //       -webkit-border-radius: 5px;
+      //       -moz-border-radius: 5px;
+      //       -ms-border-radius: 5px;
+      //       -o-border-radius: 5px;
+      //       width: 111px;
+      //       height: 34px;
+      //       bottom: -74px;
+      //       outline: none;
+      //       border: none;
+      //     }
+
+      //     .p-dropdown {
+      //       border: none;
+      //       width: 100%;
+      //       background-color: transparent;
+      //       margin: 0 20px;
+      //       justify-content: center;
+      //       align-items: center;
+      //       display: flex;
+      //     }
+
+      //     input,
+      //     input:focus,
+      //     input:active {
+      //       border: none;
+      //       outline: none;
+      //       width: 50%;
+      //     }
+      //   }
+      // }
+      .div-searchBar {
+        display: none !important;
       }
 
       .div-searchBar2 {
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        // margin: 0px 35px !important;
-        height: 414px;
-
-        .form-group {
-          position: relative;
-
-          .Search-btn {
-            background-color: #0f3d3e;
-            color: white;
-            position: absolute;
-            right: 46px !important;
-            border-radius: 5px;
-            -webkit-border-radius: 5px;
-            -moz-border-radius: 5px;
-            -ms-border-radius: 5px;
-            -o-border-radius: 5px;
-            width: 111px;
-            height: 34px;
-            bottom: -74px;
-            outline: none;
-            border: none;
-          }
-
-          .p-dropdown {
-            border: none;
-            width: 100%;
-            background-color: transparent;
-            margin: 0 20px;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-          }
-
-          input,
-          input:focus,
-          input:active {
-            border: none;
-            outline: none;
-            width: 50%;
-          }
-        }
+        display: none !important;
       }
     }
   }
@@ -446,6 +474,7 @@ section .Contact{
       }
     }
   }
+
   section .Restaurants {
     .container {
       .h1 {
@@ -456,16 +485,20 @@ section .Contact{
         margin: 0px 21px;
         font-weight: 700;
       }
+
       .container {
         p {
           font-size: 10px;
         }
+
         .p-tabview-nav-container .p-tabview-nav-content {
           width: 100% !important;
         }
+
         p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
           border-color: #258a8b;
         }
+
         .p-tabview-title {
           line-height: 1;
           white-space: nowrap;
@@ -552,7 +585,20 @@ section .Contact{
       }
     }
   }
+
+  .p-tabview .p-tabview-nav {
+    background: #ffffff;
+    border: none;
+    border-width: 0 0 2px 0;
+    border-color: #258a8b;
+    color: #0f3d3e !important;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 0px;
+  }
 }
+
 @media (min-width: 375px) and (max-width: 620px) {
   section .header {
     background-color: #0f3d3e;
@@ -667,6 +713,7 @@ section .Contact{
       }
     }
   }
+
   section .Restaurants {
     .container {
       .h1 {
@@ -677,10 +724,12 @@ section .Contact{
         margin: 0px 21px;
         font-weight: 700;
       }
+
       .container {
         p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
           border-color: #258a8b;
         }
+
         p-tabPanel {
           .d-flex {
             .card {
@@ -763,132 +812,57 @@ section .Contact{
   }
 }
 
-@media (min-width:768px) and (max-width:1400px){
-    section .header {
-        background-color: #0f3d3e;
-    
+@media (min-width:768px) and (max-width:1400px) {
+  section .header {
+    background-color: #0f3d3e;
+
+    .container {
+      background-color: #0f3d3e;
+
+      .div {
+        h1 {
+          color: white;
+        }
+
+        p {
+          color: #e2dcc8;
+          font-size: 14px;
+          line-height: 29.26px;
+        }
+      }
+
+      .div-searchBar {
+        display: none;
+      }
+
+      .div-searchBar2 {
+        display: none;
+      }
+
+
+
+
+    }
+
+    section .bg-green {
+      .cards {
         .container {
-          background-color: #0f3d3e;
-    
-          .div {
-            h1 {
-              color: white;
+          .row {
+            .col-md-2 {
+              width: 31.666667% !important;
             }
-    
-            p {
-              color: #e2dcc8;
-              font-size: 14px;
-              line-height: 29.26px;
-            }
-          }
-    
-          .div-searchBar {
-            flex-direction: column;
-            gap: 1rem;
-            display: flex;
-            flex-direction: column !important;
-            align-items: center;
-            justify-content: center;
-    
-            .form-group {
-              position: relative;
-    
-              input {
-                height: 39px;
-                width: 820px;
-                padding: 0 174px;
-              }
-    
-              .Search-btn {
-                display: none;
-              }
-    
-              i {
-                position: absolute;
-                left: 413px;
-                background-color: #0f3d3e;
-                color: white !important;
-                width: 33px;
-                height: 27px;
-                border-radius: 4px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                -ms-border-radius: 4px;
-                -o-border-radius: 4px;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-              }
-            }
-          }
-    
-          .div-searchBar2 {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-          //  margin: 0px 148px !important;
-            height: 417px;
-            width: 403px !important;
-    
-            .form-group {
-              position: relative;
-    
-              .Search-btn {
-                background-color: #0f3d3e;
-                color: white;
-                position: absolute;
-                right: 46px;
-                border-radius: 5px;
-                -webkit-border-radius: 5px;
-                -moz-border-radius: 5px;
-                -ms-border-radius: 5px;
-                -o-border-radius: 5px;
-                width: 111px;
-                height: 34px;
-                bottom: -74px;
-                outline: none;
-                border: none;
-              }
-    
-              .p-dropdown {
-                border: none;
-                width: 100%;
-                background-color: transparent;
-                margin: 0 20px;
-                justify-content: center;
-                align-items: center;
-                display: flex;
-              }
-    
-              input,
-              input:focus,
-              input:active {
-                border: none;
-                outline: none;
-                width: 50%;
-              }
-            }
+
+
+
           }
         }
       }
-    section .bg-green {
-        .cards {
-          .container {
-            .row {
-              .col-md-2 {
-                width: 31.666667%;
-            }
-    
-                // .col-8 {
-                // }
-    
-                
-              }
-            }
-          }
-        }
+       .container .row .col-md-2 .box-card .rounded-circle{
+        background-color: white;
+        height: 200px;
+        width: 138px;
+      }
+    }
+   
+  }
 }
-
-    
