@@ -1,7 +1,7 @@
 .list-img{
     .container{
         .row{
-            .col-md-2{
+            .col-md-3{
                 .card{
                     border-radius: 25px;
                     -webkit-border-radius: 25px;
@@ -12,13 +12,14 @@
                    
 
                     img{
-                        height:200px;
-                        border-radius: 7px;
-                        -webkit-border-radius: 7px;
-                        -moz-border-radius: 7px;
-                        -ms-border-radius: 7px;
-                        -o-border-radius: 7px;
-                        .title{
+                        height:250px;
+                        border-radius: 7px!important;
+                        -webkit-border-radius: 7px !important;
+                        -moz-border-radius: 7px !important;
+                        -ms-border-radius: 7px !important;
+                        -o-border-radius: 7px !important;
+                        .title
+                        {
                        
 
                             background-color: white;
