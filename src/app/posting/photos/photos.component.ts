@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ServicesListingService } from 'src/app/listings/services/services-listing.service';
+import { PostingService } from '../services/posting.service';
 
 @Component({
   selector: 'app-photos',
@@ -8,16 +9,16 @@ import { ServicesListingService } from 'src/app/listings/services/services-listi
 })
 export class PhotosComponent {
   data:any[]=[]
-  constructor(private service:ServicesListingService){}
+  constructor(private service:PostingService){}
 
-  getlisting(){
-    this.service.GetListing().subscribe((res:any)=>{
-      this.data=res
+  posting(){
+    this.service.GetPosting().subscribe((res:any)=>{
+      this.data=res.data
      console.log(this.data)
     })
   }
   ngOnInit(): void {
-    this.getlisting()
+    this.posting()
   }
 
 }

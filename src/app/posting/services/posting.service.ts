@@ -11,17 +11,10 @@ export class PostingService {
   constructor(public _http:HttpClient) { }
 
   GetPosting(){
-    return this._http.get(`${environment.BACKEND_DOMAIN}/get-businesses-website-request/${environment.SITE_DOMAIN}`)
+    return this._http.get(`${environment.BACKEND_DOMAIN}/get-all-posts-website-request/${environment.SITE_DOMAIN}`)
   }
   GetPostingByID(id:any){
-    return this._http.get(`${environment.BACKEND_DOMAIN}/get-business/${id}`);
+    return this._http.get(`${environment.BACKEND_DOMAIN}/get-post-website_request/${id}`);
   }
-  fliterPosting(){
-    let body ={
-      state:this.filterbody.value.state.name,
-    }
-    return this._http.post(`${environment.BACKEND_DOMAIN}/filter-business-website-request/${environment.SITE_DOMAIN}`,body ,{
-      observe: 'response',
-    })
-  }
+
 }

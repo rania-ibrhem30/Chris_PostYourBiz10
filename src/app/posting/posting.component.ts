@@ -1,15 +1,17 @@
-import { Component } from '@angular/core';
-import { ServicesListingService } from '../listings/services/services-listing.service';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { FormGroup } from '@angular/forms';
+import { PostingService } from './services/posting.service';
 
 @Component({
   selector: 'app-posting',
   templateUrl: './posting.component.html',
-  styleUrls: ['./posting.component.scss']
+  styleUrls: ['./posting.component.scss'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class PostingComponent {
-  data:any[] = [];
+  postingarray:any[] = [];
   fliterarray:any[] = [];
   searcharray:any[]=[];
   cities: any[] | undefined;
@@ -22,51 +24,27 @@ export class PostingComponent {
   Subscription!: Subscription;
   fliterbody!:FormGroup;
   filterForm: any;
- loader:boolean =false
    first = 0; 
    rows = 2; 
    searchQuery: string = '';
 
 
 
-  constructor(public service:ServicesListingService){
+  constructor(public service:PostingService){
   }
-  getlisting(){
-    this.service.GetListing().subscribe((res:any)=>{
-      this.data=res
-     console.log(this.data)
+  posting(){
+    this.service.GetPosting().subscribe((res:any)=>{
+      this.postingarray=res.data
+     console.log(this.postingarray)
      
     })
   }
- 
-  fliterlistingBIZ(){
-    this.loader=true
 
-    this.service.fliterListing().subscribe((res:any)=>{
-      this.fliterarray= res.body;
-      this.data = this.fliterarray;
-      this.loader=false
-
-
-      console.log(this.fliterarray)
-
-
-
-
-    })
-  }
+  
   onPageChange(event: any): void {
     this.first = event.first;
   }
-  onSearch(): void {
-    if (this.searchQuery.trim() === '') {
-      this.searcharray = this.data;
-    } else {
-      this.searcharray = this.data.filter(item =>
-        item.name.toLowerCase().includes(this.searchQuery.toLowerCase())
-      );
-    }
-  }
+
  
   ngOnInit(): void {
     this.StatesName = [
@@ -128,7 +106,7 @@ export class PostingComponent {
       { name: "BEAUTY SALON SPA", code: "BS" },
     ];
 
-    this.getlisting()
+    this.posting()
   }
   ngDoCheck(): void {
    

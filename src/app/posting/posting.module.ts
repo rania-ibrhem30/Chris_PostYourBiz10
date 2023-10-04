@@ -28,6 +28,7 @@ import { PostingDetalisPageComponent } from './posting-detalis-page/posting-deta
     HttpClientModule,
     ReactiveFormsModule,
     
+    
   ],
   exports:[
     

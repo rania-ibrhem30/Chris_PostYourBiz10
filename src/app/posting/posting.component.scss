@@ -183,61 +183,29 @@
             }
             .tab-content {
                 .tab-pane {
-                    .d-flex {
+                    .data {
                         .card-body {
-                            .d-flex {
-                                h5 {
-                                    font-family: "Lato", sans-serif;
-                                    font-size: 20px;
-                                    line-height: 24px;
-                                    font-weight: 900 !important;
-                                    white-space: nowrap;
-                                    // margin: 0px 36px;;
-                                }
-
-                                span {
-                                    color: #ff8682;
-                                    width: 107px;
-                                    height: 59px;
-                                    font-weight: 700;
-                                    font-size: 20px;
-                                    padding: 0 82px;
-                                    font-family: "Lato", sans-serif;
-                                }
-
-                                small {
-                                    font-family: "Lato", sans-serif;
-                                }
-                            }
-
-                            .heartt {
-                                .heart {
-                                    i {
-                                        border: 1px #258a8b solid !important;
-                                        height: 48px;
-                                        width: 48px;
-                                        border-radius: 10px;
-                                        -webkit-border-radius: 10px;
-                                        -moz-border-radius: 10px;
-                                        -ms-border-radius: 10px;
-                                        -o-border-radius: 10px;
-                                        justify-content: center;
-                                        align-items: center;
-                                        display: flex;
+                            .data {
+                                .row{
+                                    .col-4{
+                                      img{
+                                        width: 200px;
+                                      }
+                                    }
+                                    .col-8{
+                                       .title-name {
+                                            font-family: "Lato", sans-serif !important;
+                                            font-size: 20px;
+                                            line-height: 24px;
+                                            font-weight: 900 !important;
+                                            white-space: nowrap;
+                                            // margin: 0px 36px;;
+                                        }
                                     }
                                 }
                             }
 
-                            .btn {
-                                button {
-                                    height: 48px;
-                                    border-radius: 10px;
-                                    width: 236px;
-                                    background-color: #8dd3bb;
-                                    outline: none;
-                                    border: none;
-                                }
-                            }
+                            
                         }
                     }
                 }
@@ -253,7 +221,7 @@
                 color: #ff8682 !important;
             }
             p-tabPanel {
-                .d-flex {
+                .data {
                     .card {
                         .row {
                             .col-4 {
@@ -269,61 +237,7 @@
                                 -ms-border-radius: 4px;
                                 -o-border-radius: 4px;
 
-                                .card-body {
-                                    .d-flex {
-                                        h5 {
-                                            font-family: "Lato", sans-serif;
-                                            font-size: 20px;
-                                            line-height: 24px;
-                                            font-weight: 900 !important;
-                                            white-space: nowrap;
-                                            margin: 0 36px;
-                                        }
-
-                                        span {
-                                            color: #ff8682;
-                                            width: 107px;
-                                            height: 59px;
-                                            font-weight: 700;
-                                            font-size: 20px;
-                                            padding: 0 82px;
-                                            font-family: "Lato", sans-serif;
-                                        }
-
-                                        small {
-                                            font-family: "Lato", sans-serif;
-                                        }
-                                    }
-
-                                    .heartt {
-                                        .heart {
-                                            i {
-                                                border: 1px #258a8b solid !important;
-                                                height: 48px;
-                                                width: 48px;
-                                                border-radius: 10px;
-                                                -webkit-border-radius: 10px;
-                                                -moz-border-radius: 10px;
-                                                -ms-border-radius: 10px;
-                                                -o-border-radius: 10px;
-                                                justify-content: center;
-                                                align-items: center;
-                                                display: flex;
-                                            }
-                                        }
-                                    }
-
-                                    .btn {
-                                        button {
-                                            height: 48px;
-                                            border-radius: 10px;
-                                            width: 236px;
-                                            background-color: #8dd3bb;
-                                            outline: none;
-                                            border: none;
-                                        }
-                                    }
-                                }
+                               
                             }
                         }
                     }
@@ -576,4 +490,18 @@
 
     }
 
+}
+.title-name {
+    font-family: "Lato", sans-serif !important;
+    font-size: 25px;
+    line-height: 24px;
+    font-weight: 900 !important;
+    white-space: nowrap;
+}
+.description{
+    font-family: "Lato", sans-serif !important;
+
+}
+.width{
+    width: 29.666667%;
 }

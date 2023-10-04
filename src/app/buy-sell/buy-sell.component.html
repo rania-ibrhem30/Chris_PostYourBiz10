@@ -1,4 +1,6 @@
-<section class="searchBar py-5">
+
+
+<section class="searchBar py-5" >
     <div class="container">
       <div class="div-searchBar2 py-2 form-control w-100">
         <div class="form-group">
@@ -19,7 +21,7 @@
       </div>
     </div>
   </section>
-  <section class="Restaurants py-2">
+  <section class="Restaurants py-2" >
     <div class="container">
       <ul class="nav nav-underline m-auto" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -43,7 +45,7 @@
       </ul>
     </div>
   </section>
-  <section class="Area py-3">
+  <section class="Area py-3" >
     <div class="container">
       <div class="row justify-content-between align-items-center d-flex">
         <div class="col-md-6">
@@ -95,8 +97,7 @@
         <div class="tab-content py-5" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
             tabindex="0">
-            <!-- <app-loader *ngIf="data.length <= 0 && fliterarray.length <= 0"></app-loader>
-            <app-loader *ngIf="loader"></app-loader> -->
+            <app-loader *ngIf="loading"></app-loader>
             <div *ngIf="data" class="d-flex gap-3 justify-content-center align-items-center py-3 row">
               <div *ngFor="let item of data.slice(first, first + rows)" class="card my-0 py-0 px-0"
                 style="max-width: 635px;">

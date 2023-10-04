@@ -10,13 +10,15 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BuySellDetalisComponent } from './buy-sell-detalis/buy-sell-detalis.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
     BuySellComponent,
     MapComponent,
     PhotosComponent,
-    BuySellDetalisComponent
+    BuySellDetalisComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,

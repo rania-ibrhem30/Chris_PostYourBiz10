@@ -4,13 +4,15 @@ import { ListingsComponent } from './listings.component';
 import { MapComponent } from './map/map.component';
 import { PhotosComponent } from './photos/photos.component';
 import { ListingDetailsPageComponent } from './listing-details-page/listing-details-page.component';
+import { ItemDetalisComponent } from './item-detalis/item-detalis.component';
 
 const routes: Routes = [
   { path: '', component: ListingsComponent },
   { path: 'grid', component: ListingsComponent },
   {path:'map',component:MapComponent},
   {path:'photos',component:PhotosComponent},
-  {path:'details/:id',component:ListingDetailsPageComponent}
+  {path:'details/:id',component:ListingDetailsPageComponent},
+  {path:'info',component:ItemDetalisComponent}
 
 ];
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ServicesListingService } from 'src/app/listings/services/services-listing.service';
+import { PostingService } from '../services/posting.service';
 
 @Component({
   selector: 'app-posting-detalis-page',
@@ -11,17 +12,20 @@ import { ServicesListingService } from 'src/app/listings/services/services-listi
 export class PostingDetalisPageComponent {
   id : any;
   datainfo : any;
-  imgs : any[] = [];
+  imgs : any[] = [] ;
   photo : any[] = [];
   twoImgs : boolean = false;
   displayCount : number = 4;
-  img : any[] = [];
+  img: any;
   isVisible = false;
   displayBasic : boolean = false;
   galleryphotos : string[] = [];
   galleryphotosmobile : string[] = [];
+  displayCustom: boolean = false;
+  activeIndex: number = 0;
+  images: any[] | undefined;
 
-  constructor(private service : ServicesListingService, private route:ActivatedRoute) {
+  constructor(private service : PostingService, private route:ActivatedRoute) {
       this.id = route.snapshot.paramMap.get('id');
   }
 
@@ -56,7 +60,7 @@ export class PostingDetalisPageComponent {
       nav: false
   };
   getdetalisId() {
-      this.service.GetListingByID(this.id).subscribe((res : any) => {
+      this.service.GetPostingByID(this.id).subscribe((res : any) => {
           this.datainfo = res.data;
           this.galleryphotos = res.data.images;
           this.imgs = res.data.images;
@@ -64,9 +68,6 @@ export class PostingDetalisPageComponent {
           if (this.imgs.length == 2) {
               this.twoImgs = true;
           }
-          // console.log(this.imgs)
-          // console.log("rania", res);
-          // console.log(this.imgs);
           console.log(this.galleryphotos);
       });
   }
@@ -87,16 +88,25 @@ export class PostingDetalisPageComponent {
       },
   ];
 
-  getimges() {
-    this.service.GetListingByID(this.id).subscribe((res : any) => {
-        this.datainfo = res.data;
-        this.galleryphotos = res.data.images;
+  getImages() {
+    this.service.GetPostingByID(this.id).subscribe((res: any) => {
+      this.datainfo = res.data;
+      this.galleryphotos = res.data.images;
+      this.imgs = this.galleryphotos.map((image: any) => ({
+        itemImageSrc: image.url
+      }));
+      this.displayCustom = true;
     });
+  
 }
 
   ngOnInit(): void {
       this.getdetalisId();
       this.galleryphotos = this.img;
   }
+  imageClick(index: number) {
+    this.activeIndex = index;
+    this.displayCustom = true;
+}
 
 }
