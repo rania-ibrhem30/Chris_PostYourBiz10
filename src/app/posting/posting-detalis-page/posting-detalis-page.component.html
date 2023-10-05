@@ -5,60 +5,48 @@
                 <img src="{{ datainfo.business.logo}}" alt="" width="50" height="50" class="rounded-circle" />
                 <div>
                     <p class="p-0 m-0">{{ datainfo.title}}</p>
-                    <small>{{datainfo.postTime}}</small>
+                    <small>{{datainfo.timepost}}</small>
                 </div>
             </div>
-            <div class="card-imgs py-3"   ngFor="index = index">
+            <div class="card-imgs py-3">
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 1">
-                    <div class="col-12 col-12" *ngFor="let item of imgs">
-                        <!-- <img src="{{item}}" alt="" class="rounded rounded-3 w-100"  style="cursor: pointer" (click)="imageClick(index)" > -->
+                    <div class="col-md-12 col-12" *ngFor="let item of imgs">
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" class="custom-image"></p-image>
+
 
                     </div>
                 </div>
-                <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 2">
-                    <div class="col-md-5 col-12" *ngFor="let item of imgs">
-                        <img src="{{item}}" alt="" class="rounded rounded-3 w-100" >
+                <div class="row gap-2 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 2">
+                    <div class="col-md-5 col-6" *ngFor="let item of imgs">
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true"></p-image>
 
                     </div>
                 </div>
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 3">
                     <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <img src="{{item}}" alt="" class="rounded rounded-3 w-100" height="330" >
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true"></p-image>
 
                     </div>
                 </div>
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 4">
                     <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <img src="{{item}}" alt="" class="rounded rounded-3 w-100" height="300" >
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width="200"></p-image>
 
                     </div>
                 </div>
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length > 4">
                     <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <img src="{{item}}" alt="" class="rounded rounded-3 w-100" height="300" >
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width="250"></p-image>
 
                     </div>
                 </div>
+                
             </div>
             <div>
                 <p>{{datainfo.content}}</p>
             </div>
         </div>
     </div>
-    <p-galleria *ngIf="imgs"
-    [value]="imgs"
-    [(visible)]="displayCustom"
-    [(activeIndex)]="activeIndex"
-    [containerStyle]="{ 'max-width': '850px' }"
-    [numVisible]="7"
-    [circular]="true"
-    [fullScreen]="true"
-    [showItemNavigators]="true"
-    [showThumbnails]="false"
-  >
-    <ng-template pTemplate="img" let-item>
-      <img [src]="img" style="width: 100%; display: block;" />
-    </ng-template>
-  </p-galleria>
+ 
         
 </section>

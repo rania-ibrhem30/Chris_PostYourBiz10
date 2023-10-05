@@ -9,6 +9,7 @@ import { PaginatorModule } from 'primeng/paginator';
 import { TabViewModule } from 'primeng/tabview';
 import { GalleriaModule } from 'primeng/galleria';
 import { PasswordModule } from 'primeng/password';
+import { ImageModule } from 'primeng/image';
 
 
 
@@ -26,7 +27,8 @@ import { PasswordModule } from 'primeng/password';
       PaginatorModule,
       TabViewModule,
       GalleriaModule,
-      PasswordModule
+      PasswordModule,
+      ImageModule
       
       
 

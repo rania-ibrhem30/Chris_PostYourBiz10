@@ -1,74 +1,39 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { ServicesListingService } from 'src/app/listings/services/services-listing.service';
 import { PostingService } from '../services/posting.service';
 
 @Component({
   selector: 'app-posting-detalis-page',
   templateUrl: './posting-detalis-page.component.html',
-  styleUrls: ['./posting-detalis-page.component.scss']
+  styleUrls: ['./posting-detalis-page.component.scss'],
+  encapsulation: ViewEncapsulation.None
+
 })
 export class PostingDetalisPageComponent {
   id : any;
   datainfo : any;
-  imgs : any[] = [] ;
   photo : any[] = [];
   twoImgs : boolean = false;
   displayCount : number = 4;
   img: any;
   isVisible = false;
-  displayBasic : boolean = false;
   galleryphotos : string[] = [];
-  galleryphotosmobile : string[] = [];
-  displayCustom: boolean = false;
+  imgs: any[] = []; // Assuming imgs is an array of strings representing image URLs
+  displayCustom: boolean = true; // Assuming you want to display the galleria by default
   activeIndex: number = 0;
-  images: any[] | undefined;
+  timepost:any;
 
   constructor(private service : PostingService, private route:ActivatedRoute) {
       this.id = route.snapshot.paramMap.get('id');
   }
 
-  customOptions : OwlOptions = {
-      loop: true,
-      autoplay: false,
-      mouseDrag: true,
-      touchDrag: false,
-      pullDrag: false,
-      dots: false,
-      navSpeed: 1000,
-      navText: [
-          '', ''
-      ],
-      responsive: {
-          0: {
-              items: 1
-          },
-          400: {
-              items: 1
-          },
-          740: {
-              items: 1
-          },
-          940: {
-              items: 1
-          },
-          1200: {
-              items: 1
-          }
-      },
-      nav: false
-  };
+ 
   getdetalisId() {
       this.service.GetPostingByID(this.id).subscribe((res : any) => {
           this.datainfo = res.data;
+          this.timepost=res.data.dates
           this.galleryphotos = res.data.images;
           this.imgs = res.data.images;
-
-          if (this.imgs.length == 2) {
-              this.twoImgs = true;
-          }
-          console.log(this.galleryphotos);
       });
   }
 
@@ -88,25 +53,39 @@ export class PostingDetalisPageComponent {
       },
   ];
 
-  getImages() {
-    this.service.GetPostingByID(this.id).subscribe((res: any) => {
-      this.datainfo = res.data;
-      this.galleryphotos = res.data.images;
-      this.imgs = this.galleryphotos.map((image: any) => ({
-        itemImageSrc: image.url
-      }));
-      this.displayCustom = true;
-    });
+//   getImages() {
+//     this.service.GetPostingByID(this.id).subscribe((res: any) => {
+//       this.datainfo = res.data;
+//       this.galleryphotos = res.data.images;
+//       this.imgs = this.galleryphotos.map((image: any) => ({
+//         itemImageSrc: image.url
+//       }));
+//       this.displayCustom = false;
+//     });
   
-}
+// }
 
   ngOnInit(): void {
       this.getdetalisId();
+      this.getImages()
       this.galleryphotos = this.img;
+
   }
-  imageClick(index: number) {
-    this.activeIndex = index;
-    this.displayCustom = true;
+
+getImages(): void {
+    this.service.GetPostingByID(this.id).subscribe((res: any) => {
+      this.datainfo = res.data;
+      this.imgs = res.data.images;
+      console.log(this.imgs)
+    });
+  }
+
+  imageClick(index: number): void {
+    console.log('Image clicked at index:', index);
+    this.displayCustom = true
+  }
+
+  
 }
 
-}
+
