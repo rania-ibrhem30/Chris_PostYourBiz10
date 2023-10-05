@@ -15,7 +15,8 @@ export class ServicesListingService {
     state: new FormControl<string | null>(null)
   });
   filterbodyhome: FormGroup = new FormGroup({
-    state: new FormControl<string | null>(null)
+    state: new FormControl<string | null>(null),
+    categoriesName:new FormControl<string | null>(null)
   });
   constructor(private _http:HttpClient){}
 

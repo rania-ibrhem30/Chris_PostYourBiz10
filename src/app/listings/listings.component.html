@@ -7,7 +7,7 @@
             <p-dropdown [options]="categories" optionlabel="name" placeholder="Listings"></p-dropdown>
             <p-dropdown formControlName="state" [options]="StatesName" optionLabel="name" placeholder="State">
             </p-dropdown>
-            <p-dropdown [options]="categories" optionlabel="name" placeholder="Category"></p-dropdown>
+            <p-dropdown [options]="categories" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
             <input type="text" pInputText placeholder="Zip Code" />
 
             <button class="Search-btn ms-5" (click)="fliterlistingBIZ()">
