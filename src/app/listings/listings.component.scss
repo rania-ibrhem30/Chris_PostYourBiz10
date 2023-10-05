@@ -258,7 +258,7 @@
                         .row {
                             .col-4 {
                                 img {
-                                    height: 219px;
+                                    height: 222px !important;
                                 }
                             }
 
@@ -576,4 +576,8 @@
 
     }
 
+}
+.sfarray{
+    width: 300px;
+    height: 222px;
 }
