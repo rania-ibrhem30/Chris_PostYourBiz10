@@ -54,6 +54,7 @@
                 .col-md-3{
                     .p-image-preview-container>img{
                         width: 300px !important;
+                        height: 340px;
                         border-radius: 10px !important;
                         -webkit-border-radius: 10px !important;
                         -moz-border-radius: 10px !important;
@@ -61,7 +62,8 @@
                         -o-border-radius: 10px !important;
                     }
                     .p-image-preview-indicator{
-                        width: 300px;
+                        width: 300px !important;
+                        height: 340px;
                         border-radius: 10px !important;
                         -webkit-border-radius: 10px !important;
                         -moz-border-radius: 10px !important;
@@ -130,9 +132,7 @@
                             -o-border-radius: 10px !important;
                         }
                     }
-                    // .col-md-3{
-
-                    // }
+                    
                   }
                 }
             }

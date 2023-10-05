@@ -24,16 +24,20 @@ export class PostingComponent {
   Subscription!: Subscription;
   fliterbody!:FormGroup;
   filterForm: any;
-   first = 0; 
-   rows = 2; 
-   searchQuery: string = '';
+  first = 0; 
+  rows = 2; 
+  searchQuery: string = '';
+  loading:boolean =false
 
 
 
   constructor(public service:PostingService){
   }
   posting(){
+    this.loading=true
     this.service.GetPosting().subscribe((res:any)=>{
+      this.loading=false
+
       this.postingarray=res.data
      console.log(this.postingarray)
      

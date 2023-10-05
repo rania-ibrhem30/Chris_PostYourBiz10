@@ -184,8 +184,10 @@
             .tab-content {
                 .tab-pane {
                     .data {
+                        cursor: pointer;
                         .card-body {
                             .data {
+                                cursor: pointer;
                                 .row{
                                     .col-4{
                                       img{
@@ -355,11 +357,7 @@
                             align-items: center;
                             display: flex;
                             .row {
-                                .col-4 {
-                                    // img {
-                                    //     height: 219px;
-                                    // }
-                                }
+                                
                                 .col-8 {
                                     .card-body {
                                         .d-flex {
@@ -516,6 +514,17 @@
             }
         }
 
+    }
+    .title-name {
+        font-family: "Lato", sans-serif !important;
+        font-size: 17px;
+        line-height: 14px;
+        font-weight: 900 !important;
+        white-space: nowrap;
+    }
+    .description{
+        font-family: "Lato", sans-serif !important;
+    
     }
 
 }

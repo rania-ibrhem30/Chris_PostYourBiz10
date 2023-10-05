@@ -9,6 +9,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
 import { PostingDetalisPageComponent } from './posting-detalis-page/posting-detalis-page.component';
+import { LoaderComponent } from './loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { PostingDetalisPageComponent } from './posting-detalis-page/posting-deta
     MapComponent,
     PhotosComponent,
     PostingDetalisPageComponent,
+    LoaderComponent,
     
     
   ],

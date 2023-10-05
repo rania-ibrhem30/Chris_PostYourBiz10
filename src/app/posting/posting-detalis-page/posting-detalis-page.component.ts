@@ -18,18 +18,20 @@ export class PostingDetalisPageComponent {
   img: any;
   isVisible = false;
   galleryphotos : string[] = [];
-  imgs: any[] = []; // Assuming imgs is an array of strings representing image URLs
-  displayCustom: boolean = true; // Assuming you want to display the galleria by default
+  imgs: any[] = [];
+  displayCustom: boolean = true; 
   activeIndex: number = 0;
   timepost:any;
-
+  loading:boolean = false
   constructor(private service : PostingService, private route:ActivatedRoute) {
       this.id = route.snapshot.paramMap.get('id');
   }
 
  
   getdetalisId() {
+   this.loading = true
       this.service.GetPostingByID(this.id).subscribe((res : any) => {
+        this.loading= false
           this.datainfo = res.data;
           this.timepost=res.data.dates
           this.galleryphotos = res.data.images;
@@ -73,7 +75,9 @@ export class PostingDetalisPageComponent {
   }
 
 getImages(): void {
+  this.loading=true
     this.service.GetPostingByID(this.id).subscribe((res: any) => {
+      this.loading=false
       this.datainfo = res.data;
       this.imgs = res.data.images;
       console.log(this.imgs)

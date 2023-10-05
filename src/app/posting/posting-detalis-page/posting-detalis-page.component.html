@@ -1,6 +1,8 @@
 <section class="posting py-5">
+    <app-loader *ngIf="loading"></app-loader>
+
     <div class="container" *ngIf="datainfo">
-        <div class="box-white">
+        <div class="box-white" >
             <div class="div-info d-flex align-items-center justify-content-start gap-3">
                 <img src="{{ datainfo.business.logo}}" alt="" width="50" height="50" class="rounded-circle" />
                 <div>
@@ -30,20 +32,20 @@
                 </div>
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 4">
                     <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width="200"></p-image>
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width=""></p-image>
 
                     </div>
                 </div>
                 <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length > 4">
                     <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width="250"></p-image>
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width=""></p-image>
 
                     </div>
                 </div>
                 
             </div>
             <div>
-                <p>{{datainfo.content}}</p>
+                <p class="text-start">{{datainfo.content}}</p>
             </div>
         </div>
     </div>

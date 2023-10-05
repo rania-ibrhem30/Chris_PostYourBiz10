@@ -1,11 +1,14 @@
-<main class="d-flex flex-column">
-<nav *ngIf="auth">
-    <app-navbar></app-navbar>
-</nav>
-<section>
-    <router-outlet></router-outlet>
-</section>
-<footer *ngIf="auth">
+<main class="page-container">
+
+<div class="content-container">
+    <nav *ngIf="auth">
+        <app-navbar></app-navbar>
+    </nav>
+    <section>
+        <router-outlet></router-outlet>
+    </section>
+</div>
+<footer *ngIf="auth" class="footer">
     <app-footer></app-footer>
 </footer>
 </main>
