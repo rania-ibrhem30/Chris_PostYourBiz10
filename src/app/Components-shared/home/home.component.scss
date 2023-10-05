@@ -63,7 +63,7 @@ section .header {
             /* or inline-flex if you want it inline */
             justify-content: center !important;
             align-items: center !important;
-            gap: 5rem;
+            gap: 3rem;
 
             /* Adjust the gap as needed */
             .p-dropdown {
@@ -865,4 +865,8 @@ section .Restaurants {
     }
    
   }
+}
+.p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+  color: #258a8b !important;
+  border-color: #258a8b !important;
 }

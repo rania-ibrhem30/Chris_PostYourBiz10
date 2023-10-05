@@ -10,8 +10,8 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
-  cities: any[] | undefined;
-  categories:any[]|undefined;
+  // cities: any[] | undefined;
+  // categories:any[]|undefined;
   categoriesName:string|any
   StatesName: string | any;
    arrayfromnavbar:any[]=[]
@@ -22,11 +22,6 @@ export class HomeComponent {
     
   }
   filterlistingBIZ() {
-    // this.service.filterbodyhomepage().subscribe((res: any) => {
-    //   this.arrayfromnavbar = res;
-    //   console.log("rania", this.arrayfromnavbar);
-    //   this.router.navigate(['/Listings'], { queryParams: { arrayData: JSON.stringify(this.arrayfromnavbar) } });
-    // });
     console.log(this.service.filterbodyhome.value)
     this.router.navigate(['/Listings'], {
       queryParams: {
@@ -88,7 +83,7 @@ export class HomeComponent {
     { name: "Wisconsin", code: "WI" },
     { name: "Wyoming", code: "WY" },
   ];
-   this.categories = [
+   this.categoriesName = [
     { name: "MASSAGE SPA", cities: "SPA" },
     { name: "RESTAURANTS ", cities: "RS" },
     { name: "BEAUTY SALON SPA", code: "BS" },
@@ -99,7 +94,7 @@ export class HomeComponent {
     if (params && params['arrayData']) {
       this.arrayData = JSON.parse(params['arrayData']);
       console.log(this.arrayData);
-      // Perform further manipulation with the arrayData
+      
     }
   })
   

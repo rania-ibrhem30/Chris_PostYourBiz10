@@ -18,11 +18,10 @@
       <div class="form-group">
         <div class="justify-content-center align-items-center d-flex div-searchBar">
           <form [formGroup]="service.filterbodyhome" >
-            <p-dropdown [options]="categories" optionlabel="name" placeholder="Listings"></p-dropdown>
+            <p-dropdown formControlName="Listings" optionlabel="Listings" placeholder="Listings"></p-dropdown>
             <p-dropdown formControlName="state" [options]="StatesName" optionLabel="name" placeholder="State">
             </p-dropdown>
-            <p-dropdown [options]="categories" optionlabel="name" placeholder="Category"></p-dropdown>
-            <input type="text" pInputText placeholder="Zip Code" />
+            <p-dropdown [options]="categoriesName" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
           
             <button class="Search-btn ms-5" (click)="filterlistingBIZ()">
               Search
