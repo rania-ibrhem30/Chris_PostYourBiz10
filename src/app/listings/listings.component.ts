@@ -30,6 +30,7 @@ export class ListingsComponent implements DoCheck {
   rows = 2;
   searchQuery: string = '';
   arrayData: any;
+  loading:boolean = false
 
 
 
@@ -37,7 +38,10 @@ export class ListingsComponent implements DoCheck {
   constructor(public service: ServicesListingService , public _router:ActivatedRoute) {
   }
   getlisting() {
+    this.loading= true
     this.service.GetListing().subscribe((res: any) => {
+      this.loading= false
+
       this.data = res
       console.log(this.data)
 
@@ -45,7 +49,7 @@ export class ListingsComponent implements DoCheck {
   }
 
   fliterlistingBIZ() {
-    this.loader = true
+    this.loading = true
     this.service.fliterListing().subscribe((res: any) => {
       this.fliterarray = res.body; 
       this.data = this.fliterarray;
