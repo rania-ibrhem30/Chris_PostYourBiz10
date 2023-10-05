@@ -99,10 +99,10 @@
             <div routerLink="details/{{ item.id }}" *ngFor="let item of postingarray" class="card my-0 py-0 px-0"
               style="max-width: 1250px;">
               <div class="row g-0">
-                <div class="col-5 width">
-                  <img src="{{item.business.logo}}" class="rounded-start" alt="..." height="200" />
+                <div class="col-4">
+                  <img src="{{item.business.logo}}" class="rounded-start" alt="..." class="w-100" height="200" />
                 </div>
-                <div class="col-7">
+                <div class="col-8">
                   <div class="card-body">
                      <div><h5 class="title-name">{{item.title}}</h5></div>
                      <div><p class="title-time text-muted">{{item.postTime}}</p></div>

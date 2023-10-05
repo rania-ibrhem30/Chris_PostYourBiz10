@@ -348,19 +348,17 @@
             }
             .tab-content {
                 .tab-pane {
-                    .d-flex {
-                        padding: 0 10px !important;
-
-
+                    .data {
+                        // padding: 0 10px !important;
                         .card {
                             justify-content: center;
                             align-items: center;
                             display: flex;
                             .row {
                                 .col-4 {
-                                    img {
-                                        height: 219px;
-                                    }
+                                    // img {
+                                    //     height: 219px;
+                                    // }
                                 }
                                 .col-8 {
                                     .card-body {
@@ -426,6 +424,36 @@
                     }
                 }
             }
+            // .tab-content {
+            //     .tab-pane {
+            //         .data {
+            //             .card-body {
+            //                 .data {
+            //                     .row{
+            //                         .col-4{
+            //                           img{
+            //                             width: 200px;
+            //                           }
+            //                         }
+            //                         .col-8{
+            //                            .title-name {
+            //                                 font-family: "Lato", sans-serif !important;
+            //                                 font-size: 20px;
+            //                                 line-height: 24px;
+            //                                 font-weight: 900 !important;
+            //                                 white-space: nowrap;
+            //                                 // margin: 0px 36px;;
+            //                             }
+            //                         }
+            //                     }
+            //                 }
+
+                            
+            //             }
+            //         }
+            //     }
+
+            // }
         }
     }
     .Restaurants {
@@ -502,6 +530,6 @@
     font-family: "Lato", sans-serif !important;
 
 }
-.width{
-    width: 29.666667%;
-}
+// .width{
+//     width: 29.666667%;
+// }
