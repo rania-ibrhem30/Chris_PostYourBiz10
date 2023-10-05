@@ -10,6 +10,7 @@ import { TabViewModule } from 'primeng/tabview';
 import { GalleriaModule } from 'primeng/galleria';
 import { PasswordModule } from 'primeng/password';
 import { ImageModule } from 'primeng/image';
+import { CardModule } from 'primeng/card';
 
 
 
@@ -28,7 +29,7 @@ import { ImageModule } from 'primeng/image';
       TabViewModule,
       GalleriaModule,
       PasswordModule,
-      ImageModule
+      ImageModule,CardModule
       
       
 
