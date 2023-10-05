@@ -9,7 +9,6 @@ import { ListingDetailsPageComponent } from './listing-details-page/listing-deta
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
-import { ItemDetalisComponent } from './item-detalis/item-detalis.component';
 
 
 
@@ -19,7 +18,6 @@ import { ItemDetalisComponent } from './item-detalis/item-detalis.component';
     MapComponent,
     PhotosComponent,
     ListingDetailsPageComponent,
-    ItemDetalisComponent,
     
   ],
   imports: [
