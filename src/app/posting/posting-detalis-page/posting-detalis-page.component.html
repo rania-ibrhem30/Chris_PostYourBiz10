@@ -11,38 +11,40 @@
                 </div>
             </div>
             <div class="card-imgs py-3">
-                <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 1">
+                <!-- <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 1">
                     <div class="col-md-12 col-12" *ngFor="let item of imgs">
                         <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" class="custom-image"></p-image>
 
 
                     </div>
-                </div>
-                <div class="row gap-2 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 2">
-                    <div class="col-md-5 col-6" *ngFor="let item of imgs">
-                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true"></p-image>
-
-                    </div>
-                </div>
-                <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 3">
-                    <div class="col-md-3 col-12" *ngFor="let item of imgs">
-                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true"></p-image>
-
-                    </div>
-                </div>
-                <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length == 4">
-                    <div class="col-md-3 col-12" *ngFor="let item of imgs">
+                    
+                </div> -->
+                <div class="d-flex flex-wrap gap-3 m-auto one" *ngIf="imgs.length == 1">
+                    <div class="" *ngFor="let item of imgs">
                         <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width=""></p-image>
 
                     </div>
                 </div>
-                <div class="row gap-1 justify-content-start align-items-start d-flex" *ngIf="imgs.length > 4">
-                    <div class="col-md-3 col-12" *ngFor="let item of imgs">
+             
+                <div class="d-flex flex-wrap gap-3 m-auto two" *ngIf="imgs.length == 2">
+                    <div class="" *ngFor="let item of imgs">
                         <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width=""></p-image>
 
                     </div>
                 </div>
-                
+                <div class="d-flex flex-wrap gap-3 m-auto three" *ngIf="imgs.length == 3">
+                    <div class="" *ngFor="let item of imgs">
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width=""></p-image>
+
+                    </div>
+                </div>
+             
+                <div class="d-flex flex-wrap gap-2 m-auto four" *ngIf="imgs.length >= 4">
+                    <div class="" *ngFor="let item of imgs">
+                        <p-image src="{{item}}" previewImageSrc="{{item}}" alt="Image" [preview]="true" width="400"></p-image>
+
+                    </div>
+                </div>
             </div>
             <div>
                 <p class="text-start">{{datainfo.content}}</p>
