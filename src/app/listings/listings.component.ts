@@ -17,7 +17,7 @@ export class ListingsComponent implements DoCheck {
   searcharray: any[] = [];
   cities: any[] | undefined;
   categories: any[] | undefined;
-  categoriesName: string | any
+  // categoriesName: string | any
   citiesName: string | any;
   StatesName: any[] | undefined;
   state: string | any;
@@ -41,7 +41,6 @@ export class ListingsComponent implements DoCheck {
     this.loading= true
     this.service.GetListing().subscribe((res: any) => {
       this.loading= false
-
       this.data = res
       console.log(this.data)
 
@@ -139,7 +138,7 @@ export class ListingsComponent implements DoCheck {
     ;
    ;
    this._router.queryParams.subscribe(params => {
-      console.log(params)
+      // console.log(params)
       if(Object.keys(params).length) {
         this.service.fliterListing(params).subscribe(res => {
           this.data=res.body

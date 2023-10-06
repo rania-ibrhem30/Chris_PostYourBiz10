@@ -1,5 +1,5 @@
 <section class="searchBar py-5">
-  <div class="container">
+  <div class="container" *ngIf="data">
     <div class="div-searchBar2 py-2 form-control w-100">
       <div class="form-group">
         <div class="div-searchBar justify-content-center align-items-center d-flex gap-1">
@@ -7,7 +7,7 @@
             <p-dropdown [options]="categories" optionlabel="name" placeholder="Listings"></p-dropdown>
             <p-dropdown formControlName="state" [options]="StatesName" optionLabel="name" placeholder="State">
             </p-dropdown>
-            <p-dropdown [options]="categories" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
+            <p-dropdown [options]="categories" optionLabel="name" placeholder="Category"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
             <input type="text" pInputText placeholder="Zip Code" />
 
             <button class="Search-btn ms-5" (click)="fliterlistingBIZ()">
@@ -20,7 +20,7 @@
   </div>
 </section>
 <section class="Restaurants py-2">
-  <div class="container">
+  <div class="container" *ngIf="data">
     <ul class="nav nav-underline m-auto" id="myTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
@@ -78,7 +78,7 @@
             </div>
           </div>
         </div>
-        <p class="ps-5">{{data?.length}} Results</p>
+        <p class="ps-5" *ngIf="data">{{data?.length}} Results</p>
       </div>
       <div class="col-md-6">
         <div class="div-searchBar py-2">
@@ -95,7 +95,7 @@
       <div class="tab-content py-5" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
           tabindex="0">
-         <app-loader *ngIf="data.length <= 0 && fliterarray.length <= 0"></app-loader>
+         <!-- <app-loader *ngIf="data.length <= 0 && fliterarray.length <= 0"></app-loader> -->
          <div *ngIf="data" class="rania d-flex gap-3 justify-content-center align-items-center py-3 row px-3">
           <div *ngFor="let item of data.slice(first, first + rows)" class="card my-0 py-0 px-0" style="max-width: 635px;">
             <div class="row g-0">

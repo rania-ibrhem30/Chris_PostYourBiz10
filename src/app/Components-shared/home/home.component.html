@@ -18,7 +18,7 @@
       <div class="form-group">
         <div class="justify-content-center align-items-center d-flex div-searchBar">
           <form [formGroup]="service.filterbodyhome" >
-            <p-dropdown formControlName="Listings" optionlabel="Listings" placeholder="Listings"></p-dropdown>
+            <p-dropdown optionlabel="Listings" placeholder="Listings"></p-dropdown>
             <p-dropdown formControlName="state" [options]="StatesName" optionLabel="name" placeholder="State">
             </p-dropdown>
             <p-dropdown [options]="categoriesName" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
