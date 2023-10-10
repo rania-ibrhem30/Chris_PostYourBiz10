@@ -95,7 +95,7 @@ export class ListingDetailsPageComponent {
         this.galleryphotos = this.img;
        this.route.params.subscribe(params =>{
         console.log()
-        this.getdetalisId(this.id);
+        this.getdetalisId(params);
 
      })
 
