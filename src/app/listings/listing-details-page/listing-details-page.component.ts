@@ -53,7 +53,7 @@ export class ListingDetailsPageComponent {
         nav: false
     };
     getdetalisId(id:any) {
-        this.service.GetListingByID(this.id).subscribe((res : any) => {
+        this.service.GetListingByID(id).subscribe((res : any) => {
             this.datainfo = res.data;
             this.galleryphotos = res.data.images;
             this.imgs = res.data.images;
@@ -93,9 +93,9 @@ export class ListingDetailsPageComponent {
 
     ngOnInit(): void {
         this.galleryphotos = this.img;
-       this.route.params.subscribe(params =>{
-        console.log()
-        this.getdetalisId(params);
+       this.route.params.subscribe((params:any) =>{
+        console.log(params )
+       this.getdetalisId(params.id);
 
      })
 
