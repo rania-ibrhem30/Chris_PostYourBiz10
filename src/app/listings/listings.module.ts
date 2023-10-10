@@ -10,6 +10,7 @@ import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { HttpClientModule } from '@angular/common/http';
 import { LoaderComponent } from './loader/loader.component';
+import { SimilarworkComponent } from './similarwork/similarwork.component';
 
 
 
@@ -20,6 +21,7 @@ import { LoaderComponent } from './loader/loader.component';
     PhotosComponent,
     ListingDetailsPageComponent,
     LoaderComponent,
+    SimilarworkComponent,
     
   ],
   imports: [

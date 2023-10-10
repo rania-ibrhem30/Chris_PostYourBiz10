@@ -15,6 +15,8 @@ export class ListingDetailsPageComponent {
     displayBasic : boolean = false;
     galleryphotos : string[] = [];
     galleryphotosmobile : string[] = [];
+    data:any[]=[];
+    itemId:any;
 
     constructor(private service : ServicesListingService, private route:ActivatedRoute) {
         this.id = route.snapshot.paramMap.get('id');
@@ -50,7 +52,7 @@ export class ListingDetailsPageComponent {
         },
         nav: false
     };
-    getdetalisId() {
+    getdetalisId(id:any) {
         this.service.GetListingByID(this.id).subscribe((res : any) => {
             this.datainfo = res.data;
             this.galleryphotos = res.data.images;
@@ -90,7 +92,13 @@ export class ListingDetailsPageComponent {
   }
 
     ngOnInit(): void {
-        this.getdetalisId();
         this.galleryphotos = this.img;
+       this.route.params.subscribe(params =>{
+        console.log()
+        this.getdetalisId(this.id);
+
+     })
+
     }
+  
 }
