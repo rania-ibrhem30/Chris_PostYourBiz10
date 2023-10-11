@@ -1,7 +1,7 @@
 {
     "version": 2,
     "public": true,
-    "name": "site-10",
+    "name": "Site-10",
     "rewrites": [
       { "source": "/(.*)", "destination": "/api" }
     ],
