@@ -52,6 +52,7 @@ export class ListingDetailsPageComponent {
         },
         nav: false
     };
+    
     getdetalisId(id:any) {
         this.service.GetListingByID(id).subscribe((res : any) => {
             this.datainfo = res.data;

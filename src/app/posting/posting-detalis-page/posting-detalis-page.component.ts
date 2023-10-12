@@ -23,6 +23,7 @@ export class PostingDetalisPageComponent {
   activeIndex: number = 0;
   timepost:any;
   loading:boolean = false
+  displayBasic:boolean=true
   constructor(private service : PostingService, private route:ActivatedRoute) {
       this.id = route.snapshot.paramMap.get('id');
   }

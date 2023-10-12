@@ -49,23 +49,26 @@ section .header {
     }
 
     .div-searchBar2 {
-      background-color: #ffff;
-      margin: 0px 160px;
+      // background-color: #ffff;
+      // margin: 0px 200px;
+      // height: 65px;
+      // justify-content: center;
+      // align-items: start;
+      // display: flex;
 
       .form-group {
         position: relative;
 
         .div-searchBar {
-          margin-right: 168px;
+          // margin-right: 168px;
 
           form {
             display: flex !important;
-            /* or inline-flex if you want it inline */
             justify-content: center !important;
             align-items: center !important;
             gap: 3rem;
+            height: 44px;
 
-            /* Adjust the gap as needed */
             .p-dropdown {
               border: none;
               width: 100%;
@@ -88,10 +91,10 @@ section .header {
             }
 
             .Search-btn {
-              background-color: #0F3D3E;
-              color: #ffff;
+              // background-color: #0F3D3E;
+              // color: white;
               position: absolute;
-              right: -6px;
+              right: -2px !important;
               border-radius: 12px;
               -webkit-border-radius: 12px;
               -moz-border-radius: 12px;
@@ -303,6 +306,7 @@ section .Restaurants {
 
   .p-tabview-nav-content {
     width: 50%;
+    margin: 17px 0px !important;
   }
 }
 
@@ -857,15 +861,17 @@ section .Restaurants {
           }
         }
       }
-       .container .row .col-md-2 .box-card .rounded-circle{
+
+      .container .row .col-md-2 .box-card .rounded-circle {
         background-color: white;
         height: 200px;
         width: 138px;
       }
     }
-   
+
   }
 }
+
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
   color: #258a8b !important;
   border-color: #258a8b !important;

@@ -1,71 +1,81 @@
 .searchBar {
     .container {
         .div-searchBar2 {
-          
-            .form-group {
-                flex: 1; /* Adjust the flex value as needed */
-                position: relative;
-                margin: 0;
-                padding: 0;
+            height: 65px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
 
-                .div-searchBar {
-              
-                   form{
+        .form-group {
+            flex: 1;
+            /* Adjust the flex value as needed */
+            position: relative;
+            margin: 0;
+            padding: 0;
+
+            .div-searchBar {
+
+                form {
                     display: flex !important;
                     justify-content: center !important;
                     align-items: center !important;
-                    gap: 5rem !important; 
+                    gap: 5rem !important;
                     margin-right: 228px;
+
                     .p-dropdown {
                         border: none;
                         width: 100%;
                         background-color: transparent;
                         margin: 0 15px;
                     }
+
                     input,
                     input:focus,
                     input:active {
                         border: none;
                         outline: none;
                     }
-                    
-                  small {
-                    white-space: nowrap;
-                    font-family: 'Lato', sans-serif;
-                    font-size: 14px !important;
 
-                  }
-                  
-                  .Search-btn {
-                    background-color: #0F3D3E;
-                    color: #ffff;
-                    position: absolute;
-                    right: -6px;
-                    border-radius: 12px;
-                    -webkit-border-radius: 12px;
-                    -moz-border-radius: 12px;
-                    -ms-border-radius: 12px;
-                    -o-border-radius: 12px;
-                    width: 100px;
-                    height: 38px;
-                }
-                small {
-                    font-size: 12px;
-                }
+                    small {
+                        white-space: nowrap;
+                        font-family: 'Lato', sans-serif;
+                        font-size: 14px !important;
+
+                    }
+
+                    .Search-btn {
+                        background-color: #0F3D3E;
+                        color: #ffff;
+                        position: absolute;
+                        right: -6px;
+                        border-radius: 12px;
+                        -webkit-border-radius: 12px;
+                        -moz-border-radius: 12px;
+                        -ms-border-radius: 12px;
+                        -o-border-radius: 12px;
+                        width: 100px;
+                        height: 38px;
+                    }
+
+                    small {
+                        font-size: 12px;
+                    }
 
 
-                   }
-                
-                 
-
-                  }
                 }
 
-                
-            
+
+
+            }
         }
+
+
+
     }
 }
+
+
 .Restaurants {
     p {
         line-height: 38.4px;
@@ -74,6 +84,7 @@
         color: #000000;
         font-weight: 900 !important;
     }
+
     .div-box-navs {
         justify-content: center !important;
         align-items: center !important;
@@ -125,6 +136,7 @@
         }
     }
 }
+
 .Area {
     .container {
         .row {
@@ -136,6 +148,7 @@
                     font-weight: 800;
 
                 }
+
                 .nav-tabs {
                     .nav-link {
                         color: #000000;
@@ -144,6 +157,7 @@
                         font-family: 'Lato', sans-serif !important;
 
                     }
+
                     .nav-link.active {
                         color: #0F3D3E;
                         border-bottom: #0F3D3E 2px solid;
@@ -181,6 +195,7 @@
                     }
                 }
             }
+
             .tab-content {
                 .tab-pane {
                     .d-flex {
@@ -246,12 +261,14 @@
         }
     }
 }
+
 .tabs {
     .container {
         .container {
             p {
                 color: #ff8682 !important;
             }
+
             p-tabPanel {
                 .d-flex {
                     .card {
@@ -332,6 +349,7 @@
         }
     }
 }
+
 .p-tabview .p-tabview-nav-content {
     height: 80px;
     justify-content: center;
@@ -344,14 +362,17 @@
     -ms-border-radius: 12px;
     -o-border-radius: 12px;
 }
+
 .p-tabview .p-tabview-nav {
     background: #ffffff;
     border: none;
     border-width: 0 0 2px 0;
 }
+
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
     color: #0f3d3e !important;
 }
+
 .p-tabview .p-tabview-nav {
     background: #ffffff;
     border: none;
@@ -362,9 +383,11 @@
     align-items: center;
     display: flex;
 }
+
 .p-tabview-nav-container {
     display: flex;
     justify-content: center;
+
     .p-tabview-nav-content {
         width: 50%;
     }
@@ -374,9 +397,11 @@
     .searchBar {
         display: none;
     }
+
     .Area .container .row .col-md-6 .form-group .Search-btn {
         display: none;
     }
+
     .Area {
         .container {
             .row {
@@ -387,14 +412,17 @@
                             padding: 0;
                             margin: 0;
                         }
+
                         .nav {
 
                             .nav-link {
                                 .par {
                                     gap: 19px !important;
+
                                     p {
                                         display: none !important;
                                     }
+
                                     i {
                                         color: #ff8682;
                                     }
@@ -404,6 +432,7 @@
                     }
                 }
             }
+
             .col-md-6 {
                 .div-searchBar {
                     .form-group {
@@ -432,6 +461,7 @@
                     }
                 }
             }
+
             .tab-content {
                 .tab-pane {
                     .rania {
@@ -442,12 +472,14 @@
                             justify-content: center;
                             align-items: center;
                             display: flex;
+
                             .row {
                                 .col-4 {
                                     img {
                                         height: 219px;
                                     }
                                 }
+
                                 .col-8 {
                                     .card-body {
                                         .d-flex {
@@ -514,6 +546,7 @@
             }
         }
     }
+
     .Restaurants {
         p {
             line-height: 38.4px;
@@ -522,6 +555,7 @@
             color: #000000;
             font-weight: 900 !important;
         }
+
         .div-box-navs {
             justify-content: center !important;
             align-items: center !important;
@@ -577,7 +611,8 @@
     }
 
 }
-.sfarray{
+
+.sfarray {
     width: 300px;
     height: 222px;
 }
