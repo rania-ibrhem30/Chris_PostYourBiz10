@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: 'navbar', component: NavbarComponent },
   { path: 'contact-us', component:ContactUsComponent },
   {path:'Terms-Conditions',component:TermsConditionsComponent},
-  { path: 'Listings', loadChildren: () => import('./listings/listings.module').then(m => m.ListingsModule) },
+  { path: 'listing', loadChildren: () => import('./listings/listings.module').then(m => m.ListingsModule) },
   { path: 'posting', loadChildren: () => import('./posting/posting.module').then(m => m.PostingModule) },
   { path: 'Buy-Sell', loadChildren: () => import('./buy-sell/buy-sell.module').then(m => m.BuySellModule) },
   { path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule) },

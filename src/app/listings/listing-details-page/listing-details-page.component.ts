@@ -11,7 +11,7 @@ export class ListingDetailsPageComponent {
     twoImgs : boolean = false;
     displayCount : number = 4;
     img : any[] = [];
-    isVisible = false;
+    // isVisible = false;
     displayBasic : boolean = false;
     galleryphotos : string[] = [];
     galleryphotosmobile : string[] = [];
