@@ -23,7 +23,8 @@ export class PostingDetalisPageComponent {
   activeIndex: number = 0;
   timepost:any;
   loading:boolean = false
-  displayBasic:boolean=true
+  displayBasic:boolean=true   
+
   constructor(private service : PostingService, private route:ActivatedRoute) {
       this.id = route.snapshot.paramMap.get('id');
   }
@@ -52,9 +53,10 @@ export class PostingDetalisPageComponent {
           numVisible: 2
       }, {
           breakpoint: '560px',
-          numVisible: 1
+          numVisible: 2
       },
   ];
+  
 
 //   getImages() {
 //     this.service.GetPostingByID(this.id).subscribe((res: any) => {

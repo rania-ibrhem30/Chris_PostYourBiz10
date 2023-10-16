@@ -16,7 +16,7 @@
             </div>
              
             <div class="justify-content-center align-items-center d-flex">
-                <p-galleria [value]="galleryphotos" [(visible)]="displayBasic" [responsiveOptions]="responsiveOptions"
+                <!-- <p-galleria [value]="galleryphotos" [(visible)]="displayBasic" [responsiveOptions]="responsiveOptions"
                 [containerStyle]="{ 'max-width': '850px' }" [numVisible]="7" [circular]="true" [showIndicatorsOnItem]="true"[showItemNavigators]="true" 
                 [showItemNavigators]="true" [showThumbnails]="false">
                 <ng-template pTemplate="item" let-item>
@@ -27,7 +27,31 @@
                         <img [src]="item.thumbnailImageSrc" style="display: block;" />
                     </div>
                 </ng-template>
-            </p-galleria>
+               </p-galleria> -->
+               <p-galleria
+          
+               [value]="galleryphotos"
+               [showItemNavigators]="true"
+               [responsiveOptions]="responsiveOptions"
+               [circular]="true"
+               [numVisible]="5"
+               [showThumbnailNavigators]="false"
+             >
+               <ng-template pTemplate="item" let-item>
+                 <img
+                   [src]="item"
+                   class="w-75"
+                 />
+               </ng-template>
+               <ng-template pTemplate="thumbnail" let-item>
+                 <div class="d-grid justify-content-center">
+                   <img
+                     [src]="item"
+                     class="img-fluid w-75"
+                   />
+                 </div>
+               </ng-template>
+             </p-galleria>
        
             </div>
 
