@@ -208,7 +208,7 @@ section .Restaurants {
                       line-height: 24px;
                       font-weight: 900 !important;
                       white-space: nowrap;
-                      margin: 0px 36px;
+                      // margin: 0px 36px;
                       ;
                     }
 
@@ -875,4 +875,10 @@ section .Restaurants {
 .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
   color: #258a8b !important;
   border-color: #258a8b !important;
+}
+
+a {
+  text-decoration: none;
+  border:none;
+
 }
