@@ -10,8 +10,7 @@ import { ActivatedRoute, Route, Router } from '@angular/router';
   encapsulation: ViewEncapsulation.None
 })
 export class HomeComponent {
-  // cities: any[] | undefined;
-  // categories:any[]|undefined;
+ 
   categoriesName:string|any
   StatesName: string | any;
    arrayfromnavbar:any[]=[]

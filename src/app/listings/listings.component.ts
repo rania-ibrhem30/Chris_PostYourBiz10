@@ -153,6 +153,7 @@ export class ListingsComponent implements DoCheck {
   ngDoCheck(): void {
 
   }
+  
 
 
 }
