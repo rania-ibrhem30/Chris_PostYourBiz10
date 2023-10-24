@@ -17,6 +17,7 @@ export class ListingDetailsPageComponent {
     galleryphotosmobile : string[] = [];
     data:any[]=[];
     itemId:any;
+    posts:any[]=[];
 
     constructor(private service : ServicesListingService, private route:ActivatedRoute) {
         this.id = route.snapshot.paramMap.get('id');
@@ -91,12 +92,19 @@ export class ListingDetailsPageComponent {
           this.galleryphotos = res.data.images;
       });
   }
+  getPosts(id:number){
+    this.service.getpostsbusinessID(id).subscribe((res:any)=>{
+       this.posts=res.data;
+       console.log("rania",this.posts)
+    })
+ }
 
     ngOnInit(): void {
         this.galleryphotos = this.img;
        this.route.params.subscribe((params:any) =>{
         console.log(params )
        this.getdetalisId(params.id);
+       this.getPosts(this.id);
 
      })
 

@@ -58,18 +58,6 @@ export class PostingDetalisPageComponent {
   ];
   
 
-//   getImages() {
-//     this.service.GetPostingByID(this.id).subscribe((res: any) => {
-//       this.datainfo = res.data;
-//       this.galleryphotos = res.data.images;
-//       this.imgs = this.galleryphotos.map((image: any) => ({
-//         itemImageSrc: image.url
-//       }));
-//       this.displayCustom = false;
-//     });
-  
-// }
-
   ngOnInit(): void {
       this.getdetalisId();
       this.getImages()
