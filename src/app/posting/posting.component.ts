@@ -28,6 +28,7 @@ export class PostingComponent {
   rows = 20; 
   searchQuery: string = '';
   loading:boolean =false
+  sortedArray: any[] = [];
 
 
 
@@ -111,8 +112,14 @@ export class PostingComponent {
     ];
 
     this.posting()
+    this.sortArrayByPostTime();
   }
-  ngDoCheck(): void {
-   
+  sortArrayByPostTime() {
+    this.sortedArray = this.postingarray.sort((a, b) => {
+      const timeA = new Date(a.postTime);
+      const timeB = new Date(b.postTime);
+      return timeA.getTime() - timeB.getTime();
+    });
   }
+  
 }
