@@ -25,7 +25,7 @@ export class PostingComponent {
   fliterbody!:FormGroup;
   filterForm: any;
   first = 0; 
-  rows = 3; 
+  rows = 20; 
   searchQuery: string = '';
   loading:boolean =false
 

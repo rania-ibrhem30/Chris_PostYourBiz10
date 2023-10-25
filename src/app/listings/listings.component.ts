@@ -27,7 +27,7 @@ export class ListingsComponent implements DoCheck {
   filterForm: any;
   loader: boolean = false
   first = 0;
-  rows = 2;
+  rows = 4;
   searchQuery: string = '';
   arrayData: any;
   loading:boolean = false
