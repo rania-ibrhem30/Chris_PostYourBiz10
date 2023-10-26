@@ -112,14 +112,7 @@ export class PostingComponent {
     ];
 
     this.posting()
-    this.sortArrayByPostTime();
   }
-  sortArrayByPostTime() {
-    this.sortedArray = this.postingarray.sort((a, b) => {
-      const timeA = new Date(a.postTime);
-      const timeB = new Date(b.postTime);
-      return timeA.getTime() - timeB.getTime();
-    });
-  }
+ 
   
 }
