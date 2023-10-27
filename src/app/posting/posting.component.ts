@@ -29,20 +29,37 @@ export class PostingComponent {
   searchQuery: string = '';
   loading:boolean =false
   sortedArray: any[] = [];
+  posttime:any[]=[];
 
 
 
   constructor(public service:PostingService){
   }
-  posting(){
-    this.loading=true
-    this.service.GetPosting().subscribe((res:any)=>{
-      this.loading=false
+  // posting(){
+  //   this.loading=true
+  //   this.service.GetPosting().subscribe((res:any)=>{
+  //     this.loading=false
 
-      this.postingarray=res.data
-     console.log(this.postingarray)
+  //     this.postingarray=res.data
+  //    console.log(this.postingarray)
      
-    })
+  //   })
+  // }
+  posting() {
+    this.loading = true;
+    this.service.GetPosting().subscribe((res: any) => {
+      this.loading = false;
+      this.postingarray = res.data;
+      this.sortArrayByUpdatedAt();
+    });
+  }
+  
+  sortArrayByUpdatedAt() {
+    this.postingarray.sort((a, b) => {
+      const timeA = new Date(a.updated_at).getTime();
+      const timeB = new Date(b.updated_at).getTime();
+      return timeB - timeA;
+    });
   }
 
   
