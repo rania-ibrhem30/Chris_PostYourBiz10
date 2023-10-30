@@ -28,7 +28,7 @@ export class PostingComponent {
   rows = 20; 
   searchQuery: string = '';
   loading:boolean =false
-  sortedArray: any[] = [];
+  // sortedArray: any[] = [];
   posttime:any[]=[];
 
 
