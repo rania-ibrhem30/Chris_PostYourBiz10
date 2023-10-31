@@ -30,6 +30,7 @@ export class PostingComponent {
   loading:boolean =false
   // sortedArray: any[] = [];
   posttime:any[]=[];
+  firstimg:any[]=[];
 
 
 
@@ -45,10 +46,26 @@ export class PostingComponent {
      
   //   })
   // }
+  // posting() {
+  //   this.loading = true;
+  //   this.service.GetPosting().subscribe((res: any) => {
+  //     this.loading = false;
+  //     this.postingarray = res.data;
+  //     this.firstimg = res.data.images[0];
+  //     console.log(this.firstimg)
+  //     this.sortArrayByUpdatedAt();
+  //   });
+  // }
+  
+  // sortArrayByUpdatedAt() {
+  //   this.postingarray.sort((a, b) => {
+  //     const timeA = new Date(a.updated_at).getTime();
+  //     const timeB = new Date(b.updated_at).getTime();
+  //     return timeB - timeA;
+  //   });
+  // }
   posting() {
-    this.loading = true;
     this.service.GetPosting().subscribe((res: any) => {
-      this.loading = false;
       this.postingarray = res.data;
       this.sortArrayByUpdatedAt();
     });
@@ -58,7 +75,7 @@ export class PostingComponent {
     this.postingarray.sort((a, b) => {
       const timeA = new Date(a.updated_at).getTime();
       const timeB = new Date(b.updated_at).getTime();
-      return timeB - timeA;
+      return timeB - timeA; // Sorting in descending order
     });
   }
 
