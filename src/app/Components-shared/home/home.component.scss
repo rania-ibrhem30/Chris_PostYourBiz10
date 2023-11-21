@@ -126,37 +126,50 @@ section .bg-green {
         margin-top: -92px;
 
         .col-md-2 {
+          img{
+            border-radius: 50% !important;
+            -webkit-border-radius: 50% !important;
+            -moz-border-radius: 50% !important;
+            -ms-border-radius: 50% !important;
+            -o-border-radius: 50% !important;
+            height: 300px;
+            width: 300px;
+}
+          width:350px;
           height: 350px;
-          background-color: #0f3d3e;
-          border: 5px solid rgb(237, 236, 236);
-          border-radius: 12px;
-          -webkit-border-radius: 12px;
-          -moz-border-radius: 12px;
-          -ms-border-radius: 12px;
-          -o-border-radius: 12px;
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          // background-color: #1c2121;
+          // border: 5px solid rgb(237, 236, 236);
+          // border-radius: 12px;
+          // -webkit-border-radius: 12px;
+          // -moz-border-radius: 12px;
+          // -ms-border-radius: 12px;
+          // -o-border-radius: 12px;
+          // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
           position: relative;
 
           .box-card {
             position: absolute;
             top: -16px;
+            
+   
 
-            p {
-              font-weight: 600;
-            }
+            // p {
+            //   font-weight: 600;
+            // }
 
-            .rounded-circle {
-              background-color: #ffff;
-              height: 200px;
-              width: 195px;
-              margin: 45px -4px;
+            // .rounded-circle {
+            //   background-color: #ffff;
+            //   height: 200px;
+            //   width: 195px;
+            //   margin: 45px -4px;
 
-              small {
-                font-size: 13px;
-                color: #454545;
-                font-family: "Lato", sans-serif;
-              }
-            }
+            //   small {
+            //     font-size: 13px;
+            //     color: #454545;
+            //     font-family: "Lato", sans-serif;
+            //   }
+ 
+            // }
           }
         }
       }
@@ -434,19 +447,19 @@ section .Restaurants {
         .row {
           .col-md-2 {
             height: 350px;
-            -webkit-border-radius: 12px;
-            -moz-border-radius: 12px;
-            -ms-border-radius: 12px;
-            -o-border-radius: 12px;
-            box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+            // -webkit-border-radius: 12px;
+            // -moz-border-radius: 12px;
+            // -ms-border-radius: 12px;
+            // -o-border-radius: 12px;
+            // box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
             position: relative;
-            justify-content: center;
-            align-items: center;
-            display: flex;
-            margin: 0px 30px;
-            background-color: #0f3d3e;
-            border: 5px solid rgb(237, 236, 236);
-            border-radius: 12px;
+            // justify-content: center;
+            // align-items: center;
+            // display: flex;
+            // margin: 0px 30px;
+            // background-color: #0f3d3e;
+            // border: 5px solid rgb(237, 236, 236);
+            // border-radius: 12px;
 
             .col-8 {
               width: 100%;
