@@ -21,7 +21,7 @@
             <p-dropdown optionlabel="Listings" placeholder="Listings"></p-dropdown>
             <p-dropdown formControlName="state" [options]="StatesName" optionLabel="name" placeholder="State">
             </p-dropdown>
-            <p-dropdown [options]="categoriesName" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>            <input type="text" pInputText placeholder="Zip Code" />
+            <p-dropdown [options]="categoriesName" optionLabel="name" placeholder="Category" formControlName="categoriesName"></p-dropdown>
           
             <button class="Search-btn ms-5" (click)="filterlistingBIZ()">
               Search
@@ -42,15 +42,17 @@
 <section class="bg-green">
   <div class="cards pb-5">
     <div class="container">
-      <div class="row justify-content-center align-items-center d-flex gap-4">
+      <div class="row justify-content-center align-items-center d-flex gap-4" >
         <div class="col-md-2 justify-content-center align-items-center d-flex col-8">
           <div class="box-card">
            <img src="../../../assets/img/Home/Rectangle 7.png" alt="">
           </div>
+         
         </div>
         <div class="col-md-2 justify-content-center align-items-center d-flex col-8">
           <div class="box-card">
            <img src="../../../assets/img/Home/Rectangle 87.png" alt="">
+           
           </div>
         </div>
         <div class="col-md-2 justify-content-center align-items-center d-flex col-8">
@@ -64,6 +66,7 @@
     </div>
   </div>
 </section>
+
 <section class="Restaurants">
   <div class="container py-5">
     <p class="h1">Most Popular Restaurants, Salons & Spa’s</p>

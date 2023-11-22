@@ -176,6 +176,51 @@ section .bg-green {
     }
   }
 }
+.Explore {
+  .container {
+      .three-box {
+          .row {
+              .one {
+                  background-image: url("../../../assets/img/home/Rectangle 88.png");
+                  background-size: cover;
+                  height: 300px;
+                  width: 300px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+
+              }
+
+              .two {
+                  background-image: url("../../../assets/img/home/Rectangle 7.png");
+                  background-size: cover;
+                  height: 300px;
+                  width: 300px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+}
+              }
+
+              .three {
+                  background-image: url("../../../assets/img/home/Rectangle 87.png");
+                  background-size: cover;
+                  height: 300px;
+                  width: 300px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -moz-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  -o-border-radius: 50%;
+}
+          }
+      }
+  }
+
 
 section .Restaurants {
   .container {
